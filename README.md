@@ -11,53 +11,59 @@
 
 This is a comprehensive learning resource for the unit **AHCECR309 - Conduct an ecological and cultural site inspection prior to works**. The resource is designed for students in the Tasmanian context and covers **five** key modules:
 
-1. **Ecological Site Inspection Fundamentals** - Introduction to ecological site inspections
-2. **Tasmanian Ecosystems** - Tasmania's unique ecosystems and endemic species
-3. **Cultural Heritage Considerations** - Aboriginal and historic heritage recognition and protection
-4. **Legislative Framework** - Laws and regulations governing site inspections
-5. **Conducting the Inspection** - Complete workflow from planning to reporting
+1. Ecological Site Inspection Fundamentals - Introduction to ecological site inspections
+2. Tasmanian Ecosystems - Tasmania's unique ecosystems and endemic species
+3. Cultural Heritage Considerations - Aboriginal and historic heritage recognition and protection
+4. Legislative Framework - Laws and regulations governing site inspections
+5. Conducting the Inspection - Complete workflow from planning to reporting
 
 ---
 
 ## Features
 
-- **5 Interactive Learning Modules** - Comprehensive modules with internal navigation
-- **Progress Tracking** - LocalStorage-based progress tracking for students
-- **Interactive Activities** - Species identification, ecosystem mapping, threat identification
-- **Site Inspection Tool** - Practice inspection form with real-world components
-- **Revision & Quiz** - Multiple-choice questions, flashcards, and matching activities
-- **Resource Downloads** - PDF guides, checklists, and full learner's guide
-- **Accessibility** - ARIA attributes, keyboard navigation, skip links, and semantic HTML
-- **Responsive Design** - Works on desktop, tablet, and mobile devices
-- **Breadcrumb Navigation** - Clear navigation path for students
+- 5 Interactive Learning Modules - Comprehensive modules with internal navigation
+- Progress Tracking - LocalStorage-based progress tracking for students
+- Interactive Activities - Species identification, ecosystem mapping, threat identification
+- Site Inspection Tool - Practice inspection form with real-world components
+- Revision and Quiz - Multiple-choice questions, flashcards, and matching activities
+- Resource Downloads - PDF guides, checklists, and full learner's guide
+- Accessibility - ARIA attributes, keyboard navigation, skip links, and semantic HTML
+- Responsive Design - Works on desktop, tablet, and mobile devices
+- Breadcrumb Navigation - Clear navigation path for students
 
 ---
 
 ## Project Structure
 
-AHCECR309/
-├── index.html              # Main landing page
-├── UserGuide.html          # Student user guide
-├── CHANGELOG.md            # Version history
-├── README.md               # This file
-├── css/
-│   └── style.css           # Shared styles
-├── js/
-│   └── app.js              # Shared JavaScript
-├── modules/
-│   ├── module1.html        # Ecological Site Inspection Fundamentals
-│   ├── module2.html        # Tasmanian Ecosystems
-│   ├── module3.html        # Cultural Heritage Considerations
-│   ├── module4.html        # Legislative Framework
-│   └── module5.html        # Conducting the Inspection
-├── resources/
-│   ├── CulturalHeritageAssessmentGuidelines.pdf
-│   ├── LegislativeRequirementsSummary.pdf
-│   ├── SiteInspectionChecklist.pdf
-│   ├── TasVegClassificationGuide.pdf
-│   └── EcologicalCulturalSiteInspections_LearnerGuide.pdf
-└── images/
-    └── pademelon.jpg       # Species identification image
+- index.html - Main landing page
+- UserGuide.html - Student user guide
+- CHANGELOG.md - Version history
+- README.md - This file
+
+Folders:
+
+- css/
+  - style.css - Shared styles
+
+- js/
+  - app.js - Shared JavaScript
+
+- modules/
+  - module1.html - Ecological Site Inspection Fundamentals
+  - module2.html - Tasmanian Ecosystems
+  - module3.html - Cultural Heritage Considerations
+  - module4.html - Legislative Framework
+  - module5.html - Conducting the Inspection
+
+- resources/
+  - CulturalHeritageAssessmentGuidelines.pdf
+  - LegislativeRequirementsSummary.pdf
+  - SiteInspectionChecklist.pdf
+  - TasVegClassificationGuide.pdf
+  - EcologicalCulturalSiteInspections_LearnerGuide.pdf
+
+- images/
+  - pademelon.jpg - Species identification image
 
 ---
 
@@ -97,16 +103,16 @@ AHCECR309/
 
 ## Credits
 
-- **Developer:** Jay Rowley
-- **Unit:** AHCECR309 - Conduct an ecological and cultural site inspection prior to works
-- **Context:** Tasmanian
+- Developer: Jay Rowley
+- Unit: AHCECR309 - Conduct an ecological and cultural site inspection prior to works
+- Context: Tasmanian
 
 ## Acknowledgments
 
-- **Tasmanian Aboriginal Centre (TAC)** - Cultural heritage guidance and protocols
-- **Aboriginal Heritage Tasmania** - Heritage protection framework
-- **NRE Tasmania** - Natural values and ecological resources
-- **TasTAFE** - Vocational education and training support
+- Tasmanian Aboriginal Centre (TAC) - Cultural heritage guidance and protocols
+- Aboriginal Heritage Tasmania - Heritage protection framework
+- NRE Tasmania - Natural values and ecological resources
+- TasTAFE - Vocational education and training support
 
 ---
 
@@ -116,4 +122,4 @@ This resource is for educational purposes only.
 
 ---
 
-© 2025 Jay Rowley | Tasmanian Context | AHCECR309
+Copyright 2025-2026 Jay Rowley | Tasmanian Context | AHCECR309
