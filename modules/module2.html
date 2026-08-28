@@ -46,6 +46,8 @@
                 <li>Understand the key characteristics of each ecosystem</li>
                 <li>Recognize the conservation significance of Tasmanian ecosystems</li>
                 <li>Describe the Gondwanan heritage of Tasmania's flora and fauna</li>
+                <li>Identify and value ecosystem services provided by Tasmanian ecosystems</li>
+                <li>Understand the impacts of local industries on Tasmanian ecosystems</li>
             </ul>
         </div>
 
@@ -58,6 +60,14 @@
             <button class="nav-tab" role="tab" aria-selected="false" aria-controls="species" data-target="species" tabindex="0">
                 <i class="fas fa-paw" aria-hidden="true"></i>
                 <span>Endemic Species</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="services" data-target="services" tabindex="0">
+                <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                <span>Ecosystem Services</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="industry" data-target="industry" tabindex="0">
+                <i class="fas fa-industry" aria-hidden="true"></i>
+                <span>Industry Impacts</span>
             </button>
             <button class="nav-tab" role="tab" aria-selected="false" aria-controls="threats" data-target="threats" tabindex="0">
                 <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
@@ -215,6 +225,278 @@
                 </ul>
             </div>
 
+            <button class="btn" onclick="switchTab('services')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Ecosystem Services</button>
+        </section>
+
+        <!-- Ecosystem Services - NEW -->
+        <section id="services" class="content-section" role="tabpanel" hidden>
+            <h2>Ecosystem Services: What Nature Provides</h2>
+            <p>Ecosystem services are the benefits that people obtain from ecosystems. Understanding these helps justify conservation and informs management decisions.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                    <h3>Types of Ecosystem Services</h3>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid #4CAF50;">
+                        <h4><i class="fas fa-apple-alt" aria-hidden="true"></i> Provisioning Services</h4>
+                        <p style="font-size: 0.9rem;">Products obtained from ecosystems:</p>
+                        <ul style="font-size: 0.85rem;">
+                            <li>Timber and wood products</li>
+                            <li>Food (fish, game, bush tucker)</li>
+                            <li>Fresh water</li>
+                            <li>Medicinal plants</li>
+                            <li>Fibre for textiles and crafts</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid #2196F3;">
+                        <h4><i class="fas fa-cloud-sun" aria-hidden="true"></i> Regulating Services</h4>
+                        <p style="font-size: 0.9rem;">Benefits from ecosystem processes:</p>
+                        <ul style="font-size: 0.85rem;">
+                            <li>Climate regulation (carbon sequestration)</li>
+                            <li>Flood and erosion control</li>
+                            <li>Water purification</li>
+                            <li>Pollination</li>
+                            <li>Air quality regulation</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid #FF9800;">
+                        <h4><i class="fas fa-seedling" aria-hidden="true"></i> Supporting Services</h4>
+                        <p style="font-size: 0.9rem;">Underpin all other services:</p>
+                        <ul style="font-size: 0.85rem;">
+                            <li>Soil formation</li>
+                            <li>Nutrient cycling</li>
+                            <li>Primary production (photosynthesis)</li>
+                            <li>Habitat provision</li>
+                            <li>Water cycling</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid #9C27B0;">
+                        <h4><i class="fas fa-users" aria-hidden="true"></i> Cultural Services</h4>
+                        <p style="font-size: 0.9rem;">Non-material benefits:</p>
+                        <ul style="font-size: 0.85rem;">
+                            <li>Spiritual and cultural values</li>
+                            <li>Recreation and tourism</li>
+                            <li>Education and research</li>
+                            <li>Aesthetic appreciation</li>
+                            <li>Sense of place and identity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <h3>Tasmanian Examples</h3>
+                </div>
+
+                <div class="tas-example" style="margin-top: var(--spacing-md);">
+                    <h4><i class="fas fa-tree" aria-hidden="true"></i> Tarkine Rainforest Services</h4>
+                    <p>The Tarkine rainforest provides ecosystem services including: carbon storage (regulating), clean water (regulating), timber (provisioning), tourism (cultural), and nutrient cycling (supporting). The value of these services far exceeds the value of timber extraction alone.</p>
+                </div>
+
+                <div class="tas-example">
+                    <h4><i class="fas fa-mountain" aria-hidden="true"></i> Alpine Ecosystem Services</h4>
+                    <p>Alpine ecosystems regulate water flow, store carbon, provide habitat for endemic species, and offer cultural and recreational value through activities like bushwalking and nature appreciation.</p>
+                </div>
+
+                <div class="tas-example">
+                    <h4><i class="fas fa-water" aria-hidden="true"></i> Wetland Services</h4>
+                    <p>Wetlands filter pollutants, store floodwaters, provide habitat for birds and fish, and support recreational activities like birdwatching and fishing.</p>
+                </div>
+            </div>
+
+            <div class="interactive-box">
+                <h4><i class="fas fa-question-circle" aria-hidden="true"></i> Quick Check</h4>
+                <p>Which of these is NOT an ecosystem service?</p>
+                <div class="quiz-question">
+                    <div class="quiz-option" data-correct="false" role="radio" tabindex="0">Carbon sequestration by forests</div>
+                    <div class="quiz-option" data-correct="true" role="radio" tabindex="0">Timber harvesting from plantations</div>
+                    <div class="quiz-option" data-correct="false" role="radio" tabindex="0">Pollination of crops by native bees</div>
+                    <div class="quiz-option" data-correct="false" role="radio" tabindex="0">Recreation and tourism in national parks</div>
+                    <button class="btn check-answer" data-question="services-quiz"><i class="fas fa-check" aria-hidden="true"></i> Check Answer</button>
+                    <div class="feedback correct" style="display: none;">Correct! While timber harvesting provides provisioning services, plantations are not natural ecosystems - they are managed agricultural systems. The question asks about ecosystem services, which come from natural ecosystems.</div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('industry')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Industry Impacts</button>
+        </section>
+
+        <!-- Industry Impacts - NEW -->
+        <section id="industry" class="content-section" role="tabpanel" hidden>
+            <h2>Local Industry Impacts on Tasmanian Ecosystems</h2>
+            <p>Tasmania's industries have shaped the landscape for over 200 years. Understanding their impacts is critical for restoration and management.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tree" aria-hidden="true"></i>
+                    <h3>Forestry</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Impacts</h4>
+                        <ul>
+                            <li><strong>Habitat fragmentation:</strong> Clearing breaks up continuous habitat</li>
+                            <li><strong>Soil compaction:</strong> Heavy machinery compacts soil</li>
+                            <li><strong>Altered hydrology:</strong> Changes to drainage patterns</li>
+                            <li><strong>Weed invasion:</strong> Disturbance creates opportunities for weeds</li>
+                            <li><strong>Loss of old-growth:</strong> Reduced habitat for hollow-dependent species</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Threatened Species Affected</h4>
+                        <ul>
+                            <li><strong>Swift Parrot:</strong> Needs old-growth eucalypts for nesting</li>
+                            <li><strong>Tasmanian Devil:</strong> Habitat loss impacts populations</li>
+                            <li><strong>Wedge-tailed Eagle:</strong> Nesting trees destroyed</li>
+                            <li><strong>Spotted-tail Quoll:</strong> Fragmentation reduces range</li>
+                            <li><strong>Giant Freshwater Crayfish:</strong> Sedimentation from roads and logging</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: var(--spacing-md);">
+                    <h4>Restoration Actions</h4>
+                    <ul>
+                        <li>Native revegetation with appropriate species</li>
+                        <li>Habitat corridor creation</li>
+                        <li>Protection of old-growth and hollow-bearing trees</li>
+                        <li>Soil remediation and erosion control</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tractor" aria-hidden="true"></i>
+                    <h3>Agriculture</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Impacts</h4>
+                        <ul>
+                            <li><strong>Land clearing:</strong> Loss of native vegetation</li>
+                            <li><strong>Nutrient runoff:</strong> Fertilizers, manure entering waterways</li>
+                            <li><strong>Weed invasion:</strong> Pasture species spreading into bushland</li>
+                            <li><strong>Soil degradation:</strong> Compaction, erosion, salinity</li>
+                            <li><strong>Overgrazing:</strong> Damage to native vegetation</li>
+                            <li><strong>Pest harborage:</strong> Rabbits, foxes, deer</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Threatened Species Affected</h4>
+                        <ul>
+                            <li><strong>Eastern Barred Bandicoot:</strong> Grassland loss</li>
+                            <li><strong>Native Grasslands:</strong> Less than 5% remain</li>
+                            <li><strong>Quolls:</strong> Poisoning from baits</li>
+                            <li><strong>Wetland species:</strong> Water extraction and degradation</li>
+                            <li><strong>Soil invertebrates:</strong> Chemical use and compaction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: var(--spacing-md);">
+                    <h4>Restoration Actions</h4>
+                    <ul>
+                        <li>Revegetation of riparian zones and remnant bushland</li>
+                        <li>Fencing to exclude stock from sensitive areas</li>
+                        <li>Sustainable grazing practices</li>
+                        <li>Weed management programs</li>
+                        <li>Re-establishment of native grasslands</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-gem" aria-hidden="true"></i>
+                    <h3>Mining</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Impacts</h4>
+                        <ul>
+                            <li><strong>Habitat destruction:</strong> Removal of vegetation and soil</li>
+                            <li><strong>Water pollution:</strong> Acid mine drainage, heavy metals</li>
+                            <li><strong>Soil contamination:</strong> Chemical residues, tailings</li>
+                            <li><strong>Biodiversity loss:</strong> Local extinction of species</li>
+                            <li><strong>Visual impacts:</strong> Scarring of the landscape</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Threatened Species Affected</h4>
+                        <ul>
+                            <li><strong>Aquatic species:</strong> Fish, crayfish, invertebrates</li>
+                            <li><strong>Riparian vegetation:</strong> Along streams below mines</li>
+                            <li><strong>Bat species:</strong> Loss of roosting habitat</li>
+                            <li><strong>Plants:</strong> Direct loss from clearing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: var(--spacing-md);">
+                    <h4>Restoration Actions</h4>
+                    <ul>
+                        <li>Mine site rehabilitation</li>
+                        <li>Water treatment for acid mine drainage</li>
+                        <li>Containment of contaminated material</li>
+                        <li>Revegetation with appropriate species</li>
+                        <li>Long-term monitoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-camera" aria-hidden="true"></i>
+                    <h3>Tourism</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Impacts</h4>
+                        <ul>
+                            <li><strong>Trampling:</strong> Damage to vegetation and soil</li>
+                            <li><strong>Erosion:</strong> Track degradation</li>
+                            <li><strong>Disturbance:</strong> Stress to wildlife</li>
+                            <li><strong>Litter:</strong> Visual and physical contamination</li>
+                            <li><strong>Weed spread:</strong> Introduction of seeds on clothing and vehicles</li>
+                            <li><strong>Cultural site damage:</strong> Vandalism, disturbance</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Threatened Species Affected</h4>
+                        <ul>
+                            <li><strong>Coastal nesting birds:</strong> Hooded Plover, Shearwater</li>
+                            <li><strong>Alpine plants:</strong> Slow regeneration</li>
+                            <li><strong>Aboriginal sites:</strong> Middens, rock art</li>
+                            <li><strong>Orchids:</strong> Trampled by walkers</li>
+                            <li><strong>Devils:</strong> Road mortality</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: var(--spacing-md);">
+                    <h4>Restoration Actions</h4>
+                    <ul>
+                        <li>Track management and erosion control</li>
+                        <li>Visitor education and signage</li>
+                        <li>Boardwalks over sensitive areas</li>
+                        <li>Fencing around cultural sites</li>
+                        <li>Weed hygiene stations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>Tasmania's industries have significant impacts on ecosystems</li>
+                    <li>Understanding these impacts is essential for restoration</li>
+                    <li>Each industry requires different management approaches</li>
+                    <li>Collaboration between industry and conservation is essential</li>
+                    <li>Cumulative impacts of multiple industries can be greater than individual effects</li>
+                </ul>
+            </div>
+
             <button class="btn" onclick="switchTab('threats')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Threats</button>
         </section>
 
@@ -314,6 +596,8 @@
                     <li>Ecosystems face threats from climate change, invasive species, and habitat loss</li>
                     <li>Understanding ecosystem types is essential for effective site inspections</li>
                     <li>Gondwanan heritage makes Tasmanian ecosystems particularly important</li>
+                    <li>Ecosystem services provide vital benefits to humans and justify conservation</li>
+                    <li>Local industries have significant impacts that must be managed</li>
                 </ul>
             </div>
 
@@ -331,7 +615,7 @@
         <!-- Footer -->
         <footer role="contentinfo">
             <p>AHCECR309 - Conduct an ecological and cultural site inspection prior to works.</p>
-            <p>Developed by Jay Rowley | Tasmanian Context | © 2025</p>
+            <p>Developed by Jay Rowley | Tasmanian Context | © 2025-2026</p>
         </footer>
     </div>
 
@@ -363,23 +647,22 @@
             }
         });
 
-// Complete Module - FIXED
-document.getElementById('complete-module')?.addEventListener('click', () => {
-    const feedback = document.getElementById('complete-feedback');
-    setModuleProgress('module2', 100);  // ← Changed from 'moduleX' to 'module2'
-    
-    // Add animation to the completion card
-    const completionCard = document.querySelector('.card:last-child');
-    if (completionCard) {
-        completionCard.classList.add('module-complete');
-        setTimeout(() => {
-            completionCard.classList.remove('module-complete');
-        }, 1000);
-    }
-    
-    showFeedback(feedback, '🎉 Module 2 Complete!', 'correct');
-    document.getElementById('complete-module').disabled = true;
-});
+        // Complete Module
+        document.getElementById('complete-module')?.addEventListener('click', () => {
+            const feedback = document.getElementById('complete-feedback');
+            setModuleProgress('module2', 100);
+
+            const completionCard = document.querySelector('.card:last-child');
+            if (completionCard) {
+                completionCard.classList.add('module-complete');
+                setTimeout(() => {
+                    completionCard.classList.remove('module-complete');
+                }, 1000);
+            }
+
+            showFeedback(feedback, '🎉 Module 2 Complete!', 'correct');
+            document.getElementById('complete-module').disabled = true;
+        });
 
         updateAllProgressBars();
     </script>

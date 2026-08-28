@@ -48,6 +48,7 @@
                 <li>Recognize Tasmania's unique ecological features and conservation values</li>
                 <li>Apply appropriate assessment techniques for different ecosystem types</li>
                 <li>Document findings effectively using standard protocols</li>
+                <li>Understand the role of abiotic elements and microorganisms in ecosystem function</li>
             </ul>
         </div>
 
@@ -60,6 +61,14 @@
             <button class="nav-tab" role="tab" aria-selected="false" aria-controls="concepts" data-target="concepts" tabindex="0">
                 <i class="fas fa-lightbulb" aria-hidden="true"></i>
                 <span>Key Concepts</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="abiotic" data-target="abiotic" tabindex="0">
+                <i class="fas fa-mountain" aria-hidden="true"></i>
+                <span>Abiotic Elements</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="microorganisms" data-target="microorganisms" tabindex="0">
+                <i class="fas fa-bacteria" aria-hidden="true"></i>
+                <span>Microorganisms</span>
             </button>
             <button class="nav-tab" role="tab" aria-selected="false" aria-controls="process" data-target="process" tabindex="0">
                 <i class="fas fa-sitemap" aria-hidden="true"></i>
@@ -153,6 +162,272 @@
                     <button class="btn check-answer" data-question="concepts-quiz"><i class="fas fa-check" aria-hidden="true"></i> Check Answer</button>
                     <div class="feedback correct" style="display: none;">Correct! TasVeg provides a standardized framework for classifying, assessing, and managing native vegetation communities.</div>
                 </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('abiotic')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Abiotic Elements</button>
+        </section>
+
+        <!-- Abiotic Elements - NEW -->
+        <section id="abiotic" class="content-section" role="tabpanel" hidden>
+            <h2>Abiotic Elements: The Physical Environment</h2>
+            <p>Abiotic elements are the non-living physical and chemical components of the environment that shape ecosystems. Understanding these factors is essential for interpreting ecological patterns and making informed management decisions.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tint" aria-hidden="true"></i>
+                    <h3>Soil</h3>
+                </div>
+                <p>Soil is the foundation of terrestrial ecosystems. Tasmania has diverse soil types including dermosols, kurosols, sodosols, and organosols.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Soil Properties to Assess</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>pH:</strong> Affects nutrient availability and plant selection</li>
+                            <li><strong>Nutrients:</strong> Nitrogen, phosphorus, potassium levels</li>
+                            <li><strong>Organic matter:</strong> Indicates soil health and biological activity</li>
+                            <li><strong>Texture:</strong> Sand, silt, clay proportions</li>
+                            <li><strong>Structure:</strong> How particles clump together</li>
+                            <li><strong>Compaction:</strong> Indicates disturbance or heavy use</li>
+                            <li><strong>Salinity:</strong> Salt levels affect plant growth</li>
+                            <li><strong>Native topsoil condition:</strong> Assess compaction, erosion, salinity</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>How to Assess Soil in the Field</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Texture:</strong> Feel test - rub soil between fingers</li>
+                            <li><strong>pH:</strong> Use a field pH test kit</li>
+                            <li><strong>Compaction:</strong> Push a soil penetrometer or use a spade</li>
+                            <li><strong>Organic matter:</strong> Observe color and feel</li>
+                            <li><strong>Erosion:</strong> Look for rills, gullies, exposed roots</li>
+                            <li><strong>Salinity:</strong> Look for salt crusts or salt-tolerant species</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tas-example" style="margin-top: var(--spacing-md);">
+                    <h4><i class="fas fa-map-marker-alt" aria-hidden="true"></i> TAS Example: Midlands Soils</h4>
+                    <p>Dolerite-derived soils in the Midlands are naturally low in phosphorus and nitrogen, supporting distinctive grassy woodlands. Understanding this helps explain why native grassland species are adapted to low nutrient conditions, and why nutrient enrichment from agricultural runoff can promote weed invasion.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-cloud-rain" aria-hidden="true"></i>
+                    <h3>Climate & Weather</h3>
+                </div>
+                <p>Climate influences which species can survive and how ecosystems function.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Key Climate Factors</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Annual rainfall:</strong> Varies from 500mm (east) to 3000mm+ (west)</li>
+                            <li><strong>Temperature:</strong> Maritime climate with distinct seasons</li>
+                            <li><strong>Frost:</strong> Frequency and severity</li>
+                            <li><strong>Snow:</strong> Alpine areas experience regular snowfall</li>
+                            <li><strong>Wind:</strong> Roaring Forties affect western and southern coasts</li>
+                            <li><strong>Climate change:</strong> Drying trends, increased fire risk, sea level rise</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>How to Record Climate on Site</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Temperature:</strong> Use a digital thermometer</li>
+                            <li><strong>Rainfall:</strong> Check BOM data for nearest station</li>
+                            <li><strong>Aspect:</strong> North-facing slopes are warmer and drier</li>
+                            <li><strong>Elevation:</strong> Higher altitudes are cooler and wetter</li>
+                            <li><strong>Wind exposure:</strong> Assess vegetation for wind pruning or salt spray</li>
+                            <li><strong>Frost hollows:</strong> Cold air drainage areas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="margin-top: var(--spacing-md);">
+                    <p><strong>Tip:</strong> Always record weather conditions during your inspection - this helps interpret your observations and provides context for future monitoring.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-water" aria-hidden="true"></i>
+                    <h3>Hydrology & Drainage</h3>
+                </div>
+                <p>Water movement shapes landscapes and determines which ecosystems can exist.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Hydrological Features to Observe</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Gradient and slope:</strong> Steeper slopes increase runoff and erosion risk</li>
+                            <li><strong>Drainage patterns:</strong> Well-drained, waterlogged, or seasonal wetlands</li>
+                            <li><strong>Base level:</strong> Water table depth and fluctuations</li>
+                            <li><strong>Water quality:</strong> Turbidity, salinity, pH, nutrients</li>
+                            <li><strong>Erosion:</strong> Gullies, rills, bank slumping</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>How to Assess Hydrology</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Soil moisture:</strong> Feel test or use a moisture meter</li>
+                            <li><strong>Water table:</strong> Look for wetland indicator species</li>
+                            <li><strong>Runoff:</strong> Observe drainage lines and erosion patterns</li>
+                            <li><strong>Water quality:</strong> Use field test kits (pH, turbidity, salinity)</li>
+                            <li><strong>Flooding:</strong> Look for debris lines, water marks on trees</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-cubes" aria-hidden="true"></i>
+                    <h3>Geology & Landform</h3>
+                </div>
+                <p>Geology and landform shape soil types, drainage patterns, and vegetation communities.</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Key Rock Types</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Dolerite:</strong> Extensive throughout Tasmania, forms nutrient-poor soils</li>
+                            <li><strong>Granite:</strong> Produces sandy, well-drained soils</li>
+                            <li><strong>Sandstone:</strong> Forms low-nutrient, erodible soils</li>
+                            <li><strong>Limestone:</strong> Calcareous, supports distinctive vegetation</li>
+                            <li><strong>Basalt:</strong> Produces fertile, clay-rich soils</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Landform Features</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Mountains:</strong> Alpine ecosystems, cold and wet</li>
+                            <li><strong>Valleys:</strong> Fertile alluvial soils</li>
+                            <li><strong>Plains:</strong> Grasslands and woodlands</li>
+                            <li><strong>Coastlines:</strong> Dunes, saltmarshes, heathlands</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Erosion Processes</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Water erosion:</strong> Sheet, rill, gully, streambank</li>
+                            <li><strong>Wind erosion:</strong> Coastal and dry areas</li>
+                            <li><strong>Chemical erosion:</strong> Soil degradation, acidification</li>
+                            <li><strong>Mass movement:</strong> Landslides, slumping</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Topography</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Aspect:</strong> North vs south facing slopes</li>
+                            <li><strong>Elevation:</strong> Affects temperature and rainfall</li>
+                            <li><strong>Slope steepness:</strong> Affects erosion and accessibility</li>
+                            <li><strong>Position:</strong> Ridge, mid-slope, valley floor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('microorganisms')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Microorganisms</button>
+        </section>
+
+        <!-- Microorganisms - NEW -->
+        <section id="microorganisms" class="content-section" role="tabpanel" hidden>
+            <h2>Microorganisms: The Hidden Workforce</h2>
+            <p>Microorganisms are the unseen engine of ecosystem function. They drive nutrient cycling, soil formation, and plant health.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-fungi" aria-hidden="true"></i>
+                    <h3>Mycorrhizal Fungi</h3>
+                </div>
+                <p>Mycorrhizal fungi form symbiotic relationships with plant roots, extending the plant's root system and improving access to water and nutrients.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Why They Matter</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Most Tasmanian native plants rely on mycorrhizal associations</li>
+                            <li>Essential for nutrient uptake (especially phosphorus)</li>
+                            <li>Improve drought tolerance</li>
+                            <li>Protect against soil pathogens</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>What to Observe</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Fungal hyphae in the soil (white threads)</li>
+                            <li>Mushrooms or fruiting bodies in the litter</li>
+                            <li>Healthy root systems with fine mycorrhizal networks</li>
+                            <li>Ectomycorrhizal associations on tree roots</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                    <h3>Decomposers & Nutrient Cycling</h3>
+                </div>
+                <p>Bacteria and fungi break down organic matter, recycling nutrients back into the soil.</p>
+
+                <ul style="margin-top: var(--spacing-md);">
+                    <li><strong>Leaf litter breakdown:</strong> Essential for soil formation and nutrient cycling</li>
+                    <li><strong>Humus formation:</strong> Decomposed organic matter improves soil structure</li>
+                    <li><strong>Nutrient release:</strong> Nitrogen, phosphorus, and other nutrients become available to plants</li>
+                    <li><strong>Carbon cycling:</strong> Decomposition releases carbon dioxide, but some carbon is stored in soil</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-dna" aria-hidden="true"></i>
+                    <h3>Nitrogen Fixers</h3>
+                </div>
+                <p>Nitrogen-fixing bacteria convert atmospheric nitrogen into plant-available forms.</p>
+
+                <ul style="margin-top: var(--spacing-md);">
+                    <li><strong>Rhizobium bacteria:</strong> Form nodules on legume roots (e.g., Acacia, Hovea)</li>
+                    <li><strong>Frankia bacteria:</strong> Associate with non-legumes like She-oaks (Allocasuarina)</li>
+                    <li><strong>Free-living bacteria:</strong> Fix nitrogen in soil without plant hosts</li>
+                    <li><strong>Essential for:</strong> Soil fertility, especially in nutrient-poor Tasmanian soils</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                    <h3>Pathogens & Disease</h3>
+                </div>
+                <p>Some microorganisms cause disease and can devastate ecosystems.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--danger);">
+                        <h4>Key Pathogens in Tasmania</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Phytophthora cinnamomi:</strong> Root rot affecting over 100 species</li>
+                            <li><strong>Myrtle wilt:</strong> Fungal disease affecting Myrtle Beech</li>
+                            <li><strong>Xylella:</strong> Bacterial disease affecting many plants</li>
+                            <li><strong>Devil Facial Tumor Disease:</strong> Transmissible cancer</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--info);">
+                        <h4>Identifying Disease in the Field</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Dieback:</strong> Dead or dying branches</li>
+                            <li><strong>Discoloration:</strong> Unusual leaf colors (yellow, brown, red)</li>
+                            <li><strong>Lesions:</strong> Sunken, discolored areas on bark</li>
+                            <li><strong>Wilting:</strong> Drooping leaves despite adequate water</li>
+                            <li><strong>Fungal growth:</strong> Mushrooms, brackets, mycelium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-note">
+                <h4><i class="fas fa-hard-hat" aria-hidden="true"></i> In the Field</h4>
+                <p>Look for signs of microbial activity: healthy leaf litter decomposition, fungal hyphae in soil, and healthy root systems. These indicate functioning soil ecosystems with active microbial communities.</p>
             </div>
 
             <button class="btn" onclick="switchTab('process')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Process</button>
@@ -335,13 +610,15 @@
                     <li>Weed and pest identification</li>
                     <li>Condition assessment techniques</li>
                     <li>Standardized data recording methods</li>
+                    <li>Understanding abiotic elements (soil, climate, hydrology, geology)</li>
+                    <li>Recognizing the role of microorganisms in ecosystem function</li>
                 </ul>
             </div>
 
             <div class="card" style="text-align: center;">
                 <h3>Module Completion</h3>
                 <p>Congratulations on completing Module 1!</p>
-                <p>You've learned about the key concepts, Tasmanian context, and practical approaches to ecological site assessment.</p>
+                <p>You've learned about the key concepts, Tasmanian context, practical approaches to ecological site assessment, and the importance of abiotic elements and microorganisms.</p>
                 <button class="btn" id="complete-module"><i class="fas fa-award" aria-hidden="true"></i> Mark Module Complete</button>
                 <div class="feedback" id="complete-feedback" role="alert"></div>
                 <div style="margin-top: var(--spacing-md);">
@@ -353,7 +630,7 @@
         <!-- Footer -->
         <footer role="contentinfo">
             <p>AHCECR309 - Conduct an ecological and cultural site inspection prior to works.</p>
-            <p>Developed by Jay Rowley | Tasmanian Context | © 2025</p>
+            <p>Developed by Jay Rowley | Tasmanian Context | © 2025-2026</p>
         </footer>
     </div>
 
@@ -387,23 +664,22 @@
             showFeedback(feedback, `You selected ${checked} of ${total} items. ${completed ? 'Progress updated!' : ''}`, 'correct');
         });
 
-// Complete Module - FIXED
-document.getElementById('complete-module')?.addEventListener('click', () => {
-    const feedback = document.getElementById('complete-feedback');
-    setModuleProgress('module1', 100);  // ← Changed from 'moduleX' to 'module1'
-    
-    // Add animation to the completion card
-    const completionCard = document.querySelector('.card:last-child');
-    if (completionCard) {
-        completionCard.classList.add('module-complete');
-        setTimeout(() => {
-            completionCard.classList.remove('module-complete');
-        }, 1000);
-    }
-    
-    showFeedback(feedback, '🎉 Module 1 Complete!', 'correct');
-    document.getElementById('complete-module').disabled = true;
-});
+        // Complete Module
+        document.getElementById('complete-module')?.addEventListener('click', () => {
+            const feedback = document.getElementById('complete-feedback');
+            setModuleProgress('module1', 100);
+
+            const completionCard = document.querySelector('.card:last-child');
+            if (completionCard) {
+                completionCard.classList.add('module-complete');
+                setTimeout(() => {
+                    completionCard.classList.remove('module-complete');
+                }, 1000);
+            }
+
+            showFeedback(feedback, '🎉 Module 1 Complete!', 'correct');
+            document.getElementById('complete-module').disabled = true;
+        });
 
         // Initialize
         updateAllProgressBars();
