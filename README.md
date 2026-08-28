@@ -35,12 +35,14 @@ AHCECR309/
 │   ├── module1.html        # Ecological Site Inspection Fundamentals
 │   ├── module2.html        # Tasmanian Ecosystems
 │   ├── module3.html        # Cultural Heritage Considerations
-│   └── module4.html        # Legislative Framework
+│   ├── module4.html        # Legislative Framework
+│   └── module5.html        # Conducting the Inspection
 ├── resources/
 │   ├── CulturalHeritageAssessmentGuidelines.pdf
 │   ├── LegislativeRequirementsSummary.pdf
 │   ├── SiteInspectionChecklist.pdf
-│   └── TasVegClassificationGuide.pdf
+│   ├── TasVegClassificationGuide.pdf
+│   └── EcologicalCulturalSiteInspections_LearnerGuide.pdf
 ├── images/
 │   └── pademelon.jpg       # Species identification image
 └── README.md
