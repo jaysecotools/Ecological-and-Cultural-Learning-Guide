@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 6 - Biosecurity & Environmental Context</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-module="module6">
+    <div class="container">
+        <!-- Header -->
+        <header class="module1" style="--module-color: #00897B;">
+            <h1><i class="fas fa-shield-alt" aria-hidden="true"></i> Biosecurity & Environmental Context</h1>
+            <p>AHCECR309 - Conservation and Ecosystem Management</p>
+
+            <div class="header-progress">
+                <div class="progress-info">
+                    <span>Module Progress: <strong id="module-progress-text">0%</strong></span>
+                    <span>Overall Progress: <strong id="overall-progress-text">0%</strong></span>
+                    <a href="../index.html" class="btn btn-sm" style="background: rgba(255,255,255,0.2); padding: 6px 16px;">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Main
+                    </a>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress" id="module-progress-bar" style="width: 0%"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="separator">/</span>
+            <a href="../index.html#learning">Learning Modules</a>
+            <span class="separator">/</span>
+            <span class="current">Module 6: Biosecurity & Environmental Context</span>
+        </nav>
+
+        <!-- Module Content -->
+        <div class="learning-objectives">
+            <h3><i class="fas fa-bullseye" aria-hidden="true"></i> Learning Objectives</h3>
+            <p>By the end of this module, you will be able to:</p>
+            <ul>
+                <li>Identify and understand key biosecurity threats in Tasmania</li>
+                <li>Apply effective hygiene practices in the field</li>
+                <li>Understand the role of abiotic elements in ecosystem function</li>
+                <li>Recognize the importance of microorganisms in ecosystem health</li>
+                <li>Identify and value ecosystem services</li>
+                <li>Understand the impacts of local industries on Tasmanian ecosystems</li>
+            </ul>
+        </div>
+
+        <!-- Content tabs -->
+        <nav class="nav-tabs" role="tablist" style="margin-bottom: var(--spacing-lg);">
+            <button class="nav-tab active" role="tab" aria-selected="true" aria-controls="biosecurity" data-target="biosecurity" tabindex="0">
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                <span>Biosecurity</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="abiotic" data-target="abiotic" tabindex="0">
+                <i class="fas fa-mountain" aria-hidden="true"></i>
+                <span>Abiotic Elements</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="microorganisms" data-target="microorganisms" tabindex="0">
+                <i class="fas fa-bacteria" aria-hidden="true"></i>
+                <span>Microorganisms</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="services" data-target="services" tabindex="0">
+                <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                <span>Ecosystem Services</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="industry" data-target="industry" tabindex="0">
+                <i class="fas fa-industry" aria-hidden="true"></i>
+                <span>Industry Impacts</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="practice" data-target="practice" tabindex="0">
+                <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                <span>Practice</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="summary" data-target="summary" tabindex="0">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Summary</span>
+            </button>
+        </nav>
+
+        <!-- Biosecurity -->
+        <section id="biosecurity" class="content-section active" role="tabpanel">
+            <h2>Biosecurity in Site Inspections</h2>
+            <p>Biosecurity protects Tasmania's unique ecosystems from invasive species, pests, and diseases.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    <h3>What is Biosecurity?</h3>
+                </div>
+                <p>Biosecurity refers to measures taken to prevent the introduction and spread of harmful organisms that can threaten the environment, agriculture, and human health.</p>
+                <p>Tasmania's isolation makes it particularly vulnerable to biosecurity threats. Once established, many invasive species are extremely difficult to control or eradicate.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-bug" aria-hidden="true"></i>
+                    <h3>Key Biosecurity Threats in Tasmania</h3>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--danger);">
+                        <h4><i class="fas fa-fungi" aria-hidden="true"></i> Phytophthora cinnamomi</h4>
+                        <p style="font-size: 0.9rem;">A soil-borne fungus that causes root rot in many native species. Spreads through soil movement, water, and infected plant material.</p>
+                        <p style="font-size: 0.85rem; color: var(--text-light);"><strong>Affects:</strong> Xanthorrhoea, Banksia, Epacris, and many other native plants</p>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--warning);">
+                        <h4><i class="fas fa-seedling" aria-hidden="true"></i> Weeds of National Significance</h4>
+                        <p style="font-size: 0.9rem;">Invasive plants that outcompete natives and degrade habitats.</p>
+                        <p style="font-size: 0.85rem; color: var(--text-light);"><strong>Key species:</strong> Gorse (Ulex europaeus), Blackberry (Rubus fruticosus), Spanish Heath (Erica lusitanica)</p>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--module2-color);">
+                        <h4><i class="fas fa-paw" aria-hidden="true"></i> Feral Animals</h4>
+                        <p style="font-size: 0.9rem;">Introduced animals that prey on native wildlife or compete for resources.</p>
+                        <p style="font-size: 0.85rem; color: var(--text-light);"><strong>Key species:</strong> Feral cats, foxes, rabbits, deer, pigs</p>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--module1-color);">
+                        <h4><i class="fas fa-disease" aria-hidden="true"></i> Plant & Animal Diseases</h4>
+                        <p style="font-size: 0.9rem;">Pathogens that threaten native species and agricultural production.</p>
+                        <p style="font-size: 0.85rem; color: var(--text-light);"><strong>Examples:</strong> Myrtle wilt, Xylella, Devil Facial Tumor Disease</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-hands-wash" aria-hidden="true"></i>
+                    <h3>Hygiene Practices</h3>
+                </div>
+                <p>Implementing good hygiene practices is essential to prevent the spread of biosecurity threats.</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-car" style="font-size: 2rem; color: var(--primary);"></i>
+                        <h4>Vehicles</h4>
+                        <p style="font-size: 0.85rem;">Clean mud and plant material from wheels and underbody before entering and leaving sites.</p>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-shoe-prints" style="font-size: 2rem; color: var(--primary);"></i>
+                        <h4>Footwear</h4>
+                        <p style="font-size: 0.85rem;">Scrub boots with a stiff brush and disinfect with suitable solution (e.g., F10, methylated spirits).</p>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-tools" style="font-size: 2rem; color: var(--primary);"></i>
+                        <h4>Equipment</h4>
+                        <p style="font-size: 0.85rem;">Clean all tools and equipment between sites. Pay special attention to soil-contaminated items.</p>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-tshirt" style="font-size: 2rem; color: var(--primary);"></i>
+                        <h4>Clothing</h4>
+                        <p style="font-size: 0.85rem;">Brush off seeds and plant fragments. Consider changing clothes between high-risk sites.</p>
+                    </div>
+                </div>
+
+                <div class="field-note" style="margin-top: var(--spacing-md);">
+                    <h4><i class="fas fa-hard-hat" aria-hidden="true"></i> In the Field</h4>
+                    <p>Always follow the "Check-in, Check-out" protocol: wash and disinfect vehicles and equipment before entering a site, and repeat when leaving. This is especially important in areas with known Phytophthora presence.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                    <h3>Reporting Biosecurity Hazards</h3>
+                </div>
+                <p>If you identify a biosecurity threat during an inspection:</p>
+
+                <div class="process-step" style="margin-bottom: var(--spacing-md);">
+                    <div class="step-number" style="background: var(--warning);">1</div>
+                    <div class="step-content">
+                        <h4>Document the finding</h4>
+                        <p>Take photos, note GPS coordinates, record species/type, estimate extent.</p>
+                    </div>
+                </div>
+                <div class="process-step" style="margin-bottom: var(--spacing-md);">
+                    <div class="step-number" style="background: var(--info);">2</div>
+                    <div class="step-content">
+                        <h4>Report immediately</h4>
+                        <p>Contact Biosecurity Tasmania, NRE Tasmania, or the relevant authority.</p>
+                    </div>
+                </div>
+                <div class="process-step" style="margin-bottom: var(--spacing-md);">
+                    <div class="step-number" style="background: var(--primary);">3</div>
+                    <div class="step-content">
+                        <h4>Implement hygiene measures</h4>
+                        <p>Ensure no further spread occurs through cleaning and containment.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number" style="background: var(--danger);">4</div>
+                    <div class="step-content">
+                        <h4>Follow up</h4>
+                        <p>Provide additional information as requested and support management actions.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="margin-top: var(--spacing-md);">
+                    <h4><i class="fas fa-exclamation-circle" aria-hidden="true"></i> Key Contacts</h4>
+                    <ul>
+                        <li><strong>Biosecurity Tasmania:</strong> 1300 368 550</li>
+                        <li><strong>NRE Tasmania:</strong> 1300 368 550</li>
+                        <li><strong>Weed Spotters Network:</strong> Report new weed incursions</li>
+                        <li><strong>Emergency animal disease:</strong> 1800 675 888</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('abiotic')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Abiotic Elements</button>
+        </section>
+
+        <!-- Abiotic Elements -->
+        <section id="abiotic" class="content-section" role="tabpanel" hidden>
+            <h2>Abiotic Elements</h2>
+            <p>Understanding the physical environment is essential for interpreting ecological patterns and making informed management decisions.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tint" aria-hidden="true"></i>
+                    <h3>Soil</h3>
+                </div>
+                <p>Soil is the foundation of terrestrial ecosystems. Tasmania has diverse soil types including dermosols, kurosols, sodosols, and organosols.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Soil Properties to Assess</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>pH:</strong> Affects nutrient availability and plant selection</li>
+                            <li><strong>Nutrients:</strong> Nitrogen, phosphorus, potassium levels</li>
+                            <li><strong>Organic matter:</strong> Indicates soil health and biological activity</li>
+                            <li><strong>Texture:</strong> Sand, silt, clay proportions</li>
+                            <li><strong>Structure:</strong> How particles clump together</li>
+                            <li><strong>Compaction:</strong> Indicates disturbance or heavy use</li>
+                            <li><strong>Salinity:</strong> Salt levels affect plant growth</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>How to Assess Soil in the Field</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Texture:</strong> Feel test - rub soil between fingers</li>
+                            <li><strong>pH:</strong> Use a field pH test kit</li>
+                            <li><strong>Compaction:</strong> Push a soil penetrometer or use a spade</li>
+                            <li><strong>Organic matter:</strong> Observe color and feel</li>
+                            <li><strong>Erosion:</strong> Look for rills, gullies, exposed roots</li>
+                            <li><strong>Salinity:</strong> Look for salt crusts or salt-tolerant species</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tas-example" style="margin-top: var(--spacing-md);">
+                    <h4><i class="fas fa-map-marker-alt" aria-hidden="true"></i> TAS Example: Midlands Soils</h4>
+                    <p>Dolerite-derived soils in the Midlands are naturally low in phosphorus and nitrogen, supporting distinctive grassy woodlands. Understanding this helps explain why native grassland species are adapted to low nutrient conditions, and why nutrient enrichment from agricultural runoff can promote weed invasion.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-cloud-rain" aria-hidden="true"></i>
+                    <h3>Climate & Weather</h3>
+                </div>
+                <p>Climate influences which species can survive and how ecosystems function.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Key Climate Factors</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Annual rainfall:</strong> Varies from 500mm (east) to 3000mm+ (west)</li>
+                            <li><strong>Temperature:</strong> Maritime climate with distinct seasons</li>
+                            <li><strong>Frost:</strong> Frequency and severity</li>
+                            <li><strong>Snow:</strong> Alpine areas experience regular snowfall</li>
+                            <li><strong>Wind:</strong> Roaring Forties affect western and southern coasts</li>
+                            <li><strong>Climate change:</strong> Drying trends, increased fire risk, sea level rise</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>How to Record Climate on Site</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Temperature:</strong> Use a digital thermometer</li>
+                            <li><strong>Rainfall:</strong> Check BOM data for nearest station</li>
+                            <li><strong>Aspect:</strong> North-facing slopes are warmer and drier</li>
+                            <li><strong>Elevation:</strong> Higher altitudes are cooler and wetter</li>
+                            <li><strong>Wind exposure:</strong> Assess vegetation for wind pruning or salt spray</li>
+                            <li><strong>Frost hollows:</strong> Cold air drainage areas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="margin-top: var(--spacing-md);">
+                    <p><strong>Tip:</strong> Always record weather conditions during your inspection - this helps interpret your observations and provides context for future monitoring.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-water" aria-hidden="true"></i>
+                    <h3>Hydrology & Drainage</h3>
+                </div>
+                <p>Water movement shapes landscapes and determines which ecosystems can exist.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Hydrological Features to Observe</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Gradient and slope:</strong> Steeper slopes increase runoff and erosion risk</li>
+                            <li><strong>Drainage patterns:</strong> Well-drained, waterlogged, or seasonal wetlands</li>
+                            <li><strong>Base level:</strong> Water table depth and fluctuations</li>
+                            <li><strong>Water quality:</strong> Turbidity, salinity, pH, nutrients</li>
+                            <li><strong>Erosion:</strong> Gullies, rills, bank slumping</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>How to Assess Hydrology</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Soil moisture:</strong> Feel test or use a moisture meter</li>
+                            <li><strong>Water table:</strong> Look for wetland indicator species</li>
+                            <li><strong>Runoff:</strong> Observe drainage lines and erosion patterns</li>
+                            <li><strong>Water quality:</strong> Use field test kits (pH, turbidity, salinity)</li>
+                            <li><strong>Flooding:</strong> Look for debris lines, water marks on trees</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-cubes" aria-hidden="true"></i>
+                    <h3>Geology & Landform</h3>
+                </div>
+                <p>Geology and landform shape soil types, drainage patterns, and vegetation communities.</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Key Rock Types</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Dolerite:</strong> Extensive throughout Tasmania, forms nutrient-poor soils</li>
+                            <li><strong>Granite:</strong> Produces sandy, well-drained soils</li>
+                            <li><strong>Sandstone:</strong> Forms low-nutrient, erodible soils</li>
+                            <li><strong>Limestone:</strong> Calcareous, supports distinctive vegetation</li>
+                            <li><strong>Basalt:</strong> Produces fertile, clay-rich soils</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Landform Features</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Mountains:</strong> Alpine ecosystems, cold and wet</li>
+                            <li><strong>Valleys:</strong> Fertile alluvial soils</li>
+                            <li><strong>Plains:</strong> Grasslands and woodlands</li>
+                            <li><strong>Coastlines:</strong> Dunes, saltmarshes, heathlands</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Erosion Processes</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Water erosion:</strong> Sheet, rill, gully, streambank</li>
+                            <li><strong>Wind erosion:</strong> Coastal and dry areas</li>
+                            <li><strong>Chemical erosion:</strong> Soil degradation, acidification</li>
+                            <li><strong>Mass movement:</strong> Landslides, slumping</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Topography</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Aspect:</strong> North vs south facing slopes</li>
+                            <li><strong>Elevation:</strong> Affects temperature and rainfall</li>
+                            <li><strong>Slope steepness:</strong> Affects erosion and accessibility</li>
+                            <li><strong>Position:</strong> Ridge, mid-slope, valley floor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('microorganisms')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Microorganisms</button>
+        </section>
+
+        <!-- Microorganisms -->
+        <section id="microorganisms" class="content-section" role="tabpanel" hidden>
+            <h2>Microorganisms: The Hidden Workforce</h2>
+            <p>Microorganisms are the unseen engine of ecosystem function, driving nutrient cycling, soil formation, and plant health.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-fungi" aria-hidden="true"></i>
+                    <h3>Mycorrhizal Fungi</h3>
+                </div>
+                <p>Mycorrhizal fungi form symbiotic relationships with plant roots, extending the plant's root system and improving access to water and nutrients.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Why They Matter</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Most Tasmanian native plants rely on mycorrhizal associations</li>
+                            <li>Essential for nutrient uptake (especially phosphorus)</li>
+                            <li>Improve drought tolerance</li>
+                            <li>Protect against soil pathogens</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>What to Observe</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Fungal hyphae in the soil (white threads)</li>
+                            <li>Mushrooms or fruiting bodies in the litter</li>
+                            <li>Healthy root systems with fine mycorrhizal networks</li>
+                            <li>Ectomycorrhizal associations on tree roots</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                    <h3>Decomposers & Nutrient Cycling</h3>
+                </div>
+                <p>Bacteria and fungi break down organic matter, recycling nutrients back into the soil.</p>
+
+                <ul style="margin-top: var(--spacing-md);">
+                    <li><strong>Leaf litter breakdown:</strong> Essential for soil formation and nutrient cycling</li>
+                    <li><strong>Humus formation:</strong> Decomposed organic matter improves soil structure</li>
+                    <li><strong>Nutrient release:</strong> Nitrogen, phosphorus, and other nutrients become available to plants</li>
+                    <li><strong>Carbon cycling:</strong> Decomposition releases carbon dioxide, but some carbon is stored in soil</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-dna" aria-hidden="true"></i>
+                    <h3>Nitrogen Fixers</h3>
+                </div>
+                <p>Nitrogen-fixing bacteria convert atmospheric nitrogen into plant-available forms.</p>
+
+                <ul style="margin-top: var(--spacing-md);">
+                    <li><strong>Rhizobium bacteria:</strong> Form nodules on legume roots (e.g., Acacia, Hovea)</li>
+                    <li><strong>Frankia bacteria:</strong> Associate with non-legumes like She-oaks (Allocasuarina)</li>
+                    <li><strong>Free-living bacteria:</strong> Fix nitrogen in soil without plant hosts</li>
+                    <li><strong>Essential for:</strong> Soil fertility, especially in nutrient-poor Tasmanian soils</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                    <h3>Pathogens & Disease</h3>
+                </div>
+                <p>Some microorganisms cause disease and can devastate ecosystems.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--danger);">
+                        <h4>Key Pathogens in Tasmania</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Phytophthora cinnamomi:</strong> Root rot affecting over 100 species</li>
+                            <li><strong>Myrtle wilt:</strong> Fungal disease affecting Myrtle Beech</li>
+                            <li><strong>Xylella:</strong> Bacterial disease affecting many plants</li>
+                            <li><strong>Devil Facial Tumor Disease:</strong> Transmissible cancer</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--info);">
+                        <h4>Identifying Disease in the Field</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li><strong>Dieback:</strong> Dead or dying branches</li>
+                            <li><strong>Discoloration:</strong> Unusual leaf colors (yellow, brown, red)</li>
+                            <li><strong>Lesions:</strong> Sunken, discolored areas on bark</li>
+                            <li><strong>Wilting:</strong> Drooping leaves despite adequate water</li>
+                            <li><strong>Fungal growth:</strong> Mushrooms, brackets, mycelium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-note">
+                <h4><i class="fas fa-hard-hat" aria-hidden="true"></i> In the Field</h4>
+                <p>Look for signs of microbial activity: healthy leaf litter decomposition, fungal hyphae in soil, and healthy root systems. These indicate functioning soil ecosystems with active microbial communities.</p>
+            </div>
+
+            <button class="btn" onclick="switchTab('services')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Ecosystem Services</button>
+        </section>
+
+        <!-- Ecosystem Services -->
+        <section id="services" class="content-section" role="tabpanel" hidden>
+            <h2>Ecosystem Services</h2>
+            <p>Ecosystem services are the benefits that people obtain from ecosystems. Understanding these helps justify conservation and inform management decisions.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-apple-alt" aria-hidden="true"></i>
+                    <h3>Provisioning Services</h3>
+                </div>
+                <p>Products obtained directly from ecosystems:</p>
+                <ul>
+                    <li><strong>Timber and wood products:</strong> Forestry provides renewable resources</li>
+                    <li><strong>Food:</strong> Fish, game, native bush tucker (e.g., Murnong, native cherries)</li>
+                    <li><strong>Fresh water:</strong> Clean water for drinking, irrigation, and industry</li>
+                    <li><strong>Medicinal plants:</strong> Traditional medicines and pharmaceutical resources</li>
+                    <li><strong>Fibre:</strong> Materials for textiles, crafts, and construction</li>
+                </ul>
+                <div class="tas-example" style="margin-top: var(--spacing-md);">
+                    <p><strong>TAS Example:</strong> The Tasmanian forestry industry provides timber products valued at over $1 billion annually, while supporting native forests with sustainable management practices.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+                    <h3>Regulating Services</h3>
+                </div>
+                <p>Benefits from ecosystem processes that regulate the environment:</p>
+                <ul>
+                    <li><strong>Climate regulation:</strong> Carbon sequestration in forests, peatlands, and soils</li>
+                    <li><strong>Flood control:</strong> Wetlands and vegetation absorb floodwaters</li>
+                    <li><strong>Erosion control:</strong> Vegetation stabilizes soil and prevents erosion</li>
+                    <li><strong>Water purification:</strong> Wetlands filter pollutants and sediments</li>
+                    <li><strong>Pollination:</strong> Native bees, birds, and insects pollinate crops and native plants</li>
+                    <li><strong>Air quality:</strong> Plants filter air pollutants</li>
+                </ul>
+                <div class="tas-example" style="margin-top: var(--spacing-md);">
+                    <p><strong>TAS Example:</strong> The Tarkine rainforest stores an estimated 200 million tonnes of carbon, making it a critical climate regulation service.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-seedling" aria-hidden="true"></i>
+                    <h3>Supporting Services</h3>
+                </div>
+                <p>These underpin all other ecosystem services:</p>
+                <ul>
+                    <li><strong>Soil formation:</strong> Weathering and decomposition create soils</li>
+                    <li><strong>Nutrient cycling:</strong> Decomposition and biological processes cycle nutrients</li>
+                    <li><strong>Primary production:</strong> Photosynthesis creates organic matter</li>
+                    <li><strong>Habitat provision:</strong> Ecosystems provide shelter and resources for species</li>
+                    <li><strong>Water cycling:</strong> Evapotranspiration and infiltration maintain water flows</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                    <h3>Cultural Services</h3>
+                </div>
+                <p>Non-material benefits that enrich human experience:</p>
+                <ul>
+                    <li><strong>Spiritual and cultural values:</strong> Connection to Country, Aboriginal heritage</li>
+                    <li><strong>Recreation and tourism:</strong> Walking tracks, camping, nature appreciation</li>
+                    <li><strong>Education and research:</strong> Learning opportunities, scientific discovery</li>
+                    <li><strong>Aesthetic appreciation:</strong> Beauty and inspiration from nature</li>
+                    <li><strong>Sense of place:</strong> Identity and belonging associated with landscapes</li>
+                </ul>
+                <div class="tas-example" style="margin-top: var(--spacing-md);">
+                    <p><strong>TAS Example:</strong> Tourism based on Tasmania's natural values contributes over $2 billion annually to the state economy, supporting regional communities.</p>
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h3>Ecosystem Services Summary</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Provisioning</h4>
+                        <p style="font-size: 0.9rem;">Food, water, timber, medicine</p>
+                    </div>
+                    <div>
+                        <h4>Regulating</h4>
+                        <p style="font-size: 0.9rem;">Climate, flood, erosion, pollination</p>
+                    </div>
+                    <div>
+                        <h4>Supporting</h4>
+                        <p style="font-size: 0.9rem;">Soil, nutrient cycling, habitat</p>
+                    </div>
+                    <div>
+                        <h4>Cultural</h4>
+                        <p style="font-size: 0.9rem;">Spiritual, recreation, education, aesthetic</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('industry')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Industry Impacts</button>
+        </section>
+
+        <!-- Industry Impacts -->
+        <section id="industry" class="content-section" role="tabpanel" hidden>
+            <h2>Local Industry Impacts on Tasmanian Ecosystems</h2>
+            <p>Tasmania's industries have shaped the landscape for over 200 years. Understanding their impacts is critical for restoration and management.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tree" aria-hidden="true"></i>
+                    <h3>Forestry</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Impacts</h4>
+                        <ul>
+                            <li><strong>Habitat fragmentation:</strong> Clearing breaks up continuous habitat</li>
+                            <li><strong>Soil compaction:</strong> Heavy machinery compacts soil</li>
+                            <li><strong>Altered hydrology:</strong> Changes to drainage patterns</li>
+                            <li><strong>Weed invasion:</strong> Disturbance creates opportunities for weeds</li>
+                            <li><strong>Loss of old-growth:</strong> Reduced habitat for hollow-dependent species</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Threatened Species Affected</h4>
+                        <ul>
+                            <li><strong>Swift Parrot:</strong> Needs old-growth eucalypts for nesting</li>
+                            <li><strong>Tasmanian Devil:</strong> Habitat loss impacts populations</li>
+                            <li><strong>Wedge-tailed Eagle:</strong> Nesting trees destroyed</li>
+                            <li><strong>Spotted-tail Quoll:</strong> Fragmentation reduces range</li>
+                            <li><strong>Giant Freshwater Crayfish:</strong> Sedimentation from roads and logging</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: var(--spacing-md);">
+                    <h4>Restoration Actions</h4>
+                    <ul>
+                        <li>Native revegetation with appropriate species</li>
+                        <li>Habitat corridor creation</li>
+                        <li>Protection of old-growth and hollow-bearing trees</li>
+                        <li>Soil remediation and erosion control</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tractor" aria-hidden="true"></i>
+                    <h3>Agriculture</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Impacts</h4>
+                        <ul>
+                            <li><strong>Land clearing:</strong> Loss of native vegetation</li>
+                            <li><strong>Nutrient runoff:</strong> Fertilizers, manure entering waterways</li>
+                            <li><strong>Weed invasion:</strong> Pasture species spreading into bushland</li>
+                            <li><strong>Soil degradation:</strong> Compaction, erosion, salinity</li>
+                            <li><strong>Overgrazing:</strong> Damage to native vegetation</li>
+                            <li><strong>Pest harborage:</strong> Rabbits, foxes, deer</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Threatened Species Affected</h4>
+                        <ul>
+                            <li><strong>Eastern Barred Bandicoot:</strong> Grassland loss</li>
+                            <li><strong>Native Grasslands:</strong> Less than 5% remain</li>
+                            <li><strong>Quolls:</strong> Poisoning from baits</li>
+                            <li><strong>Wetland species:</strong> Water extraction and degradation</li>
+                            <li><strong>Soil invertebrates:</strong> Chemical use and compaction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: var(--spacing-md);">
+                    <h4>Restoration Actions</h4>
+                    <ul>
+                        <li>Revegetation of riparian zones and remnant bushland</li>
+                        <li>Fencing to exclude stock from sensitive areas</li>
+                        <li>Sustainable grazing practices</li>
+                        <li>Weed management programs</li>
+                        <li>Re-establishment of native grasslands</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-gem" aria-hidden="true"></i>
+                    <h3>Mining</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Impacts</h4>
+                        <ul>
+                            <li><strong>Habitat destruction:</strong> Removal of vegetation and soil</li>
+                            <li><strong>Water pollution:</strong> Acid mine drainage, heavy metals</li>
+                            <li><strong>Soil contamination:</strong> Chemical residues, tailings</li>
+                            <li><strong>Biodiversity loss:</strong> Local extinction of species</li>
+                            <li><strong>Visual impacts:</strong> Scarring of the landscape</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Threatened Species Affected</h4>
+                        <ul>
+                            <li><strong>Aquatic species:</strong> Fish, crayfish, invertebrates</li>
+                            <li><strong>Riparian vegetation:</strong> Along streams below mines</li>
+                            <li><strong>Bat species:</strong> Loss of roosting habitat</li>
+                            <li><strong>Plants:</strong> Direct loss from clearing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: var(--spacing-md);">
+                    <h4>Restoration Actions</h4>
+                    <ul>
+                        <li>Mine site rehabilitation</li>
+                        <li>Water treatment for acid mine drainage</li>
+                        <li>Containment of contaminated material</li>
+                        <li>Revegetation with appropriate species</li>
+                        <li>Long-term monitoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-camera" aria-hidden="true"></i>
+                    <h3>Tourism</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Impacts</h4>
+                        <ul>
+                            <li><strong>Trampling:</strong> Damage to vegetation and soil</li>
+                            <li><strong>Erosion:</strong> Track degradation</li>
+                            <li><strong>Disturbance:</strong> Stress to wildlife</li>
+                            <li><strong>Litter:</strong> Visual and physical contamination</li>
+                            <li><strong>Weed spread:</strong> Introduction of seeds on clothing and vehicles</li>
+                            <li><strong>Cultural site damage:</strong> Vandalism, disturbance</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Threatened Species Affected</h4>
+                        <ul>
+                            <li><strong>Coastal nesting birds:</strong> Hooded Plover, Shearwater</li>
+                            <li><strong>Alpine plants:</strong> Slow regeneration</li>
+                            <li><strong>Aboriginal sites:</strong> Middens, rock art</li>
+                            <li><strong>Orchids:</strong> Trampled by walkers</li>
+                            <li><strong>Devils:</strong> Road mortality</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: var(--spacing-md);">
+                    <h4>Restoration Actions</h4>
+                    <ul>
+                        <li>Track management and erosion control</li>
+                        <li>Visitor education and signage</li>
+                        <li>Boardwalks over sensitive areas</li>
+                        <li>Fencing around cultural sites</li>
+                        <li>Weed hygiene stations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>Tasmania's industries have significant impacts on ecosystems</li>
+                    <li>Understanding these impacts is essential for restoration</li>
+                    <li>Each industry requires different management approaches</li>
+                    <li>Collaboration between industry and conservation is essential</li>
+                    <li>Cumulative impacts of multiple industries can be greater than individual effects</li>
+                </ul>
+            </div>
+
+            <button class="btn" onclick="switchTab('practice')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Practice</button>
+        </section>
+
+        <!-- Practice -->
+        <section id="practice" class="content-section" role="tabpanel" hidden>
+            <h2>Practice Activities</h2>
+            <p>Test your understanding of biosecurity and environmental context.</p>
+
+            <!-- Activity 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <h3>Activity 1: Biosecurity Scenario</h3>
+                </div>
+                <div class="scenario-box">
+                    <p><strong>Situation:</strong> You're inspecting a site in the Tarkine that has a known Phytophthora infestation. You've just completed the inspection and need to leave the site.</p>
+                    <p><strong>Your task:</strong> What hygiene steps must you take before leaving?</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Select all that apply:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hygiene1" value="vehicle">
+                            <label for="hygiene1">Clean mud and plant material from vehicle tyres and underbody</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hygiene2" value="boots">
+                            <label for="hygiene2">Scrub boots with stiff brush and disinfect</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hygiene3" value="tools">
+                            <label for="hygiene3">Clean all tools and equipment</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hygiene4" value="clothes">
+                            <label for="hygiene4">Brush off clothing and consider changing before next site</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hygiene5" value="report">
+                            <label for="hygiene5">Report your visit and any observations to Biosecurity Tasmania</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn" id="check-hygiene"><i class="fas fa-check" aria-hidden="true"></i> Check Answers</button>
+                <div class="feedback" id="hygiene-feedback" role="alert"></div>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-mountain" aria-hidden="true"></i>
+                    <h3>Activity 2: Ecosystem Services Identification</h3>
+                </div>
+                <div class="scenario-box">
+                    <p><strong>Situation:</strong> You're assessing a coastal reserve that includes heathland, dunes, and a small wetland.</p>
+                    <p><strong>Your task:</strong> Identify which ecosystem services this area provides.</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Select all that apply:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="service1" value="provisioning">
+                            <label for="service1">Provisioning (food, water, timber)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="service2" value="regulating">
+                            <label for="service2">Regulating (climate, flood, erosion)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="service3" value="supporting">
+                            <label for="service3">Supporting (soil formation, nutrient cycling)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="service4" value="cultural">
+                            <label for="service4">Cultural (recreation, spiritual, aesthetic)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn" id="check-services"><i class="fas fa-check" aria-hidden="true"></i> Check Answers</button>
+                <div class="feedback" id="services-feedback" role="alert"></div>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-industry" aria-hidden="true"></i>
+                    <h3>Activity 3: Industry Impact Identification</h3>
+                </div>
+                <div class="scenario-box">
+                    <p><strong>Situation:</strong> You're inspecting a site in the Midlands that was historically used for sheep grazing. The area now has remnant grassy woodland, but is heavily infested with gorse and blackberry. You also notice erosion gullies and soil compaction near old watering points.</p>
+                    <p><strong>Your task:</strong> What industry impacts do you observe, and what restoration actions would you recommend?</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="impact-response">Describe the industry impacts you observe:</label>
+                    <textarea id="impact-response" rows="3" placeholder="List the impacts you can see..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="restoration-response">What restoration actions would you recommend?</label>
+                    <textarea id="restoration-response" rows="3" placeholder="List your recommendations..."></textarea>
+                </div>
+
+                <button class="btn" id="check-impacts"><i class="fas fa-check" aria-hidden="true"></i> Check Response</button>
+                <div class="feedback" id="impacts-feedback" role="alert"></div>
+            </div>
+
+            <button class="btn" onclick="switchTab('summary')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Summary</button>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary" class="content-section" role="tabpanel" hidden>
+            <h2>Module Summary</h2>
+
+            <div class="summary-box">
+                <h3><i class="fas fa-key" aria-hidden="true"></i> Key Takeaways</h3>
+                <ul>
+                    <li><strong>Biosecurity</strong> protects Tasmania's unique ecosystems from pests, weeds, and diseases</li>
+                    <li><strong>Hygiene practices</strong> (vehicle, footwear, equipment cleaning) are essential in the field</li>
+                    <li><strong>Abiotic elements</strong> (soil, climate, hydrology, geology) shape ecosystems</li>
+                    <li><strong>Microorganisms</strong> drive nutrient cycling, soil formation, and plant health</li>
+                    <li><strong>Ecosystem services</strong> provide provisioning, regulating, supporting, and cultural benefits</li>
+                    <li><strong>Local industries</strong> (forestry, agriculture, mining, tourism) have significant ecosystem impacts</li>
+                </ul>
+            </div>
+
+            <div class="summary-box">
+                <h3><i class="fas fa-tools" aria-hidden="true"></i> Practical Applications</h3>
+                <ul>
+                    <li>Always follow biosecurity hygiene protocols during site inspections</li>
+                    <li>Record abiotic factors (soil, climate, hydrology) in your field notes</li>
+                    <li>Recognize the role of microorganisms in ecosystem health</li>
+                    <li>Consider ecosystem services when assessing site values</li>
+                    <li>Identify and understand industry impacts for effective restoration</li>
+                </ul>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h3>Module Completion</h3>
+                <p>Congratulations on completing Module 6!</p>
+                <p>You now understand biosecurity, abiotic elements, microorganisms, ecosystem services, and industry impacts in the Tasmanian context.</p>
+                <button class="btn" id="complete-module"><i class="fas fa-award" aria-hidden="true"></i> Mark Module Complete</button>
+                <div class="feedback" id="complete-feedback" role="alert"></div>
+                <div style="margin-top: var(--spacing-md); display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+                    <a href="../index.html" class="btn btn-secondary"><i class="fas fa-home" aria-hidden="true"></i> Return to Main</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer role="contentinfo">
+            <p>AHCECR309 - Conduct an ecological and cultural site inspection prior to works.</p>
+            <p>Developed by Jay Rowley | Tasmanian Context | © 2026</p>
+        </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        // ===== Activity 1: Biosecurity =====
+        document.getElementById('check-hygiene')?.addEventListener('click', () => {
+            const h1 = document.getElementById('hygiene1').checked;
+            const h2 = document.getElementById('hygiene2').checked;
+            const h3 = document.getElementById('hygiene3').checked;
+            const h4 = document.getElementById('hygiene4').checked;
+            const h5 = document.getElementById('hygiene5').checked;
+            const feedback = document.getElementById('hygiene-feedback');
+
+            if (h1 && h2 && h3 && h4 && h5) {
+                const completed = completeActivity('hygiene', 'module6', 5);
+                showFeedback(feedback, '✅ Excellent! All these hygiene steps are essential before leaving a site with known Phytophthora. ' + (completed ? 'Progress updated! 🎉' : ''), 'correct');
+                updateAllProgressBars();
+            } else {
+                showFeedback(feedback, '❌ Not quite. All five steps are essential: clean vehicles, clean boots, clean tools, clean clothing, and report your visit. Don\'t forget any of them!', 'incorrect');
+            }
+        });
+
+        // ===== Activity 2: Ecosystem Services =====
+        document.getElementById('check-services')?.addEventListener('click', () => {
+            const s1 = document.getElementById('service1').checked;
+            const s2 = document.getElementById('service2').checked;
+            const s3 = document.getElementById('service3').checked;
+            const s4 = document.getElementById('service4').checked;
+            const feedback = document.getElementById('services-feedback');
+
+            if (s1 && s2 && s3 && s4) {
+                const completed = completeActivity('services', 'module6', 5);
+                showFeedback(feedback, '✅ Correct! Coastal reserves provide all four types of ecosystem services: provisioning (if harvested), regulating (flood, erosion), supporting (soil formation), and cultural (recreation, aesthetics). ' + (completed ? 'Progress updated! 🎉' : ''), 'correct');
+                updateAllProgressBars();
+            } else {
+                showFeedback(feedback, '❌ Not quite. Coastal reserves typically provide all four types of ecosystem services. Think about what each category includes.', 'incorrect');
+            }
+        });
+
+        // ===== Activity 3: Industry Impacts =====
+        document.getElementById('check-impacts')?.addEventListener('click', () => {
+            const impactResponse = document.getElementById('impact-response').value.trim();
+            const restorationResponse = document.getElementById('restoration-response').value.trim();
+            const feedback = document.getElementById('impacts-feedback');
+
+            if (impactResponse.length < 10 || restorationResponse.length < 10) {
+                showFeedback(feedback, '⚠️ Please provide more detail in both responses. What specific impacts do you see? What restoration actions would address them?', 'incorrect');
+                return;
+            }
+
+            const completed = completeActivity('impacts', 'module6', 5);
+            showFeedback(feedback, '✅ Great work! You\'ve identified the impacts and suggested appropriate restoration actions. ' + (completed ? 'Progress updated! 🎉' : ''), 'correct');
+            updateAllProgressBars();
+        });
+
+        // ===== Complete Module =====
+        document.getElementById('complete-module')?.addEventListener('click', () => {
+            const feedback = document.getElementById('complete-feedback');
+            setModuleProgress('module6', 100);
+
+            const completionCard = document.querySelector('.card:last-child');
+            if (completionCard) {
+                completionCard.classList.add('module-complete');
+                setTimeout(() => {
+                    completionCard.classList.remove('module-complete');
+                }, 1000);
+            }
+
+            showFeedback(feedback, '🎉 Module 6 Complete! You now understand biosecurity, abiotic elements, microorganisms, ecosystem services, and industry impacts!', 'correct');
+            document.getElementById('complete-module').disabled = true;
+
+            // Check if all modules are complete
+            const allModules = ['module1', 'module2', 'module3', 'module4', 'module5', 'module6'];
+            const allComplete = allModules.every(id => getModuleProgress(id) >= 100);
+            if (allComplete) {
+                const celebration = document.createElement('div');
+                celebration.className = 'feedback correct course-complete';
+                celebration.style.marginTop = 'var(--spacing-md)';
+                celebration.style.padding = 'var(--spacing-lg)';
+                celebration.style.textAlign = 'center';
+                celebration.style.fontSize = '1.2rem';
+                celebration.innerHTML = '🎊 <strong>MASSIVE CONGRATULATIONS!</strong> 🎊<br>You\'ve completed all SIX modules of the AHCECR309 learning resource!<br><br><i class="fas fa-award" style="font-size: 3rem; color: var(--warning);"></i><br><br>You\'re now fully prepared to conduct ecological and cultural site inspections with confidence!';
+                feedback.parentNode.appendChild(celebration);
+            }
+
+            updateAllProgressBars();
+        });
+
+        // Initialize
+        updateAllProgressBars();
+    </script>
+</body>
+</html>
