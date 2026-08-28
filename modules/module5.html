@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5 - Conducting the Inspection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-module="module5">
+    <div class="container">
+        <!-- Header -->
+        <header class="module1" style="--module-color: #00897B;">
+            <h1><i class="fas fa-sitemap" aria-hidden="true"></i> Conducting the Inspection</h1>
+            <p>AHCECR309 - Practical Site Inspection Workflow</p>
+
+            <div class="header-progress">
+                <div class="progress-info">
+                    <span>Module Progress: <strong id="module-progress-text">0%</strong></span>
+                    <span>Overall Progress: <strong id="overall-progress-text">0%</strong></span>
+                    <a href="../index.html" class="btn btn-sm" style="background: rgba(255,255,255,0.2); padding: 6px 16px;">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Main
+                    </a>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress" id="module-progress-bar" style="width: 0%"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="separator">/</span>
+            <a href="../index.html#learning">Learning Modules</a>
+            <span class="separator">/</span>
+            <span class="current">Module 5: Conducting the Inspection</span>
+        </nav>
+
+        <!-- Module Content -->
+        <div class="learning-objectives">
+            <h3><i class="fas fa-bullseye" aria-hidden="true"></i> Learning Objectives</h3>
+            <p>By the end of this module, you will be able to:</p>
+            <ul>
+                <li>Plan and prepare for a site inspection from start to finish</li>
+                <li>Identify and gather the right equipment for different inspection types</li>
+                <li>Apply appropriate survey methods in the field</li>
+                <li>Document findings systematically using standard protocols</li>
+                <li>Handle unexpected discoveries appropriately</li>
+                <li>Complete post-inspection reporting and follow-up</li>
+            </ul>
+        </div>
+
+        <!-- Content tabs -->
+        <nav class="nav-tabs" role="tablist" style="margin-bottom: var(--spacing-lg);">
+            <button class="nav-tab active" role="tab" aria-selected="true" aria-controls="overview" data-target="overview" tabindex="0">
+                <i class="fas fa-home" aria-hidden="true"></i>
+                <span>Overview</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="prepare" data-target="prepare" tabindex="0">
+                <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+                <span>Prepare</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="methods" data-target="methods" tabindex="0">
+                <i class="fas fa-route" aria-hidden="true"></i>
+                <span>Methods</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="document" data-target="document" tabindex="0">
+                <i class="fas fa-camera" aria-hidden="true"></i>
+                <span>Document</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="post" data-target="post" tabindex="0">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                <span>Post-Inspection</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="scenarios" data-target="scenarios" tabindex="0">
+                <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                <span>Practice</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="summary" data-target="summary" tabindex="0">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Summary</span>
+            </button>
+        </nav>
+
+        <!-- Overview -->
+        <section id="overview" class="content-section active" role="tabpanel">
+            <h2>Overview: The Inspection Workflow</h2>
+            <p>Conducting an ecological and cultural site inspection is a systematic process. It's not just about walking around and looking at things - it requires planning, methodical observation, accurate recording, and proper follow-up.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--spacing-md); margin: var(--spacing-lg) 0;">
+                <div style="background: var(--light); padding: var(--spacing-lg); border-radius: var(--radius); text-align: center; border-top: 4px solid var(--module1-color);">
+                    <i class="fas fa-clipboard-list" style="font-size: 2.5rem; color: var(--module1-color);"></i>
+                    <h4 style="margin-top: var(--spacing-sm);">1. Prepare</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 0;">Research, equipment, permissions</p>
+                </div>
+                <div style="background: var(--light); padding: var(--spacing-lg); border-radius: var(--radius); text-align: center; border-top: 4px solid var(--module2-color);">
+                    <i class="fas fa-route" style="font-size: 2.5rem; color: var(--module2-color);"></i>
+                    <h4 style="margin-top: var(--spacing-sm);">2. Survey</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 0;">Systematic field methods</p>
+                </div>
+                <div style="background: var(--light); padding: var(--spacing-lg); border-radius: var(--radius); text-align: center; border-top: 4px solid var(--module3-color);">
+                    <i class="fas fa-camera" style="font-size: 2.5rem; color: var(--module3-color);"></i>
+                    <h4 style="margin-top: var(--spacing-sm);">3. Document</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 0;">Record findings accurately</p>
+                </div>
+                <div style="background: var(--light); padding: var(--spacing-lg); border-radius: var(--radius); text-align: center; border-top: 4px solid var(--module4-color);">
+                    <i class="fas fa-file-alt" style="font-size: 2.5rem; color: var(--module4-color);"></i>
+                    <h4 style="margin-top: var(--spacing-sm);">4. Report</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 0;">Analyze, submit, follow-up</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    <h3>Why a Structured Approach Matters</h3>
+                </div>
+                <ul>
+                    <li><strong>Consistency:</strong> Ensures nothing is missed across different sites</li>
+                    <li><strong>Defensibility:</strong> Your findings can be backed up by clear methodology</li>
+                    <li><strong>Efficiency:</strong> Saves time by avoiding rework</li>
+                    <li><strong>Compliance:</strong> Meets legislative and regulatory requirements</li>
+                    <li><strong>Professionalism:</strong> Demonstrates competence and due diligence</li>
+                </ul>
+            </div>
+
+            <button class="btn" onclick="switchTab('prepare')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Preparation</button>
+        </section>
+
+        <!-- Prepare -->
+        <section id="prepare" class="content-section" role="tabpanel" hidden>
+            <h2>Step 1: Pre-Inspection Preparation</h2>
+            <p>Proper preparation is the foundation of a successful site inspection. Rushing this step leads to missed features, incomplete data, and wasted time.</p>
+
+            <!-- Research -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <h3>Research & Desk Review</h3>
+                </div>
+                <p>Before you set foot on site, you need to know what you're looking for:</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4><i class="fas fa-database" aria-hidden="true"></i> Check Databases</h4>
+                        <ul style="margin-left: var(--spacing-md); font-size: 0.95rem;">
+                            <li>Natural Values Atlas - threatened species</li>
+                            <li>Aboriginal Heritage Register - cultural sites</li>
+                            <li>Tasmanian Heritage Register - historic places</li>
+                            <li>TasVeg maps - vegetation communities</li>
+                            <li>Previous inspection reports</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4><i class="fas fa-map" aria-hidden="true"></i> Site Context</h4>
+                        <ul style="margin-left: var(--spacing-md); font-size: 0.95rem;">
+                            <li>Tenure and ownership</li>
+                            <li>Access routes and gates</li>
+                            <li>Adjacent land uses</li>
+                            <li>Topography and drainage</li>
+                            <li>Weather forecast</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Equipment -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tools" aria-hidden="true"></i>
+                    <h3>Equipment Checklist</h3>
+                </div>
+                <p>Pack the right gear for the job. Here's what you should consider:</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4><i class="fas fa-map-marked-alt" aria-hidden="true"></i> Navigation</h4>
+                        <ul style="margin-left: var(--spacing-md); font-size: 0.9rem;">
+                            <li>GPS device or app</li>
+                            <li>Paper map (backup)</li>
+                            <li>Compass</li>
+                            <li>Site plan/ aerial photo</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4><i class="fas fa-camera" aria-hidden="true"></i> Documentation</h4>
+                        <ul style="margin-left: var(--spacing-md); font-size: 0.9rem;">
+                            <li>Camera (with geotagging)</li>
+                            <li>Field notebook & pens</li>
+                            <li>Clipboard & forms</li>
+                            <li>Scale reference (ruler, tape)</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4><i class="fas fa-search" aria-hidden="true"></i> Observation</h4>
+                        <ul style="margin-left: var(--spacing-md); font-size: 0.9rem;">
+                            <li>Hand lens (10x)</li>
+                            <li>Binoculars</li>
+                            <li>Field guide books</li>
+                            <li>Sample bags / containers</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4><i class="fas fa-shield-alt" aria-hidden="true"></i> Safety</h4>
+                        <ul style="margin-left: var(--spacing-md); font-size: 0.9rem;">
+                            <li>First aid kit</li>
+                            <li>Emergency contact details</li>
+                            <li>PPE (boots, gloves, hi-vis)</li>
+                            <li>Sun protection / rain gear</li>
+                            <li>Water & snacks</li>
+                            <li>Communication device</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="field-note" style="margin-top: var(--spacing-md);">
+                    <h4><i class="fas fa-hard-hat" aria-hidden="true"></i> In the Field</h4>
+                    <p><strong>Pro Tip:</strong> Always pack a backup for critical items. A phone with GPS is great, but paper maps don't run out of battery. Take photos of important documents before you leave.</p>
+                </div>
+            </div>
+
+            <!-- Permissions -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-file-signature" aria-hidden="true"></i>
+                    <h3>Permissions & Access</h3>
+                </div>
+                <p>Before you can inspect a site, you need to ensure you have the right to be there:</p>
+
+                <div class="scenario-box">
+                    <ul>
+                        <li><strong>Landowner consent</strong> - written permission if on private land</li>
+                        <li><strong>Land manager approval</strong> - for public land (Parks, NRE, council)</li>
+                        <li><strong>Access agreements</strong> - gates, keys, track conditions</li>
+                        <li><strong>Permits</strong> - may be required for certain activities</li>
+                        <li><strong>Cultural protocols</strong> - Aboriginal community consultation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('methods')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Survey Methods</button>
+        </section>
+
+        <!-- Methods -->
+        <section id="methods" class="content-section" role="tabpanel" hidden>
+            <h2>Step 2: Survey Methods</h2>
+            <p>Once you're on site, how do you actually conduct the inspection? Different methods suit different purposes.</p>
+
+            <!-- Method 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-walking" aria-hidden="true"></i>
+                    <h3>Meander Search</h3>
+                </div>
+                <p>The most common and flexible survey method. You walk through the site in a wandering pattern, covering all habitat types.</p>
+
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Best for:</h4>
+                        <ul>
+                            <li>General site familiarization</li>
+                            <li>Small to medium sites (under 10ha)</li>
+                            <li>Initial assessments</li>
+                            <li>When you don't know what you'll find</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Key Steps:</h4>
+                        <ol style="margin-left: var(--spacing-md); font-size: 0.9rem;">
+                            <li>Start at one boundary</li>
+                            <li>Walk in a zigzag pattern</li>
+                            <li>Cover all habitat types</li>
+                            <li>Stop to investigate interesting features</li>
+                            <li>Record observations systematically</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-ruler-combined" aria-hidden="true"></i>
+                    <h3>Transect Lines</h3>
+                </div>
+                <p>A systematic survey along one or more straight lines. You walk the line and record features at regular intervals.</p>
+
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Best for:</h4>
+                        <ul>
+                            <li>Measuring vegetation change</li>
+                            <li>Large sites</li>
+                            <li>Comparing different areas</li>
+                            <li>Monitoring over time</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Key Steps:</h4>
+                        <ol style="margin-left: var(--spacing-md); font-size: 0.9rem;">
+                            <li>Establish starting point</li>
+                            <li>Set compass bearing</li>
+                            <li>Walk in straight line</li>
+                            <li>Record at set intervals (e.g., every 10m)</li>
+                            <li>Note changes along the transect</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 3 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-square" aria-hidden="true"></i>
+                    <h3>Quadrat Sampling</h3>
+                </div>
+                <p>Detailed analysis within a defined square area. You record everything inside the quadrat.</p>
+
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Best for:</h4>
+                        <ul>
+                            <li>Detailed vegetation analysis</li>
+                            <li>Species abundance counts</li>
+                            <li>Research and monitoring</li>
+                            <li>Measuring condition</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Key Steps:</h4>
+                        <ol style="margin-left: var(--spacing-md); font-size: 0.9rem;">
+                            <li>Define quadrat size (e.g., 1m x 1m)</li>
+                            <li>Place randomly or systematically</li>
+                            <li>Identify all species inside</li>
+                            <li>Record abundance and cover</li>
+                            <li>Repeat for multiple quadrats</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 4 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-search-location" aria-hidden="true"></i>
+                    <h3>Targeted Search</h3>
+                </div>
+                <p>A focused search for specific features or species. You know what you're looking for and where to look.</p>
+
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--spacing-md);">
+                    <div>
+                        <h4>Best for:</h4>
+                        <ul>
+                            <li>Rare or threatened species</li>
+                            <li>Specific habitat features</li>
+                            <li>Cultural heritage sites</li>
+                            <li>Post-disturbance assessments</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Key Steps:</h4>
+                        <ol style="margin-left: var(--spacing-md); font-size: 0.9rem;">
+                            <li>Identify target features</li>
+                            <li>Focus on likely locations</li>
+                            <li>Search systematically</li>
+                            <li>Record all observations</li>
+                            <li>Document negative findings too</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-box">
+                <h4><i class="fas fa-question-circle" aria-hidden="true"></i> Which Method to Use?</h4>
+                <p>Consider these factors when choosing a survey method:</p>
+                <ul>
+                    <li><strong>Site size</strong> - meander for small, transects for large</li>
+                    <li><strong>What you're looking for</strong> - targeted search for specific species</li>
+                    <li><strong>Time available</strong> - meander is quick, quadrats are slow</li>
+                    <li><strong>Accuracy needed</strong> - quadrats are most accurate</li>
+                    <li><strong>Terrain</strong> - transects can be difficult in steep areas</li>
+                </ul>
+            </div>
+
+            <button class="btn" onclick="switchTab('document')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Documentation</button>
+        </section>
+
+        <!-- Document -->
+        <section id="document" class="content-section" role="tabpanel" hidden>
+            <h2>Step 3: Documentation</h2>
+            <p>Good documentation is what separates a professional inspection from a casual walk. If it's not recorded, it didn't happen.</p>
+
+            <!-- Photos -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-camera" aria-hidden="true"></i>
+                    <h3>Photographic Evidence</h3>
+                </div>
+                <p>Photos are your most important record. Follow these guidelines:</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--success);">
+                        <h4 style="color: var(--success);"><i class="fas fa-check-circle"></i> Do:</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Take photos from multiple angles</li>
+                            <li>Include a scale reference (ruler, hand)</li>
+                            <li>Geotag photos if possible</li>
+                            <li>Photo of site sign/entry point</li>
+                            <li>Panoramic overview shots</li>
+                            <li>Close-ups of diagnostic features</li>
+                            <li>Before/after comparison shots</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); border-left: 4px solid var(--danger);">
+                        <h4 style="color: var(--danger);"><i class="fas fa-times-circle"></i> Don't:</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Rely on memory instead of photos</li>
+                            <li>Forget to include a scale</li>
+                            <li>Only take distance shots</li>
+                            <li>Move or disturb objects for photos</li>
+                            <li>Take photos without documenting location</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="field-note" style="margin-top: var(--spacing-md);">
+                    <h4><i class="fas fa-camera"></i> Photo Workflow</h4>
+                    <ol>
+                        <li>Take a photo of the site entry/sign</li>
+                        <li>Take 3-5 overview photos from different angles</li>
+                        <li>Take photos of key features with scale</li>
+                        <li>Take photos of any issues (weeds, erosion, damage)</li>
+                        <li>Take photos of any heritage features found</li>
+                        <li>Number your photos to match field notes</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Field Notes -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                    <h3>Field Notes</h3>
+                </div>
+                <p>Your field notes are the backbone of your inspection record. They should be:</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4><i class="fas fa-tag"></i> What to Record</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Date and time</li>
+                            <li>Weather conditions</li>
+                            <li>Personnel present</li>
+                            <li>Site location and boundaries</li>
+                            <li>Vegetation communities (TasVeg codes)</li>
+                            <li>Species observed</li>
+                            <li>Threats and issues</li>
+                            <li>Photo numbers and descriptions</li>
+                            <li>GPS coordinates of key points</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--light); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4><i class="fas fa-check-circle"></i> Best Practice</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Write legibly</li>
+                            <li>Use consistent abbreviations</li>
+                            <li>Draw sketch maps</li>
+                            <li>Number pages</li>
+                            <li>Date each page</li>
+                            <li>Use waterproof paper and pens</li>
+                            <li>Transcribe notes soon after</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GPS -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-map-pin" aria-hidden="true"></i>
+                    <h3>GPS & Location Data</h3>
+                </div>
+                <p>Accurate location data is essential for mapping and future reference.</p>
+
+                <div class="scenario-box">
+                    <h4>Key GPS Points to Record:</h4>
+                    <ul>
+                        <li><strong>Entry point</strong> - where you started</li>
+                        <li><strong>Boundary corners</strong> - site extent</li>
+                        <li><strong>Key features</strong> - significant trees, rock outcrops, water sources</li>
+                        <li><strong>Threat locations</strong> - weed patches, erosion sites</li>
+                        <li><strong>Heritage sites</strong> - Aboriginal or historic features</li>
+                        <li><strong>Photo points</strong> - where you took key photos</li>
+                    </ul>
+                </div>
+
+                <p style="margin-top: var(--spacing-md);"><strong>Tip:</strong> Take GPS readings at the same time as photos. Many cameras and phones now embed GPS data in photos automatically.</p>
+            </div>
+
+            <button class="btn" onclick="switchTab('post')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Post-Inspection</button>
+        </section>
+
+        <!-- Post-Inspection -->
+        <section id="post" class="content-section" role="tabpanel" hidden>
+            <h2>Step 4: Post-Inspection</h2>
+            <p>The inspection doesn't end when you leave the site. Proper follow-up ensures your work has lasting value.</p>
+
+            <!-- Data Management -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-database" aria-hidden="true"></i>
+                    <h3>Data Management</h3>
+                </div>
+                <p>Organize your data immediately after returning from the field:</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-images" style="font-size: 1.5rem; color: var(--primary);"></i>
+                        <h4>Photos</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-light);">Download and organize by date/site. Rename with descriptive filenames.</p>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-file-alt" style="font-size: 1.5rem; color: var(--primary);"></i>
+                        <h4>Notes</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-light);">Transcribe field notes into digital format while memory is fresh.</p>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-map-marked-alt" style="font-size: 1.5rem; color: var(--primary);"></i>
+                        <h4>GPS</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-light);">Download GPS data and create maps of key features.</p>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-cloud-upload-alt" style="font-size: 1.5rem; color: var(--primary);"></i>
+                        <h4>Backup</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-light);">Store files in at least two locations (cloud + local).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Report Writing -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                    <h3>Report Writing</h3>
+                </div>
+                <p>A good inspection report should be clear, concise, and comprehensive.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Essential Sections:</h4>
+                        <ul style="font-size: 0.95rem;">
+                            <li><strong>Executive Summary</strong> - key findings</li>
+                            <li><strong>Introduction</strong> - purpose and scope</li>
+                            <li><strong>Methodology</strong> - how you conducted the inspection</li>
+                            <li><strong>Findings</strong> - what you observed</li>
+                            <li><strong>Threats</strong> - issues identified</li>
+                            <li><strong>Recommendations</strong> - what should happen next</li>
+                            <li><strong>Appendices</strong> - photos, maps, data</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--gray-50); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                        <h4>Best Practice:</h4>
+                        <ul style="font-size: 0.95rem;">
+                            <li>Write within 48 hours of inspection</li>
+                            <li>Use clear, simple language</li>
+                            <li>Include photos with captions</li>
+                            <li>Reference legislative requirements</li>
+                            <li>Be specific - avoid vague statements</li>
+                            <li>Prioritize recommendations</li>
+                            <li>Get peer review if possible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Follow-up -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    <h3>Follow-up Actions</h3>
+                </div>
+                <p>What happens after the report is written?</p>
+
+                <div class="scenario-box">
+                    <ul>
+                        <li><strong>Submit</strong> - Send report to relevant authorities (Heritage Council, Aboriginal Heritage Tasmania, client)</li>
+                        <li><strong>Record</strong> - Update databases with new information (Natural Values Atlas, Heritage Register)</li>
+                        <li><strong>Recommend</strong> - Provide clear next steps to decision-makers</li>
+                        <li><strong>Monitor</strong> - Schedule follow-up inspections if needed</li>
+                        <li><strong>Archive</strong> - Store records for future reference</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('scenarios')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Practice Scenarios</button>
+        </section>
+
+        <!-- Scenarios -->
+        <section id="scenarios" class="content-section" role="tabpanel" hidden>
+            <h2>Practice Scenarios</h2>
+            <p>Apply your knowledge to real-world situations.</p>
+
+            <!-- Scenario 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tree" aria-hidden="true"></i>
+                    <h3>Scenario 1: Planning an Inspection</h3>
+                </div>
+                <div class="scenario-box">
+                    <p><strong>Situation:</strong> You've been asked to inspect a 50ha property in the Tasmanian Midlands that may contain threatened grassland communities. The site has been used for grazing for 30 years.</p>
+                    <p><strong>Your task:</strong> What do you need to do before you visit the site?</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Select the most appropriate preparation steps:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="prep1" value="research">
+                            <label for="prep1">Check Natural Values Atlas for threatened species records</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="prep2" value="heritage">
+                            <label for="prep2">Check Heritage Register for any listed sites</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="prep3" value="permission">
+                            <label for="prep3">Obtain landowner permission</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="prep4" value="weather">
+                            <label for="prep4">Check weather forecast</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="prep5" value="equipment">
+                            <label for="prep5">Pack GPS, camera, field notebook, and PPE</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="prep6" value="method">
+                            <label for="prep6">Plan which survey method to use (transects likely best for grassland)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn" id="check-scenario1"><i class="fas fa-check" aria-hidden="true"></i> Check Answers</button>
+                <div class="feedback" id="scenario1-feedback" role="alert"></div>
+            </div>
+
+            <!-- Scenario 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                    <h3>Scenario 2: Unexpected Discovery</h3>
+                </div>
+                <div class="scenario-box">
+                    <p><strong>Situation:</strong> While conducting a vegetation survey, you find what appears to be a stone tool and shell midden. The site wasn't listed on any heritage registers.</p>
+                    <p><strong>Your task:</strong> What do you do immediately?</p>
+                </div>
+
+                <div class="form-group">
+                    <select id="scenario2-select">
+                        <option value="">Select your response...</option>
+                        <option value="continue">Note it in your report and continue the survey</option>
+                        <option value="collect">Collect the artifacts for safe-keeping</option>
+                        <option value="stop">Stop work immediately in the area</option>
+                        <option value="mark">Mark the location and avoid the area</option>
+                    </select>
+                </div>
+
+                <button class="btn" id="check-scenario2"><i class="fas fa-check" aria-hidden="true"></i> Check Response</button>
+                <div class="feedback" id="scenario2-feedback" role="alert"></div>
+            </div>
+
+            <!-- Scenario 3 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-question-circle" aria-hidden="true"></i>
+                    <h3>Scenario 3: Method Selection</h3>
+                </div>
+                <div class="scenario-box">
+                    <p><strong>Situation:</strong> You need to conduct a detailed vegetation assessment on a 2ha wetland site. The site has a mix of open water, sedgeland, and riparian vegetation.</p>
+                    <p><strong>Your task:</strong> Which survey method would be most appropriate for this site?</p>
+                </div>
+
+                <div class="form-group">
+                    <select id="scenario3-select">
+                        <option value="">Select your answer...</option>
+                        <option value="meander">Meander Search - flexible coverage of diverse habitats</option>
+                        <option value="transect">Transect Lines - systematic measurement of vegetation change</option>
+                        <option value="quadrat">Quadrat Sampling - detailed species abundance data</option>
+                        <option value="targeted">Targeted Search - focus on specific threatened species</option>
+                    </select>
+                </div>
+
+                <button class="btn" id="check-scenario3"><i class="fas fa-check" aria-hidden="true"></i> Check Response</button>
+                <div class="feedback" id="scenario3-feedback" role="alert"></div>
+            </div>
+
+            <button class="btn" onclick="switchTab('summary')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Summary</button>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary" class="content-section" role="tabpanel" hidden>
+            <h2>Module Summary</h2>
+
+            <div class="summary-box">
+                <h3><i class="fas fa-key" aria-hidden="true"></i> Key Takeaways</h3>
+                <ul>
+                    <li><strong>Prepare thoroughly</strong> - research, equipment, permissions, safety</li>
+                    <li><strong>Choose appropriate methods</strong> - meander, transect, quadrat, or targeted search</li>
+                    <li><strong>Document everything</strong> - photos, field notes, GPS data</li>
+                    <li><strong>Follow up properly</strong> - data management, reporting, recommendations</li>
+                    <li><strong>Handle unexpected discoveries</strong> - stop, record, report, wait</li>
+                    <li><strong>Safety first</strong> - always prioritize personal safety</li>
+                </ul>
+            </div>
+
+            <div class="summary-box">
+                <h3><i class="fas fa-tools" aria-hidden="true"></i> Quick Reference: Inspection Workflow</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: var(--spacing-sm); margin-top: var(--spacing-md);">
+                    <div style="background: var(--module1-color); color: white; padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-clipboard-list" style="font-size: 1.5rem;"></i>
+                        <h4 style="color: white; font-size: 0.9rem; margin-top: var(--spacing-xs);">1. Prepare</h4>
+                        <p style="font-size: 0.75rem; color: rgba(255,255,255,0.8); margin-bottom: 0;">Research, equipment, permissions</p>
+                    </div>
+                    <div style="background: var(--module2-color); color: white; padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-route" style="font-size: 1.5rem;"></i>
+                        <h4 style="color: white; font-size: 0.9rem; margin-top: var(--spacing-xs);">2. Survey</h4>
+                        <p style="font-size: 0.75rem; color: rgba(255,255,255,0.8); margin-bottom: 0;">Systematic field methods</p>
+                    </div>
+                    <div style="background: var(--module3-color); color: white; padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-camera" style="font-size: 1.5rem;"></i>
+                        <h4 style="color: white; font-size: 0.9rem; margin-top: var(--spacing-xs);">3. Document</h4>
+                        <p style="font-size: 0.75rem; color: rgba(255,255,255,0.8); margin-bottom: 0;">Photos, notes, GPS</p>
+                    </div>
+                    <div style="background: var(--module4-color); color: white; padding: var(--spacing-md); border-radius: var(--radius-sm); text-align: center;">
+                        <i class="fas fa-file-alt" style="font-size: 1.5rem;"></i>
+                        <h4 style="color: white; font-size: 0.9rem; margin-top: var(--spacing-xs);">4. Report</h4>
+                        <p style="font-size: 0.75rem; color: rgba(255,255,255,0.8); margin-bottom: 0;">Analyze, submit, follow-up</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h3>Module Completion</h3>
+                <p>Congratulations on completing Module 5!</p>
+                <p>You now understand the complete workflow for conducting ecological and cultural site inspections - from preparation to reporting.</p>
+                <button class="btn" id="complete-module"><i class="fas fa-award" aria-hidden="true"></i> Mark Module Complete</button>
+                <div class="feedback" id="complete-feedback" role="alert"></div>
+                <div style="margin-top: var(--spacing-md); display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+                    <a href="../index.html" class="btn btn-secondary"><i class="fas fa-home" aria-hidden="true"></i> Return to Main</a>
+                    <a href="module1.html" class="btn btn-outline"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Module 1</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer role="contentinfo">
+            <p>AHCECR309 - Conduct an ecological and cultural site inspection prior to works.</p>
+            <p>Developed by Jay Rowley | Tasmanian Context | © 2025</p>
+        </footer>
+    </div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../js/app.js"></script>
+<script>
+    // ===== Wait for DOM to be ready =====
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize progress display
+        updateAllProgressBars();
+
+        // ===== Scenario 1: Preparation =====
+        const scenario1Btn = document.getElementById('check-scenario1');
+        if (scenario1Btn) {
+            scenario1Btn.addEventListener('click', function() {
+                const prep1 = document.getElementById('prep1').checked;
+                const prep2 = document.getElementById('prep2').checked;
+                const prep3 = document.getElementById('prep3').checked;
+                const prep4 = document.getElementById('prep4').checked;
+                const prep5 = document.getElementById('prep5').checked;
+                const prep6 = document.getElementById('prep6').checked;
+                const feedback = document.getElementById('scenario1-feedback');
+
+                if (prep1 && prep2 && prep3 && prep4 && prep5 && prep6) {
+                    const completed = completeActivity('scenario1', 'module5', 10);
+                    showFeedback(feedback, '✅ Excellent! All these steps are essential preparation for a site inspection. ' + (completed ? 'Progress updated! 🎉' : ''), 'correct');
+                    // Force progress update
+                    updateAllProgressBars();
+                } else {
+                    showFeedback(feedback, '❌ Not quite. All six steps are essential preparation for this inspection. Don\'t forget to check databases, get permissions, prepare equipment, plan your method, and check the weather!', 'incorrect');
+                }
+            });
+        }
+
+        // ===== Scenario 2: Unexpected Discovery =====
+        const scenario2Btn = document.getElementById('check-scenario2');
+        if (scenario2Btn) {
+            scenario2Btn.addEventListener('click', function() {
+                const select = document.getElementById('scenario2-select');
+                const feedback = document.getElementById('scenario2-feedback');
+
+                if (!select || !select.value) {
+                    showFeedback(feedback, 'Please select a response.', 'incorrect');
+                    return;
+                }
+
+                if (select.value === 'stop') {
+                    const completed = completeActivity('scenario2', 'module5', 10);
+                    showFeedback(feedback, '✅ Correct! You must stop work immediately and contact Aboriginal Heritage Tasmania. You should never collect artifacts or continue working when Aboriginal heritage is discovered. ' + (completed ? 'Progress updated! 🎉' : ''), 'correct');
+                    updateAllProgressBars();
+                } else if (select.value === 'mark') {
+                    showFeedback(feedback, '⚠️ Almost, but not quite. While marking the location is good, you should also stop work immediately and contact Aboriginal Heritage Tasmania. The "stop, record, report, wait" protocol is essential.', 'incorrect');
+                } else {
+                    showFeedback(feedback, '❌ Incorrect. When Aboriginal heritage is discovered, you must stop work immediately in the area and contact Aboriginal Heritage Tasmania. Do not collect artifacts or continue the survey.', 'incorrect');
+                }
+            });
+        }
+
+        // ===== Scenario 3: Method Selection =====
+        const scenario3Btn = document.getElementById('check-scenario3');
+        if (scenario3Btn) {
+            scenario3Btn.addEventListener('click', function() {
+                const select = document.getElementById('scenario3-select');
+                const feedback = document.getElementById('scenario3-feedback');
+
+                if (!select || !select.value) {
+                    showFeedback(feedback, 'Please select a method.', 'incorrect');
+                    return;
+                }
+
+                if (select.value === 'transect') {
+                    const completed = completeActivity('scenario3', 'module5', 10);
+                    showFeedback(feedback, '✅ Correct! Transect lines would be most appropriate for a wetland site as they allow systematic measurement of vegetation change across the different zones (open water → sedgeland → riparian). ' + (completed ? 'Progress updated! 🎉' : ''), 'correct');
+                    updateAllProgressBars();
+                } else if (select.value === 'meander') {
+                    showFeedback(feedback, '⚠️ A meander search would work, but transect lines would provide more systematic data for a wetland site with distinct vegetation zones. Transects allow you to measure the transition between zones.', 'incorrect');
+                } else if (select.value === 'quadrat') {
+                    showFeedback(feedback, '⚠️ Quadrats would give detailed data but may not be practical for a 2ha wetland site. Transect lines would give a good overview of the vegetation zones while being more efficient.', 'incorrect');
+                } else {
+                    showFeedback(feedback, '⚠️ A targeted search would only work if you know exactly what you\'re looking for. Transect lines would provide more comprehensive data about the wetland vegetation communities.', 'incorrect');
+                }
+            });
+        }
+
+        // ===== Complete Module =====
+        const completeBtn = document.getElementById('complete-module');
+        if (completeBtn) {
+            completeBtn.addEventListener('click', function() {
+                const feedback = document.getElementById('complete-feedback');
+                
+                // Set module progress to 100%
+                setModuleProgress('module5', 100);
+                
+                // Add animation to the completion card
+                const completionCard = document.querySelector('.card:last-child');
+                if (completionCard) {
+                    completionCard.classList.add('module-complete');
+                    setTimeout(function() {
+                        completionCard.classList.remove('module-complete');
+                    }, 1000);
+                }
+                
+                showFeedback(feedback, '🎉 Module 5 Complete! You now understand the complete inspection workflow!', 'correct');
+                this.disabled = true;
+
+                // Check if all modules are complete
+                const allModules = ['module1', 'module2', 'module3', 'module4', 'module5'];
+                const allComplete = allModules.every(function(id) {
+                    return getModuleProgress(id) >= 100;
+                });
+                
+                if (allComplete) {
+                    const celebration = document.createElement('div');
+                    celebration.className = 'feedback correct course-complete';
+                    celebration.style.marginTop = 'var(--spacing-md)';
+                    celebration.style.padding = 'var(--spacing-lg)';
+                    celebration.style.textAlign = 'center';
+                    celebration.style.fontSize = '1.2rem';
+                    celebration.innerHTML = '🎊 <strong>MASSIVE CONGRATULATIONS!</strong> 🎊<br>You\'ve completed all five modules of the AHCECR309 learning resource!<br><br><i class="fas fa-award" style="font-size: 3rem; color: var(--warning);"></i><br><br>You\'re now ready to conduct ecological and cultural site inspections with confidence!';
+                    feedback.parentNode.appendChild(celebration);
+                }
+                
+                // Force progress update on main page
+                updateAllProgressBars();
+            });
+        }
+
+        // ===== Force initial progress update =====
+        setTimeout(function() {
+            updateAllProgressBars();
+        }, 100);
+    });
+</script>
+</body>
+</html>

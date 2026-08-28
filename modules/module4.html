@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 - Legislative Framework</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-module="module4">
+    <div class="container">
+        <!-- Header -->
+        <header class="module4">
+            <h1><i class="fas fa-gavel" aria-hidden="true"></i> Legislative Framework</h1>
+            <p>AHCECR309 - Conservation and Ecosystem Management</p>
+
+            <div class="header-progress">
+                <div class="progress-info">
+                    <span>Module Progress: <strong id="module-progress-text">0%</strong></span>
+                    <span>Overall Progress: <strong id="overall-progress-text">0%</strong></span>
+                    <a href="../index.html" class="btn btn-sm" style="background: rgba(255,255,255,0.2); padding: 6px 16px;">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Main
+                    </a>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress" id="module-progress-bar" style="width: 0%"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="separator">/</span>
+            <a href="../index.html#learning">Learning Modules</a>
+            <span class="separator">/</span>
+            <span class="current">Module 4: Legislative Framework</span>
+        </nav>
+
+        <!-- Module Content -->
+        <div class="learning-objectives">
+            <h3><i class="fas fa-bullseye" aria-hidden="true"></i> Learning Objectives</h3>
+            <ul>
+                <li>Understand the key legislation governing site inspections in Tasmania</li>
+                <li>Know the compliance requirements for different types of inspections</li>
+                <li>Understand the permit processes for various activities</li>
+                <li>Know your reporting obligations under the law</li>
+                <li>Apply legislative knowledge to real-world scenarios</li>
+            </ul>
+        </div>
+
+        <!-- Content tabs -->
+        <nav class="nav-tabs" role="tablist" style="margin-bottom: var(--spacing-lg);">
+            <button class="nav-tab active" role="tab" aria-selected="true" aria-controls="overview" data-target="overview" tabindex="0">
+                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                <span>Overview</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="legislation" data-target="legislation" tabindex="0">
+                <i class="fas fa-balance-scale" aria-hidden="true"></i>
+                <span>Key Legislation</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="permits" data-target="permits" tabindex="0">
+                <i class="fas fa-file-contract" aria-hidden="true"></i>
+                <span>Permits</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="scenarios" data-target="scenarios" tabindex="0">
+                <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                <span>Scenarios</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="summary" data-target="summary" tabindex="0">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Summary</span>
+            </button>
+        </nav>
+
+        <!-- Overview -->
+        <section id="overview" class="content-section active" role="tabpanel">
+            <h2>Legislative Framework Overview</h2>
+            <p>Understanding the legislative framework is essential for conducting ecological and cultural site inspections in Tasmania.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                    <h3>Why Legislation Matters</h3>
+                </div>
+                <ul>
+                    <li>Protect Tasmania's unique natural and cultural heritage</li>
+                    <li>Avoid significant penalties for non-compliance</li>
+                    <li>Ensure development occurs sustainably</li>
+                    <li>Fulfill your duty of care obligations</li>
+                    <li>Make informed decisions during site inspections</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                    <h3>Key Principles</h3>
+                </div>
+                <ul>
+                    <li><strong>Precautionary Principle:</strong> Where there are threats of serious or irreversible environmental damage, lack of full scientific certainty should not be used as a reason for postponing measures to prevent environmental degradation.</li>
+                    <li><strong>Intergenerational Equity:</strong> Present generations should ensure that the health, diversity, and productivity of the environment is maintained or enhanced for the benefit of future generations.</li>
+                    <li><strong>Conservation of Biological Diversity:</strong> Protecting the variety of all life forms - the different plants, animals and microorganisms, the genes they contain, and the ecosystems they form.</li>
+                </ul>
+            </div>
+
+            <button class="btn" onclick="switchTab('legislation')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Key Legislation</button>
+        </section>
+
+        <!-- Key Legislation -->
+        <section id="legislation" class="content-section" role="tabpanel" hidden>
+            <h2>Key Legislation</h2>
+            <p>Tasmania has a comprehensive legislative framework governing ecological and cultural heritage protection.</p>
+
+            <table class="law-table">
+                <thead>
+                    <tr>
+                        <th>Legislation</th>
+                        <th>Purpose</th>
+                        <th>Administering Authority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nature Conservation Act 2002</strong></td>
+                        <td>Conservation and protection of Tasmania's flora, fauna, and geological diversity</td>
+                        <td>NRE Tas</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aboriginal Heritage Act 1975</strong></td>
+                        <td>Protects and conserves Aboriginal relics and sites of significance</td>
+                        <td>Aboriginal Heritage Tasmania</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Historic Cultural Heritage Act 1995</strong></td>
+                        <td>Protection and conservation of Tasmania's historic cultural heritage</td>
+                        <td>Heritage Tasmania</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Threatened Species Protection Act 1995</strong></td>
+                        <td>Protection and management of threatened native flora and fauna</td>
+                        <td>NRE Tas</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Environmental Management and Pollution Control Act 1994</strong></td>
+                        <td>Management of pollution and environmental impacts</td>
+                        <td>EPA Tasmania</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Land Use Planning and Approvals Act 1993</strong></td>
+                        <td>Planning schemes and development controls</td>
+                        <td>Local Councils & Tasmanian Planning Commission</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <h4><i class="fas fa-clock" aria-hidden="true"></i> Recent Updates</h4>
+                <p><strong>Historic Cultural Heritage Act 1995:</strong> 2024 amendments effective from 1 January 2025 strengthen protection of historic built heritage and ease regulatory engagement.</p>
+                <p><strong>Coming soon:</strong> A new <strong>Aboriginal Cultural Heritage Protection Act</strong> is anticipated following the 2021 review.</p>
+            </div>
+
+            <button class="btn" onclick="switchTab('permits')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Permits</button>
+        </section>
+
+        <!-- Permits -->
+        <section id="permits" class="content-section" role="tabpanel" hidden>
+            <h2>Permit Processes</h2>
+            <p>Various activities require permits under Tasmanian legislation. Understanding these processes is essential for compliance.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                    <h3>Permits for Ecological Works</h3>
+                </div>
+                <ul>
+                    <li>Taking or disturbing threatened flora or fauna</li>
+                    <li>Scientific research on protected species</li>
+                    <li>Commercial activities in reserved lands</li>
+                    <li>Clearance of native vegetation (in certain circumstances)</li>
+                    <li>Import or export of wildlife specimens</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-monument" aria-hidden="true"></i>
+                    <h3>Permits for Heritage Works</h3>
+                </div>
+                <ul>
+                    <li>Works affecting a place listed on the Tasmanian Heritage Register</li>
+                    <li>Works that may disturb or damage Aboriginal heritage</li>
+                    <li>Archaeological investigations</li>
+                    <li>Export of heritage objects</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-sitemap" aria-hidden="true"></i>
+                    <h3>Permit Application Process</h3>
+                </div>
+
+                <div class="permit-process">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Determine Permit Requirements</h4>
+                            <p>Research which permits are required for your proposed activities.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Prepare Application Documentation</h4>
+                            <p>Gather all required information, including site plans, impact assessments, and consultation evidence.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Submit Application</h4>
+                            <p>Submit your application to the relevant authority with all required documentation and fees.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Application Assessment</h4>
+                            <p>The authority will assess your application, which may involve requesting additional information.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Decision</h4>
+                            <p>The authority will make a decision to approve, approve with conditions, or refuse the application.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h4>Comply with Conditions</h4>
+                            <p>If approved, ensure you comply with all conditions of the permit and submit any required compliance reports.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('scenarios')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Scenarios</button>
+        </section>
+
+        <!-- Scenarios -->
+        <section id="scenarios" class="content-section" role="tabpanel" hidden>
+            <h2>Interactive Scenarios</h2>
+            <p>Test your knowledge of Tasmania's legislative framework with these interactive scenarios.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tree" aria-hidden="true"></i>
+                    <h3>Scenario 1: Threatened Species Discovery</h3>
+                </div>
+                <div class="scenario-box">
+                    <p>During a site inspection for a proposed development, you identify potential habitat for the threatened Swift Parrot. What are your legal obligations?</p>
+                </div>
+
+                <div class="form-group">
+                    <select id="scenario1-select">
+                        <option value="">Select the most appropriate course of action...</option>
+                        <option value="a">Proceed with the development but avoid the specific trees where parrots might nest</option>
+                        <option value="b">Note the finding in your report but take no further action</option>
+                        <option value="c">Recommend further surveys by a qualified ecologist and consider redesigning the development to avoid impacts</option>
+                        <option value="d">Immediately report the finding to police as an emergency</option>
+                    </select>
+                </div>
+
+                <button class="btn" id="check-scenario1"><i class="fas fa-check" aria-hidden="true"></i> Check Answer</button>
+                <div class="feedback" id="scenario1-feedback" role="alert"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-monument" aria-hidden="true"></i>
+                    <h3>Scenario 2: Aboriginal Heritage Discovery</h3>
+                </div>
+                <div class="scenario-box">
+                    <p>During ground disturbance works, a worker uncovers what appears to be a stone tool. What should happen next?</p>
+                </div>
+
+                <div class="form-group">
+                    <select id="scenario2-select">
+                        <option value="">Select the legally required response...</option>
+                        <option value="a">Take a photograph for your records and continue working</option>
+                        <option value="b">Remove the object to a safe location to prevent damage</option>
+                        <option value="c">Stop works in the immediate area and report the find to Aboriginal Heritage Tasmania within 5 days</option>
+                        <option value="d">Contact the local museum to collect the artifact</option>
+                    </select>
+                </div>
+
+                <button class="btn" id="check-scenario2"><i class="fas fa-check" aria-hidden="true"></i> Check Answer</button>
+                <div class="feedback" id="scenario2-feedback" role="alert"></div>
+            </div>
+
+            <button class="btn" onclick="switchTab('summary')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Summary</button>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary" class="content-section" role="tabpanel" hidden>
+            <h2>Module Summary</h2>
+
+            <div class="summary-box">
+                <h3><i class="fas fa-key" aria-hidden="true"></i> Key Takeaways</h3>
+                <ul>
+                    <li>Multiple pieces of legislation govern ecological and cultural site inspections</li>
+                    <li>Key acts include the Nature Conservation Act, Aboriginal Heritage Act, and Historic Cultural Heritage Act</li>
+                    <li>Permits are required for certain activities</li>
+                    <li>Reporting obligations exist for discoveries and incidents</li>
+                    <li>Non-compliance can result in significant penalties</li>
+                    <li>Recent amendments strengthen heritage protection and streamline processes</li>
+                </ul>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h3>Module Completion</h3>
+                <p>Congratulations on completing Module 4!</p>
+                <p>You've now completed all four modules of the AHCECR309 learning resource.</p>
+                <button class="btn" id="complete-module"><i class="fas fa-award" aria-hidden="true"></i> Mark Module Complete</button>
+                <div class="feedback" id="complete-feedback" role="alert"></div>
+                <div style="margin-top: var(--spacing-md);">
+                    <a href="../index.html" class="btn btn-secondary"><i class="fas fa-home" aria-hidden="true"></i> Return to Main Application</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer role="contentinfo">
+            <p>AHCECR309 - Conduct an ecological and cultural site inspection prior to works.</p>
+            <p>Developed by Jay Rowley | Tasmanian Context | © 2025</p>
+        </footer>
+    </div>
+
+   <script src="../js/app.js"></script>
+<script>
+    // Scenario 1
+    document.getElementById('check-scenario1')?.addEventListener('click', () => {
+        const select = document.getElementById('scenario1-select');
+        const feedback = document.getElementById('scenario1-feedback');
+
+        if (!select.value) {
+            showFeedback(feedback, 'Please select an answer.', 'incorrect');
+            return;
+        }
+
+        if (select.value === 'c') {
+            const completed = completeActivity('scenario1', 'module4', 5);
+            showFeedback(feedback, 'Correct! Under the Threatened Species Protection Act 1995, potential impacts on threatened species must be properly assessed. ' + (completed ? 'Progress updated!' : ''), 'correct');
+        } else {
+            showFeedback(feedback, 'Incorrect. The proper response is to recommend further surveys and consider redesigning the development to avoid impacts on potential Swift Parrot habitat.', 'incorrect');
+        }
+    });
+
+    // Scenario 2
+    document.getElementById('check-scenario2')?.addEventListener('click', () => {
+        const select = document.getElementById('scenario2-select');
+        const feedback = document.getElementById('scenario2-feedback');
+
+        if (!select.value) {
+            showFeedback(feedback, 'Please select an answer.', 'incorrect');
+            return;
+        }
+
+        if (select.value === 'c') {
+            const completed = completeActivity('scenario2', 'module4', 5);
+            showFeedback(feedback, 'Correct! Under the Aboriginal Heritage Act 1975, any discovery of Aboriginal relics must be reported to the Minister within 5 days, and works should cease in the immediate area. ' + (completed ? 'Progress updated!' : ''), 'correct');
+        } else {
+            showFeedback(feedback, 'Incorrect. The legally required response is to stop works in the area and report the find to Aboriginal Heritage Tasmania within 5 days.', 'incorrect');
+        }
+    });
+
+    // Complete Module - FIXED
+    document.getElementById('complete-module')?.addEventListener('click', () => {
+        const feedback = document.getElementById('complete-feedback');
+        setModuleProgress('module4', 100);
+        
+        // Add animation to the completion card
+        const completionCard = document.querySelector('.card:last-child');
+        if (completionCard) {
+            completionCard.classList.add('module-complete');
+            setTimeout(() => {
+                completionCard.classList.remove('module-complete');
+            }, 1000);
+        }
+        
+        showFeedback(feedback, '🎉 Module 4 Complete! You\'ve completed all modules!', 'correct');
+        document.getElementById('complete-module').disabled = true;
+
+        // Check if all modules are complete
+        const allComplete = APP_CONFIG.modules.every(id => getModuleProgress(id) >= 100);
+        if (allComplete) {
+            const celebration = document.createElement('div');
+            celebration.className = 'feedback correct course-complete';
+            celebration.style.marginTop = 'var(--spacing-md)';
+            celebration.innerHTML = '🎊 <strong>Congratulations!</strong> You\'ve completed all four modules!';
+            feedback.parentNode.appendChild(celebration);
+        }
+    });
+
+    updateAllProgressBars();
+</script>
+</body>
+</html>

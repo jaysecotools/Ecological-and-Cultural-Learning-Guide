@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 - Tasmanian Ecosystems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-module="module2">
+    <div class="container">
+        <!-- Header -->
+        <header class="module2">
+            <h1><i class="fas fa-mountain" aria-hidden="true"></i> Tasmanian Ecosystems</h1>
+            <p>AHCECR309 - Conservation and Ecosystem Management</p>
+
+            <div class="header-progress">
+                <div class="progress-info">
+                    <span>Module Progress: <strong id="module-progress-text">0%</strong></span>
+                    <span>Overall Progress: <strong id="overall-progress-text">0%</strong></span>
+                    <a href="../index.html" class="btn btn-sm" style="background: rgba(255,255,255,0.2); padding: 6px 16px;">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Main
+                    </a>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress" id="module-progress-bar" style="width: 0%"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="separator">/</span>
+            <a href="../index.html#learning">Learning Modules</a>
+            <span class="separator">/</span>
+            <span class="current">Module 2: Tasmanian Ecosystems</span>
+        </nav>
+
+        <!-- Module Content -->
+        <div class="learning-objectives">
+            <h3><i class="fas fa-bullseye" aria-hidden="true"></i> Learning Objectives</h3>
+            <ul>
+                <li>Identify the major ecosystem types found in Tasmania</li>
+                <li>Understand the key characteristics of each ecosystem</li>
+                <li>Recognize the conservation significance of Tasmanian ecosystems</li>
+                <li>Describe the Gondwanan heritage of Tasmania's flora and fauna</li>
+            </ul>
+        </div>
+
+        <!-- Content tabs -->
+        <nav class="nav-tabs" role="tablist" style="margin-bottom: var(--spacing-lg);">
+            <button class="nav-tab active" role="tab" aria-selected="true" aria-controls="ecosystems" data-target="ecosystems" tabindex="0">
+                <i class="fas fa-tree" aria-hidden="true"></i>
+                <span>Ecosystems</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="species" data-target="species" tabindex="0">
+                <i class="fas fa-paw" aria-hidden="true"></i>
+                <span>Endemic Species</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="threats" data-target="threats" tabindex="0">
+                <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                <span>Threats</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="summary" data-target="summary" tabindex="0">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Summary</span>
+            </button>
+        </nav>
+
+        <!-- Ecosystems -->
+        <section id="ecosystems" class="content-section active" role="tabpanel">
+            <h2>Unique Tasmanian Ecosystems</h2>
+            <p>Tasmania's isolation and varied topography have created diverse and unique ecosystems found nowhere else on Earth.</p>
+
+            <div class="ecosystem-gallery">
+                <div class="ecosystem-item">
+                    <div class="ecosystem-img"><i class="fas fa-tree" aria-hidden="true"></i></div>
+                    <div class="ecosystem-content">
+                        <h3>Cool Temperate Rainforests</h3>
+                        <p>Characterized by myrtle beech, sassafras, and leatherwood trees. These ancient forests have remained largely unchanged for millions of years.</p>
+                        <span class="badge badge-module1">TasVeg: RFR</span>
+                    </div>
+                </div>
+
+                <div class="ecosystem-item">
+                    <div class="ecosystem-img"><i class="fas fa-mountain" aria-hidden="true"></i></div>
+                    <div class="ecosystem-content">
+                        <h3>Alpine Ecosystems</h3>
+                        <p>Found above 800m elevation, featuring cushion plants, pencil pines, and unique high-altitude flora adapted to harsh conditions.</p>
+                        <span class="badge badge-module2">TasVeg: AVG</span>
+                    </div>
+                </div>
+
+                <div class="ecosystem-item">
+                    <div class="ecosystem-img"><i class="fas fa-tree" aria-hidden="true"></i></div>
+                    <div class="ecosystem-content">
+                        <h3>Eucalypt Forests</h3>
+                        <p>Diverse forests dominated by various eucalypt species, providing habitat for many endemic animals.</p>
+                        <span class="badge badge-module4">TasVeg: WEF, DEG</span>
+                    </div>
+                </div>
+
+                <div class="ecosystem-item">
+                    <div class="ecosystem-img"><i class="fas fa-water" aria-hidden="true"></i></div>
+                    <div class="ecosystem-content">
+                        <h3>Coastal Heathlands</h3>
+                        <p>Wind-swept communities of low-growing shrubs and herbs adapted to saline conditions and poor soils.</p>
+                        <span class="badge badge-module2">TasVeg: CCH</span>
+                    </div>
+                </div>
+
+                <div class="ecosystem-item">
+                    <div class="ecosystem-img"><i class="fas fa-tint" aria-hidden="true"></i></div>
+                    <div class="ecosystem-content">
+                        <h3>Wetlands & Buttongrass Moorlands</h3>
+                        <p>Peat-accumulating ecosystems with unique hydrological characteristics and specialized plant communities.</p>
+                        <span class="badge badge-module1">TasVeg: WAT, MBU</span>
+                    </div>
+                </div>
+
+                <div class="ecosystem-item">
+                    <div class="ecosystem-img"><i class="fas fa-water" aria-hidden="true"></i></div>
+                    <div class="ecosystem-content">
+                        <h3>Marine Ecosystems</h3>
+                        <p>Kelp forests, seagrass meadows, and sponge gardens that support diverse marine life including many endemic species.</p>
+                        <span class="badge badge-module3">Coastal & Marine</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="key-concept">
+                <h3><i class="fas fa-lightbulb" aria-hidden="true"></i> Key Concept: Gondwanan Heritage</h3>
+                <p>Tasmania's ecosystems are living relics of the ancient supercontinent Gondwana. Many plant species have remained virtually unchanged for 60 million years, making these ecosystems of global significance.</p>
+            </div>
+
+            <div class="tas-example">
+                <h3><i class="fas fa-map-marker-alt" aria-hidden="true"></i> TAS Example: Tarkine Wilderness</h3>
+                <p>The Tarkine region in northwest Tasmania contains the largest single tract of cool temperate rainforest in Australia, spanning over 180,000 hectares. This area represents one of the most significant Gondwanan remnants in the world.</p>
+            </div>
+
+            <button class="btn" onclick="switchTab('species')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Endemic Species</button>
+        </section>
+
+        <!-- Species -->
+        <section id="species" class="content-section" role="tabpanel" hidden>
+            <h2>Endemic Species of Tasmania</h2>
+            <p>Tasmania's isolation has resulted in numerous species that are found nowhere else in the world.</p>
+
+            <h3>Iconic Endemic Mammals</h3>
+            <div class="species-grid">
+                <div class="species-item">
+                    <div class="species-thumb"><i class="fas fa-paw" aria-hidden="true"></i></div>
+                    <div class="species-name">Tasmanian Devil</div>
+                    <div class="species-desc">World's largest carnivorous marsupial, known for its powerful jaws and feisty temperament.</div>
+                </div>
+
+                <div class="species-item">
+                    <div class="species-thumb"><i class="fas fa-paw" aria-hidden="true"></i></div>
+                    <div class="species-name">Eastern Quoll</div>
+                    <div class="species-desc">Spotted carnivorous marsupial, extinct on mainland Australia but surviving in Tasmania.</div>
+                </div>
+
+                <div class="species-item">
+                    <div class="species-thumb"><i class="fas fa-paw" aria-hidden="true"></i></div>
+                    <div class="species-name">Tasmanian Pademelon</div>
+                    <div class="species-desc">Small, stocky macropod with a distinctive short tail and thick fur.</div>
+                </div>
+
+                <div class="species-item">
+                    <div class="species-thumb"><i class="fas fa-paw" aria-hidden="true"></i></div>
+                    <div class="species-name">Tasmanian Bettong</div>
+                    <div class="species-desc">Small, nocturnal macropod that uses its prehensile tail to gather nesting material.</div>
+                </div>
+            </div>
+
+            <h3>Unique Flora</h3>
+            <div class="species-grid">
+                <div class="species-item">
+                    <div class="species-thumb"><i class="fas fa-leaf" aria-hidden="true"></i></div>
+                    <div class="species-name">Huon Pine</div>
+                    <div class="species-desc">One of the longest-living trees in the world, with some specimens over 3,000 years old.</div>
+                </div>
+
+                <div class="species-item">
+                    <div class="species-thumb"><i class="fas fa-leaf" aria-hidden="true"></i></div>
+                    <div class="species-name">Leatherwood</div>
+                    <div class="species-desc">Unique to Tasmania's rainforests, produces flowers that are the source of distinctive honey.</div>
+                </div>
+
+                <div class="species-item">
+                    <div class="species-thumb"><i class="fas fa-leaf" aria-hidden="true"></i></div>
+                    <div class="species-name">Pencil Pine</div>
+                    <div class="species-desc">Coniferous tree found in high-altitude areas, extremely slow-growing and long-lived.</div>
+                </div>
+
+                <div class="species-item">
+                    <div class="species-thumb"><i class="fas fa-leaf" aria-hidden="true"></i></div>
+                    <div class="species-name">Tasmanian Blue Gum</div>
+                    <div class="species-desc">The floral emblem of Tasmania, one of the tallest flowering plants in the world.</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                    <h3>Species of Conservation Significance</h3>
+                </div>
+                <ul>
+                    <li><strong>Swift Parrot:</strong> Critically endangered migratory bird that breeds only in Tasmania</li>
+                    <li><strong>Orange-bellied Parrot:</strong> One of Australia's most endangered birds with fewer than 50 left in the wild</li>
+                    <li><strong>Giant Freshwater Crayfish:</strong> World's largest freshwater invertebrate, found only in northern Tasmania</li>
+                    <li><strong>Tasmanian Wedge-tailed Eagle:</strong> Unique subspecies with a population of less than 1,000 breeding pairs</li>
+                </ul>
+            </div>
+
+            <button class="btn" onclick="switchTab('threats')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Threats</button>
+        </section>
+
+        <!-- Threats -->
+        <section id="threats" class="content-section" role="tabpanel" hidden>
+            <h2>Ecosystem Threats</h2>
+            <p>Tasmania's unique ecosystems face numerous threats that require careful management and conservation efforts.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-fire" aria-hidden="true"></i>
+                    <h3>Climate Change</h3>
+                </div>
+                <ul>
+                    <li><strong>Alpine ecosystem shrinkage:</strong> Rising temperatures are reducing the area of alpine habitats</li>
+                    <li><strong>Sea level rise:</strong> Threatening coastal ecosystems and species</li>
+                    <li><strong>Changed fire regimes:</strong> Altered frequency and intensity of bushfires</li>
+                    <li><strong>Ocean acidification:</strong> Affecting marine ecosystems and species</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-seedling" aria-hidden="true"></i>
+                    <h3>Invasive Species</h3>
+                </div>
+                <ul>
+                    <li><strong>Weeds:</strong> Spanish heath, gorse, blackberry, and willow species outcompete native vegetation</li>
+                    <li><strong>Feral animals:</strong> Cats, foxes, rabbits, and deer impact native species through predation and competition</li>
+                    <li><strong>Pathogens:</strong> Phytophthora root rot and other diseases affect native plants</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-hard-hat" aria-hidden="true"></i>
+                    <h3>Habitat Loss and Fragmentation</h3>
+                </div>
+                <ul>
+                    <li><strong>Land clearing:</strong> For agriculture, urban development, and forestry</li>
+                    <li><strong>Infrastructure development:</strong> Roads, powerlines, and other linear infrastructure fragment habitats</li>
+                    <li><strong>Hydrological changes:</strong> Dams, drainage, and water extraction alter wetland ecosystems</li>
+                </ul>
+            </div>
+
+            <div class="tas-example">
+                <h3><i class="fas fa-map-marker-alt" aria-hidden="true"></i> TAS Example: Fox Incursion</h3>
+                <p>Red foxes made their way into Tasmania in the 2000s, posing a catastrophic threat to native wildlife. A comprehensive eradication program was established, involving baiting, monitoring, and community reporting.</p>
+            </div>
+
+            <div class="interactive-box">
+                <h4><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Threat Identification Practice</h4>
+                <p><strong>Scenario:</strong> You're inspecting a site where a new walking track is proposed through native vegetation. What potential threats should you look for?</p>
+
+                <div class="form-group">
+                    <label>Select all that apply:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="threat1" value="compaction">
+                            <label for="threat1">Soil compaction</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="threat2" value="weeds">
+                            <label for="threat2">Weed invasion</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="threat3" value="fragmentation">
+                            <label for="threat3">Habitat fragmentation</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="threat4" value="erosion">
+                            <label for="threat4">Erosion risk</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="threat5" value="pollution">
+                            <label for="threat5">Water pollution</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn" id="check-threats"><i class="fas fa-check" aria-hidden="true"></i> Check Answers</button>
+                <div class="feedback" id="threats-feedback" role="alert"></div>
+            </div>
+
+            <button class="btn" onclick="switchTab('summary')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Summary</button>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary" class="content-section" role="tabpanel" hidden>
+            <h2>Module Summary</h2>
+
+            <div class="summary-box">
+                <h3><i class="fas fa-key" aria-hidden="true"></i> Key Takeaways</h3>
+                <ul>
+                    <li>Tasmania contains diverse ecosystems of global significance</li>
+                    <li>Many species are endemic and found nowhere else on Earth</li>
+                    <li>Ecosystems face threats from climate change, invasive species, and habitat loss</li>
+                    <li>Understanding ecosystem types is essential for effective site inspections</li>
+                    <li>Gondwanan heritage makes Tasmanian ecosystems particularly important</li>
+                </ul>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h3>Module Completion</h3>
+                <p>Congratulations on completing Module 2!</p>
+                <button class="btn" id="complete-module"><i class="fas fa-award" aria-hidden="true"></i> Mark Module Complete</button>
+                <div class="feedback" id="complete-feedback" role="alert"></div>
+                <div style="margin-top: var(--spacing-md);">
+                    <a href="module3.html" class="btn"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Module: Cultural Heritage</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer role="contentinfo">
+            <p>AHCECR309 - Conduct an ecological and cultural site inspection prior to works.</p>
+            <p>Developed by Jay Rowley | Tasmanian Context | © 2025</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        // Threat identification
+        document.getElementById('check-threats')?.addEventListener('click', () => {
+            const checkboxes = document.querySelectorAll('#threat1, #threat2, #threat3, #threat4, #threat5');
+            const feedback = document.getElementById('threats-feedback');
+            let allChecked = true;
+            let anyChecked = false;
+
+            checkboxes.forEach(cb => {
+                if (cb.checked) anyChecked = true;
+                if (!cb.checked) allChecked = false;
+            });
+
+            if (!anyChecked) {
+                showFeedback(feedback, 'Please select at least one threat.', 'incorrect');
+                return;
+            }
+
+            if (allChecked) {
+                const completed = completeActivity('threat_identification', 'module2', 5);
+                showFeedback(feedback, 'Correct! All these threats are potential concerns. ' + (completed ? 'Progress updated!' : ''), 'correct');
+            } else {
+                showFeedback(feedback, 'Not quite. All these threats are potential concerns in this scenario.', 'incorrect');
+            }
+        });
+
+// Complete Module - FIXED
+document.getElementById('complete-module')?.addEventListener('click', () => {
+    const feedback = document.getElementById('complete-feedback');
+    setModuleProgress('module2', 100);  // ← Changed from 'moduleX' to 'module2'
+    
+    // Add animation to the completion card
+    const completionCard = document.querySelector('.card:last-child');
+    if (completionCard) {
+        completionCard.classList.add('module-complete');
+        setTimeout(() => {
+            completionCard.classList.remove('module-complete');
+        }, 1000);
+    }
+    
+    showFeedback(feedback, '🎉 Module 2 Complete!', 'correct');
+    document.getElementById('complete-module').disabled = true;
+});
+
+        updateAllProgressBars();
+    </script>
+</body>
+</html>

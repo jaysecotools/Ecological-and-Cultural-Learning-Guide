@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 - Ecological Site Inspection Fundamentals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-module="module1">
+    <div class="container">
+        <!-- Header -->
+        <header class="module1">
+            <h1><i class="fas fa-leaf" aria-hidden="true"></i> Ecological Site Inspection Fundamentals</h1>
+            <p>Tasmanian Context - AHCECR309</p>
+
+            <div class="header-progress">
+                <div class="progress-info">
+                    <span>Module Progress: <strong id="module-progress-text">0%</strong></span>
+                    <span>Overall Progress: <strong id="overall-progress-text">0%</strong></span>
+                    <a href="../index.html" class="btn btn-sm" style="background: rgba(255,255,255,0.2); padding: 6px 16px;">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Main
+                    </a>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress" id="module-progress-bar" style="width: 0%"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="separator">/</span>
+            <a href="../index.html#learning">Learning Modules</a>
+            <span class="separator">/</span>
+            <span class="current">Module 1: Ecological Site Inspection Fundamentals</span>
+        </nav>
+
+        <!-- Module Content -->
+        <div class="learning-objectives">
+            <h3><i class="fas fa-bullseye" aria-hidden="true"></i> Learning Objectives</h3>
+            <p>By the end of this module, you will be able to:</p>
+            <ul>
+                <li>Understand the purpose and importance of ecological site inspections</li>
+                <li>Identify key components of a comprehensive site inspection</li>
+                <li>Recognize Tasmania's unique ecological features and conservation values</li>
+                <li>Apply appropriate assessment techniques for different ecosystem types</li>
+                <li>Document findings effectively using standard protocols</li>
+            </ul>
+        </div>
+
+        <!-- Content sections with tabs -->
+        <nav class="nav-tabs" role="tablist" style="margin-bottom: var(--spacing-lg);">
+            <button class="nav-tab active" role="tab" aria-selected="true" aria-controls="overview" data-target="overview" tabindex="0">
+                <i class="fas fa-home" aria-hidden="true"></i>
+                <span>Overview</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="concepts" data-target="concepts" tabindex="0">
+                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                <span>Key Concepts</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="process" data-target="process" tabindex="0">
+                <i class="fas fa-sitemap" aria-hidden="true"></i>
+                <span>Process</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="practice" data-target="practice" tabindex="0">
+                <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                <span>Practice</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="summary" data-target="summary" tabindex="0">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Summary</span>
+            </button>
+        </nav>
+
+        <!-- Overview -->
+        <section id="overview" class="content-section active" role="tabpanel">
+            <h2>What is Ecological Site Inspection?</h2>
+            <p>Ecological site inspection is a systematic process of assessing and documenting the ecological values, conditions, and potential impacts of a specific area. In Tasmania, these inspections are crucial for:</p>
+            <ul>
+                <li>Conservation planning and management</li>
+                <li>Development assessment and approval processes</li>
+                <li>Monitoring ecosystem health and changes over time</li>
+                <li>Identifying threatened species and communities</li>
+                <li>Informing restoration and rehabilitation efforts</li>
+            </ul>
+
+            <div class="card" style="margin-top: var(--spacing-lg);">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                    <h3>Why Tasmania is Special</h3>
+                </div>
+                <p>Tasmania's unique ecological characteristics require specialized inspection approaches:</p>
+                <ul>
+                    <li>World Heritage Areas with exceptional universal value</li>
+                    <li>High number of endemic species found nowhere else on Earth</li>
+                    <li>Diverse ecosystems ranging from alpine to coastal environments</li>
+                    <li>Significant Aboriginal cultural heritage values intertwined with ecological values</li>
+                    <li>Specific legislative requirements under Tasmanian law</li>
+                </ul>
+            </div>
+
+            <button class="btn" onclick="switchTab('concepts')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Key Concepts</button>
+        </section>
+
+        <!-- Key Concepts -->
+        <section id="concepts" class="content-section" role="tabpanel" hidden>
+            <h2>Key Concepts in Ecological Site Inspection</h2>
+
+            <div class="key-concept">
+                <h4><i class="fas fa-seedling" aria-hidden="true"></i> TasVeg Vegetation Classification</h4>
+                <p>TasVeg is Tasmania's official vegetation classification system that describes and maps native vegetation communities across the state. Understanding TasVeg is essential for:</p>
+                <ul>
+                    <li>Identifying the conservation significance of vegetation communities</li>
+                    <li>Assessing vegetation quality and condition against benchmark descriptions</li>
+                    <li>Setting appropriate management objectives for different vegetation types</li>
+                    <li>Determining offset requirements for development applications</li>
+                </ul>
+            </div>
+
+            <div class="key-concept">
+                <h4><i class="fas fa-search" aria-hidden="true"></i> Rapid Habitat Assessment</h4>
+                <p>Rapid habitat assessment techniques allow for efficient evaluation of ecological values during site inspections. Key components include:</p>
+                <ul>
+                    <li>Vegetation structure and composition assessment</li>
+                    <li>Habitat features evaluation (logs, rocks, hollows)</li>
+                    <li>Weed and disturbance mapping</li>
+                    <li>Condition scoring using standardized metrics</li>
+                </ul>
+            </div>
+
+            <div class="key-concept">
+                <h4><i class="fas fa-balance-scale" aria-hidden="true"></i> Legislation and Policy Framework</h4>
+                <p>Ecological site inspections in Tasmania must consider multiple legislative instruments:</p>
+                <ul>
+                    <li><strong>Environment Protection and Biodiversity Conservation Act 1999</strong> (Commonwealth)</li>
+                    <li><strong>Nature Conservation Act 2002</strong> (Tasmania)</li>
+                    <li><strong>Threatened Species Protection Act 1995</strong> (Tasmania)</li>
+                    <li>Various local government planning schemes</li>
+                </ul>
+            </div>
+
+            <div class="interactive-box">
+                <h4><i class="fas fa-question-circle" aria-hidden="true"></i> Knowledge Check</h4>
+                <p>What is the primary purpose of Tasmania's vegetation classification system (TasVeg)?</p>
+                <div class="quiz-question">
+                    <div class="quiz-option" data-correct="false" role="radio" tabindex="0">To create an inventory of all plant species in Tasmania</div>
+                    <div class="quiz-option" data-correct="true" role="radio" tabindex="0">To provide a standard framework for classifying, assessing, and managing native vegetation communities</div>
+                    <div class="quiz-option" data-correct="false" role="radio" tabindex="0">To restrict development in areas with high biodiversity</div>
+                    <div class="quiz-option" data-correct="false" role="radio" tabindex="0">To document Aboriginal cultural connections to vegetation</div>
+                    <button class="btn check-answer" data-question="concepts-quiz"><i class="fas fa-check" aria-hidden="true"></i> Check Answer</button>
+                    <div class="feedback correct" style="display: none;">Correct! TasVeg provides a standardized framework for classifying, assessing, and managing native vegetation communities.</div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('process')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Process</button>
+        </section>
+
+        <!-- Process -->
+        <section id="process" class="content-section" role="tabpanel" hidden>
+            <h2>Inspection Process Overview</h2>
+            <p>A comprehensive ecological site inspection typically involves these key steps:</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+                    <h3>Step 1: Pre-inspection Planning</h3>
+                </div>
+                <ul>
+                    <li>Review existing information, maps, and data</li>
+                    <li>Check the Natural Values Atlas for listed species</li>
+                    <li>Review the Tasmanian Heritage Register</li>
+                    <li>Identify access requirements and safety considerations</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <h3>Step 2: Site Assessment</h3>
+                </div>
+                <ul>
+                    <li>Document vegetation communities using TasVeg codes</li>
+                    <li>Identify significant flora and fauna species</li>
+                    <li>Record habitat features and condition</li>
+                    <li>Identify threats and disturbances</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                    <h3>Step 3: Threat Identification</h3>
+                </div>
+                <ul>
+                    <li>Weed species present and distribution</li>
+                    <li>Erosion and soil degradation</li>
+                    <li>Pest animal activity</li>
+                    <li>Human impacts (rubbish, tracks, damage)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-camera" aria-hidden="true"></i>
+                    <h3>Step 4: Documentation</h3>
+                </div>
+                <ul>
+                    <li>Standardized data collection forms</li>
+                    <li>Geotagged photography with scale references</li>
+                    <li>GPS mapping of boundaries and features</li>
+                    <li>Detailed field notes with timestamps</li>
+                </ul>
+            </div>
+
+            <div class="field-note">
+                <h4><i class="fas fa-hard-hat" aria-hidden="true"></i> In the Field</h4>
+                <p>When you're conducting a real site inspection, you'll need to identify the TasVeg community type within the first 15 minutes of arriving on site. This helps you determine which species you might encounter and what threats to look for.</p>
+                <p><strong>Tip:</strong> Always carry a TasVeg field guide and a hand lens for close-up identification of diagnostic species.</p>
+            </div>
+
+            <button class="btn" onclick="switchTab('practice')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Practice</button>
+        </section>
+
+        <!-- Practice -->
+        <section id="practice" class="content-section" role="tabpanel" hidden>
+            <h2>Practice Activity</h2>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                    <h3>Inspection Checklist Builder</h3>
+                </div>
+                <p>Create a customized inspection checklist for different Tasmanian ecosystem types based on TasVeg classification:</p>
+
+                <div class="form-group">
+                    <label for="ecosystem-type">Select TasVeg Community Type:</label>
+                    <select id="ecosystem-type">
+                        <option value="">Select ecosystem...</option>
+                        <option value="rainforest">Rainforest (RFR)</option>
+                        <option value="alpine">Alpine Vegetation (AVG)</option>
+                        <option value="grassy">Grassy Woodland (GWL)</option>
+                        <option value="coastal">Coastal Heathland (CCH)</option>
+                        <option value="wetland">Freshwater Wetland (WAT)</option>
+                        <option value="dry-eucalypt">Dry Eucalypt Forest (DEG)</option>
+                        <option value="wet-eucalypt">Wet Eucalypt Forest (WEF)</option>
+                    </select>
+                </div>
+
+                <div class="inspection-checklist">
+                    <h4>Select Assessment Components:</h4>
+
+                    <div style="margin: var(--spacing-md) 0; padding: var(--spacing-md); border-left: 3px solid var(--primary); background: var(--gray-50); border-radius: var(--radius-sm);">
+                        <h5><i class="fas fa-tree" aria-hidden="true"></i> Vegetation Structure</h5>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item1">
+                            <label for="item1">Canopy composition and dominant species</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item2">
+                            <label for="item2">Understory diversity and density</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item3">
+                            <label for="item3">Ground cover percentage and composition</label>
+                        </div>
+                    </div>
+
+                    <div style="margin: var(--spacing-md) 0; padding: var(--spacing-md); border-left: 3px solid var(--secondary); background: var(--gray-50); border-radius: var(--radius-sm);">
+                        <h5><i class="fas fa-leaf" aria-hidden="true"></i> Flora Assessment</h5>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item6">
+                            <label for="item6">Presence of threatened plant species</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item7">
+                            <label for="item7">Weed species abundance and distribution</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item8">
+                            <label for="item8">Regeneration of key species</label>
+                        </div>
+                    </div>
+
+                    <div style="margin: var(--spacing-md) 0; padding: var(--spacing-md); border-left: 3px solid var(--module2-color); background: var(--gray-50); border-radius: var(--radius-sm);">
+                        <h5><i class="fas fa-paw" aria-hidden="true"></i> Fauna Habitat</h5>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item11">
+                            <label for="item11">Evidence of fauna activity (scats, diggings, nests)</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item12">
+                            <label for="item12">Potential habitat for threatened species</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item13">
+                            <label for="item13">Food sources availability</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: var(--spacing-md); flex-wrap: wrap; margin-top: var(--spacing-md);">
+                    <button class="btn" id="select-all"><i class="fas fa-check-square" aria-hidden="true"></i> Select All</button>
+                    <button class="btn btn-outline" id="deselect-all"><i class="fas fa-times-circle" aria-hidden="true"></i> Deselect All</button>
+                    <button class="btn" id="check-checklist"><i class="fas fa-check" aria-hidden="true"></i> Check Selections</button>
+                </div>
+                <div class="feedback" id="checklist-feedback" role="alert"></div>
+            </div>
+
+            <button class="btn" onclick="switchTab('summary')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Summary</button>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary" class="content-section" role="tabpanel" hidden>
+            <h2>Module Summary</h2>
+
+            <div class="summary-box">
+                <h3><i class="fas fa-key" aria-hidden="true"></i> Key Principles</h3>
+                <ul>
+                    <li>Ecological site inspections require systematic approach and thorough documentation</li>
+                    <li>Understanding Tasmanian ecosystems and their conservation values is essential</li>
+                    <li>TasVeg provides the standard classification system for vegetation communities</li>
+                    <li>Legislative frameworks guide protection requirements for significant values</li>
+                    <li>Both ecological and cultural values must be considered in assessments</li>
+                </ul>
+            </div>
+
+            <div class="summary-box">
+                <h3><i class="fas fa-tools" aria-hidden="true"></i> Essential Skills</h3>
+                <ul>
+                    <li>Vegetation identification and TasVeg community classification</li>
+                    <li>Threatened species habitat recognition</li>
+                    <li>Weed and pest identification</li>
+                    <li>Condition assessment techniques</li>
+                    <li>Standardized data recording methods</li>
+                </ul>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h3>Module Completion</h3>
+                <p>Congratulations on completing Module 1!</p>
+                <p>You've learned about the key concepts, Tasmanian context, and practical approaches to ecological site assessment.</p>
+                <button class="btn" id="complete-module"><i class="fas fa-award" aria-hidden="true"></i> Mark Module Complete</button>
+                <div class="feedback" id="complete-feedback" role="alert"></div>
+                <div style="margin-top: var(--spacing-md);">
+                    <a href="module2.html" class="btn"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Module: Tasmanian Ecosystems</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer role="contentinfo">
+            <p>AHCECR309 - Conduct an ecological and cultural site inspection prior to works.</p>
+            <p>Developed by Jay Rowley | Tasmanian Context | © 2025</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        // Page-specific JavaScript
+
+        // Select All
+        document.getElementById('select-all')?.addEventListener('click', () => {
+            document.querySelectorAll('.checklist-item input[type="checkbox"]').forEach(cb => cb.checked = true);
+        });
+
+        // Deselect All
+        document.getElementById('deselect-all')?.addEventListener('click', () => {
+            document.querySelectorAll('.checklist-item input[type="checkbox"]').forEach(cb => cb.checked = false);
+        });
+
+        // Checklist Check
+        document.getElementById('check-checklist')?.addEventListener('click', () => {
+            const checked = document.querySelectorAll('.checklist-item input[type="checkbox"]:checked').length;
+            const total = document.querySelectorAll('.checklist-item input[type="checkbox"]').length;
+            const feedback = document.getElementById('checklist-feedback');
+
+            if (checked === 0) {
+                showFeedback(feedback, 'Please select at least one checklist item.', 'incorrect');
+                return;
+            }
+
+            const completed = completeActivity('checklist_practice', 'module1', 5);
+            showFeedback(feedback, `You selected ${checked} of ${total} items. ${completed ? 'Progress updated!' : ''}`, 'correct');
+        });
+
+// Complete Module - FIXED
+document.getElementById('complete-module')?.addEventListener('click', () => {
+    const feedback = document.getElementById('complete-feedback');
+    setModuleProgress('module1', 100);  // ← Changed from 'moduleX' to 'module1'
+    
+    // Add animation to the completion card
+    const completionCard = document.querySelector('.card:last-child');
+    if (completionCard) {
+        completionCard.classList.add('module-complete');
+        setTimeout(() => {
+            completionCard.classList.remove('module-complete');
+        }, 1000);
+    }
+    
+    showFeedback(feedback, '🎉 Module 1 Complete!', 'correct');
+    document.getElementById('complete-module').disabled = true;
+});
+
+        // Initialize
+        updateAllProgressBars();
+    </script>
+</body>
+</html>

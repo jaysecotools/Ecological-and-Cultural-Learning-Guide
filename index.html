@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHCECR309 - Ecological & Cultural Site Inspection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="container">
+        <!-- Header -->
+        <header role="banner">
+            <h1><i class="fas fa-tree" aria-hidden="true"></i> Ecological & Cultural Site Inspection</h1>
+            <p>AHCECR309 - Conservation and Ecosystem Management (Tasmanian Context)</p>
+            
+            <div class="header-progress">
+                <div class="progress-info">
+                    <span>Course Progress: <strong id="progress-text">0%</strong> Complete</span>
+                    <span><i class="fas fa-check-circle" aria-hidden="true"></i> <span id="completed-count">0</span> of <span id="total-count">5</span> modules completed</span>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress" id="main-progress" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 15px;">
+                <a href="UserGuide.html" class="btn" style="background: linear-gradient(135deg, var(--module1-color), var(--primary)); padding: 12px 28px; font-weight: 600; box-shadow: 0 4px 12px rgba(0, 105, 137, 0.3);">
+                    <i class="fas fa-book-open" aria-hidden="true"></i> User Guide
+                </a>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs" role="tablist" aria-label="Course Sections">
+            <button class="nav-tab active" role="tab" aria-selected="true" aria-controls="learning" data-target="learning" tabindex="0">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                <span>Learning Modules</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="interactive" data-target="interactive" tabindex="0">
+                <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                <span>Activities</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="inspection" data-target="inspection" tabindex="0">
+                <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                <span>Inspection Tool</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="revision" data-target="revision" tabindex="0">
+                <i class="fas fa-brain" aria-hidden="true"></i>
+                <span>Revision & Quiz</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="resources" data-target="resources" tabindex="0">
+                <i class="fas fa-book-open" aria-hidden="true"></i>
+                <span>Resources</span>
+            </button>
+        </nav>
+
+        <!-- Learning Modules Section -->
+        <section id="learning" class="content-section active" role="tabpanel" aria-labelledby="learning-tab">
+            <h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> Learning Modules</h2>
+            <p>Explore the following modules to learn about ecological and cultural site inspections in Tasmania. Complete them in order for the best learning experience.</p>
+
+            <div class="module-grid">
+                <!-- Module 1 -->
+                <div class="module-card">
+                    <div class="module-img" style="background-image: linear-gradient(135deg, var(--module1-color), var(--module1-color) 80%, var(--primary));">
+                        <div class="module-overlay"></div>
+                        <div class="module-icon"><i class="fas fa-leaf" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="module-content">
+                        <h3>Introduction to Ecological Site Inspection</h3>
+                        <p>Learn the fundamentals of ecological site inspections and their importance in conservation work.</p>
+                        <div>
+                            <span class="badge badge-module1">15 min</span>
+                            <span class="badge badge-secondary">Beginner</span>
+                            <span class="badge" id="module1-badge" style="background: var(--gray-200); color: var(--text-dark);">Not started</span>
+                        </div>
+                        <a href="modules/module1.html" target="_blank" class="btn btn-sm" style="margin-top: 12px;">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Open Module
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-card">
+                    <div class="module-img" style="background-image: linear-gradient(135deg, var(--module2-color), var(--module2-color) 80%, var(--primary-dark));">
+                        <div class="module-overlay"></div>
+                        <div class="module-icon"><i class="fas fa-mountain" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="module-content">
+                        <h3>Tasmanian Ecosystems</h3>
+                        <p>Explore Tasmania's unique ecosystems and their conservation significance.</p>
+                        <div>
+                            <span class="badge badge-module2">20 min</span>
+                            <span class="badge badge-secondary">Intermediate</span>
+                            <span class="badge" id="module2-badge" style="background: var(--gray-200); color: var(--text-dark);">Not started</span>
+                        </div>
+                        <a href="modules/module2.html" target="_blank" class="btn btn-sm" style="margin-top: 12px;">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Open Module
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module-card">
+                    <div class="module-img" style="background-image: linear-gradient(135deg, var(--module3-color), var(--module3-color) 80%, var(--primary-dark));">
+                        <div class="module-overlay"></div>
+                        <div class="module-icon"><i class="fas fa-monument" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="module-content">
+                        <h3>Cultural Heritage Considerations</h3>
+                        <p>Understand how to identify and protect cultural heritage sites during inspections.</p>
+                        <div>
+                            <span class="badge badge-module3">25 min</span>
+                            <span class="badge badge-warning">Advanced</span>
+                            <span class="badge" id="module3-badge" style="background: var(--gray-200); color: var(--text-dark);">Not started</span>
+                        </div>
+                        <a href="modules/module3.html" target="_blank" class="btn btn-sm" style="margin-top: 12px;">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Open Module
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module-card">
+                    <div class="module-img" style="background-image: linear-gradient(135deg, var(--module4-color), var(--module4-color) 80%, var(--primary-dark));">
+                        <div class="module-overlay"></div>
+                        <div class="module-icon"><i class="fas fa-gavel" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="module-content">
+                        <h3>Legislative Framework</h3>
+                        <p>Learn about the laws and regulations governing site inspections in Tasmania.</p>
+                        <div>
+                            <span class="badge badge-module4">18 min</span>
+                            <span class="badge badge-secondary">Intermediate</span>
+                            <span class="badge" id="module4-badge" style="background: var(--gray-200); color: var(--text-dark);">Not started</span>
+                        </div>
+                        <a href="modules/module4.html" target="_blank" class="btn btn-sm" style="margin-top: 12px;">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Open Module
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5 - NEW -->
+                <div class="module-card">
+                    <div class="module-img" style="background-image: linear-gradient(135deg, #00897B, #00897B 80%, var(--primary-dark));">
+                        <div class="module-overlay"></div>
+                        <div class="module-icon"><i class="fas fa-sitemap" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="module-content">
+                        <h3>Conducting the Inspection</h3>
+                        <p>Learn the complete workflow - from planning and preparation to reporting and follow-up.</p>
+                        <div>
+                            <span class="badge" style="background: #00897B; color: white;">25 min</span>
+                            <span class="badge badge-secondary">Practical</span>
+                            <span class="badge" id="module5-badge" style="background: var(--gray-200); color: var(--text-dark);">Not started</span>
+                        </div>
+                        <a href="modules/module5.html" target="_blank" class="btn btn-sm" style="margin-top: 12px;">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Open Module
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="visual-divider" aria-hidden="true">
+
+            <!-- Video Section -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-video" aria-hidden="true"></i>
+                    <h3>Video Lesson: Conducting Site Inspections</h3>
+                </div>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: var(--radius); overflow: hidden; background: var(--gray-200);">
+                    <iframe
+                        src="https://www.youtube.com/embed/XQxpGRWlVcg?rel=0&modestbranding=1&autohide=1&showinfo=0"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        title="Video Lesson: Conducting Site Inspections"
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <p style="margin-top: 15px;">Watch this comprehensive video guide to learn the step-by-step process of conducting ecological and cultural site inspections.</p>
+                <button class="btn btn-outline" id="video-watched-btn" aria-label="Mark video as watched">
+                    <i class="fas fa-check" aria-hidden="true"></i> Mark as Watched
+                </button>
+                <div id="video-feedback" class="feedback" style="margin-top: 10px;"></div>
+            </div>
+
+            <div class="tip-box" role="complementary" aria-label="Learning tip">
+                <p><i class="fas fa-lightbulb" aria-hidden="true"></i> <strong>Tip:</strong> Complete modules in order for the best learning experience. Each module builds on concepts from the previous one.</p>
+            </div>
+        </section>
+
+        <!-- Interactive Activities Section -->
+        <section id="interactive" class="content-section" role="tabpanel" aria-labelledby="interactive-tab" hidden>
+            <h2><i class="fas fa-puzzle-piece" aria-hidden="true"></i> Interactive Activities</h2>
+            <p>Test your knowledge with these interactive exercises and simulations.</p>
+
+            <!-- Species Identification -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <h3>Tasmanian Species Identification</h3>
+                </div>
+                <p>Learn to identify key Tasmanian flora and fauna species that may be encountered during site inspections.</p>
+
+                <div class="interactive-box">
+                    <div class="species-card">
+                        <div class="species-img" style="background-image: url('images/pademelon.jpg'); background-size: cover; background-position: center; background-color: var(--gray-200); min-height: 200px;" aria-label="Photograph of a Tasmanian Pademelon">
+                        </div>
+                        <div class="species-info">
+                            <h4>What species is this?</h4>
+                            <p><strong>Characteristics:</strong> Small, stocky marsupial with a short tail, thick brown fur, and a distinctive rounded rump.</p>
+                            <div class="form-group" style="margin-bottom: var(--spacing-md);">
+                                <select id="species-select" aria-label="Select species" data-correct="pademelon">
+                                    <option value="">Select a species...</option>
+                                    <option value="pademelon">Tasmanian Pademelon</option>
+                                    <option value="devil">Tasmanian Devil</option>
+                                    <option value="quoll">Eastern Quoll</option>
+                                    <option value="gum">Eucalyptus globulus</option>
+                                    <option value="fern">Dicksonia antarctica</option>
+                                </select>
+                            </div>
+                            <button class="btn" id="check-species"><i class="fas fa-check" aria-hidden="true"></i> Check Answer</button>
+                            <div class="feedback" id="species-feedback" role="alert"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ecosystem Mapping -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                    <h3>TasVeg Ecosystem Mapping</h3>
+                </div>
+                <p>Practice identifying different TasVeg ecosystem types. Click on the marked area to learn more about it, then select the ecosystem type you think it represents.</p>
+
+                <div class="interactive-box">
+                    <div id="map" class="site-map" aria-label="Interactive map of Tasmania" role="application">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map" aria-hidden="true"></i>
+                            <p>Map loading... <span id="map-status">Initializing</span></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ecosystem-select">Select the predominant TasVeg ecosystem type in the marked area:</label>
+                        <select id="ecosystem-select" data-correct="rainforest">
+                            <option value="">Select ecosystem type...</option>
+                            <option value="rainforest">Cool Temperate Rainforest</option>
+                            <option value="wet-eucalypt">Wet Eucalypt Forest</option>
+                            <option value="dry-eucalypt">Dry Eucalypt Forest</option>
+                            <option value="alpine">Alpine Complex</option>
+                            <option value="coastal">Coastal Vegetation</option>
+                        </select>
+                    </div>
+                    <button class="btn" id="check-ecosystem"><i class="fas fa-check" aria-hidden="true"></i> Check Answer</button>
+                    <div class="feedback" id="ecosystem-feedback" role="alert"></div>
+                </div>
+            </div>
+
+            <!-- Threat Identification -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                    <h3>Threat Identification</h3>
+                </div>
+                <p>Identify potential ecological threats in different scenarios.</p>
+
+                <div class="interactive-box">
+                    <p><strong>Scenario:</strong> You're inspecting a site where a new walking track is proposed through a patch of native vegetation. What potential threats should you look for?</p>
+
+                    <div class="form-group">
+                        <label>Select all that apply:</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="threat1" value="compaction">
+                                <label for="threat1">Soil compaction</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="threat2" value="weeds">
+                                <label for="threat2">Weed invasion</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="threat3" value="fragmentation">
+                                <label for="threat3">Habitat fragmentation</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="threat4" value="erosion">
+                                <label for="threat4">Erosion risk</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="threat5" value="pollution">
+                                <label for="threat5">Water pollution</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn" id="check-threats"><i class="fas fa-check" aria-hidden="true"></i> Check Answers</button>
+                    <div class="feedback" id="threats-feedback" role="alert"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Site Inspection Tool Section -->
+        <section id="inspection" class="content-section" role="tabpanel" aria-labelledby="inspection-tab" hidden>
+            <h2><i class="fas fa-clipboard-check" aria-hidden="true"></i> Site Inspection Tool</h2>
+            <p>Use this interactive form to practice conducting ecological and cultural site inspections.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    <h3>Site Details</h3>
+                </div>
+                <div class="form-group">
+                    <label for="site-name">Site Name/Location <span style="color: var(--danger);">*</span></label>
+                    <input type="text" id="site-name" placeholder="Enter site name or location" aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="inspection-date">Inspection Date</label>
+                    <input type="date" id="inspection-date">
+                </div>
+
+                <div class="form-group">
+                    <label for="weather-conditions">Weather Conditions</label>
+                    <select id="weather-conditions">
+                        <option value="">Select weather condition...</option>
+                        <option value="sunny">Sunny</option>
+                        <option value="cloudy">Cloudy</option>
+                        <option value="rainy">Rainy</option>
+                        <option value="windy">Windy</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                    <h3>Ecological Assessment</h3>
+                </div>
+
+                <div class="form-group">
+                    <label>TasVeg Ecosystem Types Present</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="eco1" value="rainforest">
+                            <label for="eco1">Cool Temperate Rainforest</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="eco2" value="wet-eucalypt">
+                            <label for="eco2">Wet Eucalypt Forest</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="eco3" value="dry-eucalypt">
+                            <label for="eco3">Dry Eucalypt Forest</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="eco4" value="alpine">
+                            <label for="eco4">Alpine Complex</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="eco5" value="coastal">
+                            <label for="eco5">Coastal Vegetation</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="vegetation-condition">Vegetation Condition</label>
+                    <select id="vegetation-condition">
+                        <option value="">Select condition...</option>
+                        <option value="pristine">Pristine/Undisturbed</option>
+                        <option value="good">Good</option>
+                        <option value="moderate">Moderately Disturbed</option>
+                        <option value="degraded">Degraded</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="threats-observed">Threats Observed</label>
+                    <textarea id="threats-observed" rows="3" placeholder="Describe any threats observed (weeds, erosion, etc.)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="significant-species">Significant Species Observed</label>
+                    <textarea id="significant-species" rows="3" placeholder="List any significant species observed"></textarea>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-monument" aria-hidden="true"></i>
+                    <h3>Cultural Heritage Assessment</h3>
+                </div>
+
+                <div class="form-group">
+                    <label>Are there any visible cultural heritage features?</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="heritage-yes" name="heritage" value="yes">
+                            <label for="heritage-yes">Yes</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="heritage-no" name="heritage" value="no">
+                            <label for="heritage-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="heritage-description">If yes, describe the features</label>
+                    <textarea id="heritage-description" rows="3" placeholder="Describe any cultural heritage features observed"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Is the area known to have Aboriginal heritage significance?</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="aboriginal-yes" name="aboriginal" value="yes">
+                            <label for="aboriginal-yes">Yes</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="aboriginal-no" name="aboriginal" value="no">
+                            <label for="aboriginal-no">No</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="aboriginal-unknown" name="aboriginal" value="unknown">
+                            <label for="aboriginal-unknown">Unknown</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                    <h3>Risk Assessment</h3>
+                </div>
+
+                <div class="form-group">
+                    <label for="erosion-risk">Erosion Risk</label>
+                    <select id="erosion-risk">
+                        <option value="">Select risk level...</option>
+                        <option value="low">Low</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="weed-risk">Weed Invasion Risk</label>
+                    <select id="weed-risk">
+                        <option value="">Select risk level...</option>
+                        <option value="low">Low</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="recommendations">Recommendations</label>
+                    <textarea id="recommendations" rows="4" placeholder="Enter recommendations based on your inspection"></textarea>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: var(--spacing-md); flex-wrap: wrap;">
+                <button class="btn" id="submit-inspection"><i class="fas fa-paper-plane" aria-hidden="true"></i> Submit Inspection Report</button>
+                <button class="btn btn-outline" id="save-draft"><i class="fas fa-save" aria-hidden="true"></i> Save as Draft</button>
+            </div>
+            <div class="feedback" id="inspection-feedback" role="alert"></div>
+        </section>
+
+        <!-- Revision & Quiz Section -->
+        <section id="revision" class="content-section" role="tabpanel" aria-labelledby="revision-tab" hidden>
+            <h2><i class="fas fa-brain" aria-hidden="true"></i> Revision & Quiz</h2>
+            <p>Test your knowledge of ecological and cultural site inspection procedures.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-question-circle" aria-hidden="true"></i>
+                    <h3>Quick Quiz</h3>
+                </div>
+
+                <div class="interactive-box">
+                    <div class="quiz-question" id="question1">
+                        <h4>Question 1: What is the Tasmanian vegetation classification system called?</h4>
+                        <div class="quiz-option" data-correct="false" role="radio" tabindex="0">A. EVC (Ecological Vegetation Class)</div>
+                        <div class="quiz-option" data-correct="true" role="radio" tabindex="0">B. TasVeg</div>
+                        <div class="quiz-option" data-correct="false" role="radio" tabindex="0">C. VegClass Tasmania</div>
+                        <div class="quiz-option" data-correct="false" role="radio" tabindex="0">D. Tasmanian Flora System</div>
+                        <button class="btn btn-sm check-answer" data-question="question1"><i class="fas fa-check" aria-hidden="true"></i> Check Answer</button>
+                        <div class="feedback correct" style="display: none;">Correct! TasVeg is the vegetation classification system used in Tasmania.</div>
+                    </div>
+
+                    <div class="quiz-question" id="question2">
+                        <h4>Question 2: Which legislation primarily protects Aboriginal heritage in Tasmania?</h4>
+                        <div class="quiz-option" data-correct="false" role="radio" tabindex="0">A. Environmental Protection Act</div>
+                        <div class="quiz-option" data-correct="true" role="radio" tabindex="0">B. Aboriginal Heritage Act 1975</div>
+                        <div class="quiz-option" data-correct="false" role="radio" tabindex="0">C. Nature Conservation Act</div>
+                        <div class="quiz-option" data-correct="false" role="radio" tabindex="0">D. Land Use Planning Act</div>
+                        <button class="btn btn-sm check-answer" data-question="question2"><i class="fas fa-check" aria-hidden="true"></i> Check Answer</button>
+                        <div class="feedback correct" style="display: none;">Correct! The Aboriginal Heritage Act 1975 is the primary legislation protecting Aboriginal heritage in Tasmania.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flashcards -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-sticky-note" aria-hidden="true"></i>
+                    <h3>Flashcards</h3>
+                </div>
+                <p>Use these flashcards to revise key concepts and terminology.</p>
+
+                <div class="interactive-box" style="text-align: center;">
+                    <div id="flashcard-content" style="min-height: 100px; display: flex; justify-content: center; align-items: center; background-color: var(--light); border-radius: var(--radius); padding: var(--spacing-lg);">
+                        <h4>What does TasVeg stand for?</h4>
+                    </div>
+                    <div id="flashcard-answer" class="feedback correct" style="display: none; text-align: left;">
+                        <strong>Tasmanian Vegetation Mapping and Classification System</strong> - the standard vegetation classification system used in Tasmania.
+                    </div>
+                    <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap; margin-top: var(--spacing-md);">
+                        <button class="btn btn-outline btn-sm" id="prev-flashcard"><i class="fas fa-arrow-left" aria-hidden="true"></i> Previous</button>
+                        <button class="btn" id="reveal-flashcard"><i class="fas fa-eye" aria-hidden="true"></i> Reveal Answer</button>
+                        <button class="btn btn-outline btn-sm" id="next-flashcard">Next <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matching Activity -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                    <h3>Key Terminology</h3>
+                </div>
+
+                <div class="interactive-box">
+                    <p><strong>Match the terms to their definitions:</strong></p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin: var(--spacing-md) 0;">
+                        <div style="padding: var(--spacing-md); background: var(--gray-100); border-radius: var(--radius-sm);">
+                            <p><strong>1. TasVeg</strong></p>
+                        </div>
+                        <div style="padding: var(--spacing-md); background: var(--gray-100); border-radius: var(--radius-sm);">
+                            <p><strong>A.</strong> The original vegetation that would have existed at a site</p>
+                        </div>
+
+                        <div style="padding: var(--spacing-md); background: var(--gray-100); border-radius: var(--radius-sm);">
+                            <p><strong>2. Pre-European vegetation</strong></p>
+                        </div>
+                        <div style="padding: var(--spacing-md); background: var(--gray-100); border-radius: var(--radius-sm);">
+                            <p><strong>B.</strong> Tasmania's vegetation classification system</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="match-1">Match 1 to:</label>
+                        <select id="match-1" data-correct="B">
+                            <option value="">Select match...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="match-2">Match 2 to:</label>
+                        <select id="match-2" data-correct="A">
+                            <option value="">Select match...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                        </select>
+                    </div>
+
+                    <button class="btn" id="check-matching"><i class="fas fa-check" aria-hidden="true"></i> Check Matching</button>
+                    <div class="feedback" id="matching-feedback" role="alert"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="content-section" role="tabpanel" aria-labelledby="resources-tab" hidden>
+            <h2><i class="fas fa-book-open" aria-hidden="true"></i> Resources</h2>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-file-download" aria-hidden="true"></i>
+                    <h3>Downloadable Resources</h3>
+                </div>
+
+                <div class="downloads-grid">
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        <h4>Site Inspection Checklist</h4>
+                        <p>PDF, 4.2 MB</p>
+                        <button class="btn btn-outline btn-sm download-resource" data-resource="resources/SiteInspectionChecklist.pdf">
+                            <i class="fas fa-download" aria-hidden="true"></i> Download
+                        </button>
+                    </div>
+
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        <h4>TasVeg Classification Guide</h4>
+                        <p>PDF, 4.0 MB</p>
+                        <button class="btn btn-outline btn-sm download-resource" data-resource="resources/TasVegClassificationGuide.pdf">
+                            <i class="fas fa-download" aria-hidden="true"></i> Download
+                        </button>
+                    </div>
+
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        <h4>Cultural Heritage Assessment Guidelines</h4>
+                        <p>PDF, 3.9 MB</p>
+                        <button class="btn btn-outline btn-sm download-resource" data-resource="resources/CulturalHeritageAssessmentGuidelines.pdf">
+                            <i class="fas fa-download" aria-hidden="true"></i> Download
+                        </button>
+                    </div>
+
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        <h4>Legislative Requirements Summary</h4>
+                        <p>PDF, 3.8 MB</p>
+                        <button class="btn btn-outline btn-sm download-resource" data-resource="resources/LegislativeRequirementsSummary.pdf">
+                            <i class="fas fa-download" aria-hidden="true"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-link" aria-hidden="true"></i>
+                    <h3>Useful Links</h3>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="link-search" placeholder="Search links..." aria-label="Search links">
+                </div>
+
+                <div id="links-container">
+                    <div class="link-category">
+                        <h4>Government Resources</h4>
+                        <ul class="links-list" style="list-style: none; margin-left: 0;">
+                            <li style="margin-bottom: var(--spacing-sm);">
+                                <a href="https://www.naturalvaluesatlas.tas.gov.au/" target="_blank" class="resource-link" style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-sm) var(--spacing-md); background: var(--gray-50); border-radius: var(--radius-sm);">
+                                    <i class="fas fa-external-link-alt" style="color: var(--primary);"></i>
+                                    <div>
+                                        <span class="link-title" style="font-weight: 500;">Natural Values Atlas</span>
+                                        <span class="link-description" style="display: block; font-size: 0.85rem; color: var(--text-light);">Database of natural values in Tasmania</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="margin-bottom: var(--spacing-sm);">
+                                <a href="https://heritage.tas.gov.au/" target="_blank" class="resource-link" style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-sm) var(--spacing-md); background: var(--gray-50); border-radius: var(--radius-sm);">
+                                    <i class="fas fa-external-link-alt" style="color: var(--primary);"></i>
+                                    <div>
+                                        <span class="link-title" style="font-weight: 500;">Heritage Tasmania</span>
+                                        <span class="link-description" style="display: block; font-size: 0.85rem; color: var(--text-light);">Information about Tasmania's historic heritage</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="margin-bottom: var(--spacing-sm);">
+                                <a href="https://www.aboriginalheritage.tas.gov.au/" target="_blank" class="resource-link" style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-sm) var(--spacing-md); background: var(--gray-50); border-radius: var(--radius-sm);">
+                                    <i class="fas fa-external-link-alt" style="color: var(--primary);"></i>
+                                    <div>
+                                        <span class="link-title" style="font-weight: 500;">Aboriginal Heritage Tasmania</span>
+                                        <span class="link-description" style="display: block; font-size: 0.85rem; color: var(--text-light);">Protecting and managing Aboriginal heritage</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="link-category">
+                        <h4>Educational Resources</h4>
+                        <ul class="links-list" style="list-style: none; margin-left: 0;">
+                            <li style="margin-bottom: var(--spacing-sm);">
+                                <a href="https://www.utas.edu.au/" target="_blank" class="resource-link" style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-sm) var(--spacing-md); background: var(--gray-50); border-radius: var(--radius-sm);">
+                                    <i class="fas fa-external-link-alt" style="color: var(--primary);"></i>
+                                    <div>
+                                        <span class="link-title" style="font-weight: 500;">University of Tasmania</span>
+                                        <span class="link-description" style="display: block; font-size: 0.85rem; color: var(--text-light);">Environmental studies and research</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="margin-bottom: var(--spacing-sm);">
+                                <a href="https://www.parks.tas.gov.au/" target="_blank" class="resource-link" style="display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-sm) var(--spacing-md); background: var(--gray-50); border-radius: var(--radius-sm);">
+                                    <i class="fas fa-external-link-alt" style="color: var(--primary);"></i>
+                                    <div>
+                                        <span class="link-title" style="font-weight: 500;">Parks & Wildlife Service</span>
+                                        <span class="link-description" style="display: block; font-size: 0.85rem; color: var(--text-light);">Managing Tasmania's national parks and reserves</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feedback" id="links-feedback" role="alert" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer role="contentinfo">
+            <p>AHCECR309 - Conduct an ecological and cultural site inspection prior to works.</p>
+            <p>Developed by Jay Rowley | Tasmanian Context | © 2025</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // ===== Page-Specific JavaScript =====
+
+        // Flashcard data
+        const flashcardsData = [
+            { question: "What does TasVeg stand for?", answer: "Tasmanian Vegetation Mapping and Classification System - the standard vegetation classification system used in Tasmania." },
+            { question: "What is a threatened species?", answer: "A species that is vulnerable to extinction in the near future." },
+            { question: "What is the purpose of a site inspection?", answer: "To assess ecological and cultural values, identify potential impacts, and inform management decisions." },
+            { question: "Which Act protects Aboriginal heritage in Tasmania?", answer: "The Aboriginal Heritage Act 1975." },
+            { question: "What is the Burra Charter?", answer: "A set of principles for heritage conservation in Australia, providing best-practice conservation guidelines." }
+        ];
+
+        // Initialize flashcards
+        window.flashcardsData = flashcardsData;
+        initFlashcards(flashcardsData);
+
+        // Video watched button
+        document.getElementById('video-watched-btn')?.addEventListener('click', function() {
+            const feedback = document.getElementById('video-feedback');
+            const completed = completeActivity('video_watched', 'general', 5);
+            showFeedback(feedback, 'Video marked as watched! ' + (completed ? 'Progress updated!' : ''), 'correct');
+        });
+
+        // Module progress badges update - Updated for 5 modules
+        function updateModuleBadges() {
+            const modules = ['module1', 'module2', 'module3', 'module4', 'module5'];
+            modules.forEach(moduleId => {
+                const progress = getModuleProgress(moduleId);
+                const badge = document.getElementById(moduleId + '-badge');
+                if (badge) {
+                    if (progress >= 100) {
+                        badge.textContent = '✅ Completed';
+                        badge.style.background = 'var(--success)';
+                        badge.style.color = 'white';
+                    } else if (progress > 0) {
+                        badge.textContent = '🔄 In progress (' + progress + '%)';
+                        badge.style.background = 'var(--warning)';
+                        badge.style.color = 'white';
+                    } else {
+                        badge.textContent = 'Not started';
+                        badge.style.background = 'var(--gray-200)';
+                        badge.style.color = 'var(--text-dark)';
+                    }
+                }
+            });
+
+            // Update completed count
+            const completed = modules.filter(id => getModuleProgress(id) >= 100).length;
+            document.getElementById('completed-count').textContent = completed;
+            document.getElementById('total-count').textContent = modules.length;
+        }
+
+        // Run on load and whenever progress changes
+        updateModuleBadges();
+
+        // Override saveProgress to update badges
+        const originalSaveProgress = saveProgress;
+        saveProgress = function(progress) {
+            originalSaveProgress(progress);
+            updateModuleBadges();
+            updateAllProgressBars();
+        };
+
+        // Map initialization
+        let mapInitialized = false;
+
+        function initMap() {
+            if (mapInitialized) return;
+            const mapContainer = document.getElementById('map');
+            if (!mapContainer) return;
+
+            try {
+                const map = L.map('map').setView([-42.5, 147], 8);
+                mapInitialized = true;
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                // Add a marker for the study area
+                const marker = L.marker([-42.921, 147.259], {
+                    icon: L.divIcon({
+                        className: 'area-marker',
+                        html: '<i class="fas fa-search-location" style="font-size: 24px; color: var(--module2-color);"></i>',
+                        iconSize: [24, 24],
+                        iconAnchor: [12, 24]
+                    })
+                }).addTo(map);
+
+                marker.bindPopup(`
+                    <div style="text-align: center;">
+                        <h4>Study Area</h4>
+                        <p>Elevation: 430m</p>
+                        <p>Annual Rainfall: 1800mm</p>
+                        <p><em>Click elsewhere to close</em></p>
+                    </div>
+                `);
+
+                // Update status
+                document.getElementById('map-status').textContent = 'Loaded';
+
+                // Invalidate size after a moment
+                setTimeout(() => map.invalidateSize(), 100);
+            } catch (e) {
+                console.warn('Map initialization failed:', e);
+                document.getElementById('map-status').textContent = 'Failed to load';
+            }
+        }
+
+        // Initialize map when interactive tab is shown
+        document.querySelector('[data-target="interactive"]')?.addEventListener('click', function() {
+            setTimeout(initMap, 300);
+        });
+
+        // Initialize map if interactive is already active
+        if (document.querySelector('[data-target="interactive"].active')) {
+            setTimeout(initMap, 300);
+        }
+
+        console.log('AHCECR309 Learning Resource loaded successfully!');
+        console.log('Version:', APP_CONFIG.version);
+    </script>
+</body>
+</html>

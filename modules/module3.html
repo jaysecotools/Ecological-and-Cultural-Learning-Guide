@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3 - Cultural Heritage Considerations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-module="module3">
+    <div class="container">
+        <!-- Header -->
+        <header class="module3">
+            <h1><i class="fas fa-monument" aria-hidden="true"></i> Cultural Heritage Considerations</h1>
+            <p>AHCECR309 - Conservation and Ecosystem Management</p>
+
+            <div class="header-progress">
+                <div class="progress-info">
+                    <span>Module Progress: <strong id="module-progress-text">0%</strong></span>
+                    <span>Overall Progress: <strong id="overall-progress-text">0%</strong></span>
+                    <a href="../index.html" class="btn btn-sm" style="background: rgba(255,255,255,0.2); padding: 6px 16px;">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Main
+                    </a>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress" id="module-progress-bar" style="width: 0%"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="separator">/</span>
+            <a href="../index.html#learning">Learning Modules</a>
+            <span class="separator">/</span>
+            <span class="current">Module 3: Cultural Heritage Considerations</span>
+        </nav>
+
+        <!-- Module Content -->
+        <div class="learning-objectives">
+            <h3><i class="fas fa-bullseye" aria-hidden="true"></i> Learning Objectives</h3>
+            <ul>
+                <li>Understand what cultural heritage is and why it matters</li>
+                <li>Recognise different types of cultural heritage features</li>
+                <li>Understand Aboriginal heritage in Tasmania</li>
+                <li>Know the key legislation protecting cultural heritage</li>
+                <li>Apply appropriate protocols during site inspections</li>
+            </ul>
+        </div>
+
+        <!-- Content tabs -->
+        <nav class="nav-tabs" role="tablist" style="margin-bottom: var(--spacing-lg);">
+            <button class="nav-tab active" role="tab" aria-selected="true" aria-controls="overview" data-target="overview" tabindex="0">
+                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                <span>Overview</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="aboriginal" data-target="aboriginal" tabindex="0">
+                <i class="fas fa-hands" aria-hidden="true"></i>
+                <span>Aboriginal Heritage</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="legislation" data-target="legislation" tabindex="0">
+                <i class="fas fa-gavel" aria-hidden="true"></i>
+                <span>Legislation</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="practice" data-target="practice" tabindex="0">
+                <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                <span>Practice</span>
+            </button>
+            <button class="nav-tab" role="tab" aria-selected="false" aria-controls="summary" data-target="summary" tabindex="0">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Summary</span>
+            </button>
+        </nav>
+
+        <!-- Overview -->
+        <section id="overview" class="content-section active" role="tabpanel">
+            <h2>Cultural Heritage in Tasmania</h2>
+            <p>Understanding cultural heritage considerations is essential for conducting responsible site inspections in Tasmania.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    <h3>What is Cultural Heritage?</h3>
+                </div>
+                <p>Cultural heritage refers to places, objects, and traditions that communities have inherited from the past and want to preserve for future generations. In Tasmania, this includes both Aboriginal heritage and historic heritage from European settlement.</p>
+
+                <p>Tasmania's cultural heritage is diverse and includes:</p>
+                <ul>
+                    <li>Aboriginal sites and cultural landscapes</li>
+                    <li>Historic buildings and structures</li>
+                    <li>Industrial and archaeological sites</li>
+                    <li>Cultural landscapes and modified natural areas</li>
+                    <li>Movable cultural heritage objects</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                    <h3>Why Cultural Heritage Matters in Site Inspections</h3>
+                </div>
+                <ul>
+                    <li>Cultural heritage is protected by law</li>
+                    <li>Damage to heritage sites can result in significant penalties</li>
+                    <li>Heritage values contribute to Tasmania's unique character</li>
+                    <li>Understanding heritage helps in comprehensive site assessment</li>
+                    <li>Respecting heritage maintains positive community relationships</li>
+                </ul>
+            </div>
+
+            <div class="interactive-box">
+                <h4><i class="fas fa-check-circle" aria-hidden="true"></i> Key Principles</h4>
+                <h4>Do:</h4>
+                <ul>
+                    <li>Research the area's heritage potential before visiting</li>
+                    <li>Look for both obvious and subtle heritage indicators</li>
+                    <li>Document any potential heritage features with photos and notes</li>
+                    <li>Consult with Aboriginal Heritage Tasmania if Aboriginal sites are suspected</li>
+                </ul>
+                <h4 style="margin-top: var(--spacing-md);">Don't:</h4>
+                <ul>
+                    <li>Disturb or remove artifacts or materials from heritage sites</li>
+                    <li>Assume that absence of visible features means no heritage values</li>
+                    <li>Proceed with works if you suspect heritage values without proper assessment</li>
+                    <li>Share sensitive information about Aboriginal heritage locations publicly</li>
+                </ul>
+            </div>
+
+            <button class="btn" onclick="switchTab('aboriginal')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Aboriginal Heritage</button>
+        </section>
+
+        <!-- Aboriginal Heritage -->
+        <section id="aboriginal" class="content-section" role="tabpanel" hidden>
+            <h2>Aboriginal Heritage Recognition</h2>
+            <p>Understanding and respecting Aboriginal heritage is a critical component of site inspections in Tasmania.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-history" aria-hidden="true"></i>
+                    <h3>Tasmanian Aboriginal Heritage</h3>
+                </div>
+                <p>Tasmanian Aboriginal heritage represents one of the oldest continuous cultures in the world, dating back over 40,000 years.</p>
+
+                <p>Key aspects include:</p>
+                <ul>
+                    <li>Cultural landscapes reflecting deep spiritual connections to Country</li>
+                    <li>Archaeological sites documenting thousands of years of occupation</li>
+                    <li>Scarred trees marking cultural activities and resource use</li>
+                    <li>Shell middens demonstrating coastal resource use</li>
+                    <li>Rock art sites containing important cultural knowledge</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                    <h3>Working with Aboriginal Communities</h3>
+                </div>
+                <p>When Aboriginal heritage is identified or suspected during site inspections:</p>
+                <ol>
+                    <li><strong>Cease activity</strong> that may impact potential heritage values</li>
+                    <li><strong>Contact Aboriginal Heritage Tasmania</strong> for guidance</li>
+                    <li><strong>Follow established protocols</strong> for community consultation</li>
+                    <li><strong>Respect cultural authority</strong> and decision-making processes</li>
+                    <li><strong>Implement recommendations</strong> from Aboriginal heritage officers</li>
+                </ol>
+            </div>
+
+            <div class="scenario-box">
+                <h4><i class="fas fa-lightbulb" aria-hidden="true"></i> Cultural Sensitivity Note:</h4>
+                <p>Some Aboriginal heritage sites contain sensitive cultural information. It's important to follow appropriate protocols for documentation and information sharing, consulting with Aboriginal Heritage Tasmania and relevant Aboriginal communities.</p>
+            </div>
+
+            <button class="btn" onclick="switchTab('legislation')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Legislation</button>
+        </section>
+
+        <!-- Legislation -->
+        <section id="legislation" class="content-section" role="tabpanel" hidden>
+            <h2>Legislative Requirements</h2>
+            <p>Understanding the legal framework for cultural heritage protection in Tasmania is essential for compliance during site inspections.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-balance-scale" aria-hidden="true"></i>
+                    <h3>Key Legislation</h3>
+                </div>
+
+                <div class="interactive-box">
+                    <h4><i class="fas fa-book" aria-hidden="true"></i> Aboriginal Heritage Act 1975</h4>
+                    <p>The primary legislation protecting Aboriginal heritage in Tasmania. It:</p>
+                    <ul>
+                        <li>Provides for the recognition and protection of Aboriginal sites</li>
+                        <li>Establishes the Aboriginal Heritage Council</li>
+                        <li>Requires permits for works that may affect Aboriginal heritage</li>
+                        <li>Creates offenses for damaging Aboriginal heritage</li>
+                    </ul>
+                </div>
+
+                <div class="interactive-box">
+                    <h4><i class="fas fa-book" aria-hidden="true"></i> Historic Cultural Heritage Act 1995</h4>
+                    <p>Protects historic heritage in Tasmania. It:</p>
+                    <ul>
+                        <li>Establishes the Tasmanian Heritage Council</li>
+                        <li>Provides for the Tasmanian Heritage Register</li>
+                        <li>Requires works approval for registered places</li>
+                        <li>Includes provisions for archaeological sites</li>
+                    </ul>
+                    <p><strong>Note:</strong> 2024 amendments effective from 1 January 2025 strengthen protection and ease regulatory engagement.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h4><i class="fas fa-clock" aria-hidden="true"></i> Upcoming Changes</h4>
+                    <p>A new <strong>Aboriginal Cultural Heritage Protection Act</strong> is anticipated following the 2021 review. The exposure draft was expected in 2023-2024. Check <a href="https://www.aboriginalheritage.tas.gov.au/" target="_blank">Aboriginal Heritage Tasmania</a> for the latest updates.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                    <h3>Penalties for Non-Compliance</h3>
+                </div>
+                <p>Serious penalties apply for damaging cultural heritage, including:</p>
+                <ul>
+                    <li>Fines up to $1.5 million for corporations</li>
+                    <li>Fines up to $300,000 for individuals</li>
+                    <li>Imprisonment in serious cases</li>
+                    <li>Restoration orders requiring remediation</li>
+                </ul>
+            </div>
+
+            <button class="btn" onclick="switchTab('practice')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Practice</button>
+        </section>
+
+        <!-- Practice -->
+        <section id="practice" class="content-section" role="tabpanel" hidden>
+            <h2>Practice Scenarios</h2>
+            <p>Test your knowledge with these interactive scenarios based on real-world situations.</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tree" aria-hidden="true"></i>
+                    <h3>Scenario 1: Coastal Development Inspection</h3>
+                </div>
+
+                <div class="scenario-box">
+                    <p><strong>Situation:</strong> You're inspecting a coastal site proposed for a walking track development. While assessing the route, you notice an area with scattered shell fragments and dark soil. In one section, you observe what appears to be a concentration of shells and some stone fragments that look worked.</p>
+
+                    <h4>What should you do?</h4>
+                    <div class="form-group">
+                        <select id="scenario1-select">
+                            <option value="">Select your response...</option>
+                            <option value="continue">Continue with the inspection and note it in your report</option>
+                            <option value="collect">Collect a sample for further analysis</option>
+                            <option value="stop">Stop work in that area and contact Aboriginal Heritage Tasmania</option>
+                            <option value="mark">Mark the area and proceed with the rest of the inspection</option>
+                        </select>
+                    </div>
+
+                    <button class="btn" id="check-scenario1"><i class="fas fa-check" aria-hidden="true"></i> Check Response</button>
+                    <div class="feedback" id="scenario1-feedback" role="alert"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-industry" aria-hidden="true"></i>
+                    <h3>Scenario 2: Historic Site Assessment</h3>
+                </div>
+
+                <div class="scenario-box">
+                    <p><strong>Situation:</strong> You're assessing a site for a proposed vegetation management program. The area contains what appears to be the remains of an early 20th-century mining operation, including several stone foundations, metal fragments, and what might be a tailings dump. The site isn't listed on the Heritage Register.</p>
+
+                    <h4>How should you proceed?</h4>
+                    <div class="form-group">
+                        <select id="scenario2-select">
+                            <option value="">Select your response...</option>
+                            <option value="proceed">Proceed with the vegetation management as planned</option>
+                            <option value="assess">Conduct a preliminary archaeological assessment</option>
+                            <option value="contact">Contact the Tasmanian Heritage Council for advice</option>
+                            <option value="avoid">Avoid the obvious features but work in other areas</option>
+                        </select>
+                    </div>
+
+                    <button class="btn" id="check-scenario2"><i class="fas fa-check" aria-hidden="true"></i> Check Response</button>
+                    <div class="feedback" id="scenario2-feedback" role="alert"></div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="switchTab('summary')"><i class="fas fa-arrow-right" aria-hidden="true"></i> Continue to Summary</button>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary" class="content-section" role="tabpanel" hidden>
+            <h2>Module Summary</h2>
+
+            <div class="summary-box">
+                <h3><i class="fas fa-key" aria-hidden="true"></i> Key Takeaways</h3>
+                <ul>
+                    <li>Cultural heritage includes Aboriginal and historic sites, objects, and traditions</li>
+                    <li>Aboriginal heritage is protected under the Aboriginal Heritage Act 1975</li>
+                    <li>Historic heritage is protected under the Historic Cultural Heritage Act 1995</li>
+                    <li>Always cease works if potential heritage is discovered</li>
+                    <li>Consult with relevant authorities before proceeding</li>
+                    <li>Document heritage features carefully without disturbing them</li>
+                </ul>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h3>Module Completion</h3>
+                <p>Congratulations on completing Module 3!</p>
+                <button class="btn" id="complete-module"><i class="fas fa-award" aria-hidden="true"></i> Mark Module Complete</button>
+                <div class="feedback" id="complete-feedback" role="alert"></div>
+                <div style="margin-top: var(--spacing-md);">
+                    <a href="module4.html" class="btn"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Module: Legislative Framework</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer role="contentinfo">
+            <p>AHCECR309 - Conduct an ecological and cultural site inspection prior to works.</p>
+            <p>Developed by Jay Rowley | Tasmanian Context | © 2025</p>
+        </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        // Scenario 1
+        document.getElementById('check-scenario1')?.addEventListener('click', () => {
+            const select = document.getElementById('scenario1-select');
+            const feedback = document.getElementById('scenario1-feedback');
+
+            if (!select.value) {
+                showFeedback(feedback, 'Please select a response.', 'incorrect');
+                return;
+            }
+
+            if (select.value === 'stop') {
+                const completed = completeActivity('scenario1', 'module3', 5);
+                showFeedback(feedback, 'Correct! This appears to be a potential shell midden. You must stop work and contact Aboriginal Heritage Tasmania immediately. ' + (completed ? 'Progress updated!' : ''), 'correct');
+            } else {
+                showFeedback(feedback, 'Incorrect. This appears to be a potential shell midden, which is Aboriginal heritage. The correct response is to stop work and contact Aboriginal Heritage Tasmania immediately.', 'incorrect');
+            }
+        });
+
+        // Scenario 2
+        document.getElementById('check-scenario2')?.addEventListener('click', () => {
+            const select = document.getElementById('scenario2-select');
+            const feedback = document.getElementById('scenario2-feedback');
+
+            if (!select.value) {
+                showFeedback(feedback, 'Please select a response.', 'incorrect');
+                return;
+            }
+
+            if (select.value === 'contact') {
+                const completed = completeActivity('scenario2', 'module3', 5);
+                showFeedback(feedback, 'Correct! Even if not listed, these features may have heritage significance. Contacting the Tasmanian Heritage Council for advice is the appropriate response. ' + (completed ? 'Progress updated!' : ''), 'correct');
+            } else {
+                showFeedback(feedback, 'Incorrect. Even if not listed, these features may have heritage significance. The correct response is to contact the Tasmanian Heritage Council for advice.', 'incorrect');
+            }
+        });
+
+// Complete Module - FIXED
+document.getElementById('complete-module')?.addEventListener('click', () => {
+    const feedback = document.getElementById('complete-feedback');
+    setModuleProgress('module3', 100);  // ← Changed from 'moduleX' to 'module3'
+    
+    // Add animation to the completion card
+    const completionCard = document.querySelector('.card:last-child');
+    if (completionCard) {
+        completionCard.classList.add('module-complete');
+        setTimeout(() => {
+            completionCard.classList.remove('module-complete');
+        }, 1000);
+    }
+    
+    showFeedback(feedback, '🎉 Module 3 Complete!', 'correct');
+    document.getElementById('complete-module').disabled = true;
+});
+
+        updateAllProgressBars();
+    </script>
+</body>
+</html>
