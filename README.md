@@ -34,37 +34,36 @@ This is a comprehensive learning resource for the unit **AHCECR309 - Conduct an 
 ---
 
 ## Project Structure
-AHCECR309/
-├── index.html # Main landing page
-├── UserGuide.html # Student user guide
-├── CHANGELOG.md # Version history
-├── README.md # This file
-├── css/
-│ └── style.css # Shared styles
-├── js/
-│ └── app.js # Shared JavaScript
-├── modules/
-│ ├── module1.html # Ecological Site Inspection Fundamentals
-│ ├── module2.html # Tasmanian Ecosystems
-│ ├── module3.html # Cultural Heritage Considerations
-│ ├── module4.html # Legislative Framework
-│ └── module5.html # Conducting the Inspection
-├── resources/
-│ ├── CulturalHeritageAssessmentGuidelines.pdf
-│ ├── LegislativeRequirementsSummary.pdf
-│ ├── SiteInspectionChecklist.pdf
-│ ├── TasVegClassificationGuide.pdf
-│ └── EcologicalCulturalSiteInspections_LearnerGuide.pdf
-└── images/
-└── pademelon.jpg # Species identification image
 
-text
+AHCECR309/
+├── index.html              # Main landing page
+├── UserGuide.html          # Student user guide
+├── CHANGELOG.md            # Version history
+├── README.md               # This file
+├── css/
+│   └── style.css           # Shared styles
+├── js/
+│   └── app.js              # Shared JavaScript
+├── modules/
+│   ├── module1.html        # Ecological Site Inspection Fundamentals
+│   ├── module2.html        # Tasmanian Ecosystems
+│   ├── module3.html        # Cultural Heritage Considerations
+│   ├── module4.html        # Legislative Framework
+│   └── module5.html        # Conducting the Inspection
+├── resources/
+│   ├── CulturalHeritageAssessmentGuidelines.pdf
+│   ├── LegislativeRequirementsSummary.pdf
+│   ├── SiteInspectionChecklist.pdf
+│   ├── TasVegClassificationGuide.pdf
+│   └── EcologicalCulturalSiteInspections_LearnerGuide.pdf
+└── images/
+    └── pademelon.jpg       # Species identification image
 
 ---
 
 ## Getting Started
 
-1. Open `index.html` in your web browser
+1. Open index.html in your web browser
 2. Navigate through the tabs to access different sections
 3. Complete the modules in order for the best learning experience
 4. Use the interactive activities to practice your skills
