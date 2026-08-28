@@ -6,8 +6,8 @@
 // ===== Configuration =====
 const APP_CONFIG = {
     progressKey: 'ahcecr309_progress',
-    version: '1.0.0',
-    modules: ['module1', 'module2', 'module3', 'module4', 'module5']
+    version: '2.0.0',
+    modules: ['module1', 'module2', 'module3', 'module4', 'module5', 'module6']
 };
 
 // ===== Utility Functions =====
@@ -538,7 +538,7 @@ function initLinkSearch() {
 // ===== Keyboard Shortcuts =====
 function initKeyboardShortcuts() {
     document.addEventListener('keydown', function(e) {
-        if (e.ctrlKey && e.key >= '1' && e.key <= '5') {
+        if (e.ctrlKey && e.key >= '1' && e.key <= '6') {
             e.preventDefault();
             const tabs = $$('.nav-tab');
             const index = parseInt(e.key) - 1;
