@@ -1,4 +1,3 @@
-'''
 AHCECR309 — Ecological & Cultural Site Inspection Learning Resource
 
 ""Status: Production Ready" (https://img.shields.io/badge/status-production%20ready-brightgreen)"
@@ -364,4 +363,3 @@ Tasmania, Australia
 ---
 
 © 2025–2026 Jay Rowley | AHCECR309 | Tasmanian Context
-'''
