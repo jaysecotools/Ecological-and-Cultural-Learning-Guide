@@ -1,8 +1,8 @@
 AHCECR309 — Ecological & Cultural Site Inspection Learning Resource
 
-""Status: Production Ready" (https://img.shields.io/badge/status-production%20ready-brightgreen)"
-""Unit: AHCECR309" (https://img.shields.io/badge/unit-AHCECR309-blue)"
-""Context: Tasmania" (https://img.shields.io/badge/context-Tasmania-green)"
+""Status: Production Ready" (https://img.shields.io/badge/status-production%20ready-brightgreen)" (https://github.com/jaysecotools/Ecological-and-Cultural-Learning-Guide)
+""Unit: AHCECR309" (https://img.shields.io/badge/unit-AHCECR309-blue)" (https://training.gov.au/Training/Details/AHCECR309)
+""Context: Tasmania" (https://img.shields.io/badge/context-Tasmania-green)" (https://nre.tas.gov.au/)
 
 An interactive, web-based learning resource for AHCECR309 — Conduct an ecological and cultural site inspection prior to works, developed for students studying Conservation and Ecosystem Management in a Tasmanian context.
 
@@ -19,7 +19,7 @@ The resource combines structured learning content with interactive activities, k
 
 Although the resource has been developed with Tasmanian students and environments in mind, many of the ecological inspection principles, planning processes and field practices are applicable more broadly.
 
-The six learning modules cover:
+The Six Learning Modules
 
 #| Module| Focus
 1| Ecological Site Inspection Fundamentals| Purpose and principles of ecological site inspections, abiotic elements, microorganisms and basic ecological concepts
@@ -35,7 +35,7 @@ What's New in v2.0.0
 
 Version 2.0.0 represents a substantial expansion and redesign of the learning resource.
 
-New content
+New Content
 
 - Module 5 — Conducting the Inspection
   
@@ -54,7 +54,7 @@ New content
   - Ecosystem services
   - Industry and environmental impacts
 
-Expanded existing modules
+Expanded Existing Modules
 
 - Module 1
   
@@ -71,7 +71,7 @@ Expanded existing modules
   - Added biosecurity content
   - Added reconciliation activities
 
-User experience and accessibility
+User Experience & Accessibility
 
 - ARIA accessibility improvements
 - Keyboard navigation support
@@ -81,7 +81,7 @@ User experience and accessibility
 - Completion animations and visual feedback
 - Modernised interface and navigation
 
-Resources and project improvements
+Resources & Project Improvements
 
 - Full 120+ page Learner's Guide
 - Additional downloadable reference materials
@@ -100,7 +100,7 @@ Six structured learning modules provide students with a progressive introduction
 
 🧭 Progress Tracking
 
-Student progress is tracked locally using browser "localStorage", allowing learners to return to the resource without losing their progress on the same device/browser.
+Student progress is tracked locally using browser "localStorage", allowing learners to return to the resource without losing their progress on the same device and browser.
 
 🌿 Interactive Activities
 
@@ -217,7 +217,7 @@ For Students
 6. Refer to the downloadable resources when required.
 7. Use the full Learner's Guide as a supporting reference.
 
-Progress is stored locally in your browser. If you change device or browser, your locally stored progress may not be available.
+«Note: Progress is stored locally in your browser. If you change device or browser, your locally stored progress may not be available.»
 
 For Educators
 
@@ -237,7 +237,7 @@ Technical Requirements
 
 The resource is designed to run in a modern web browser.
 
-Recommended browsers
+Recommended Browsers
 
 - Google Chrome
 - Microsoft Edge
@@ -336,7 +336,7 @@ Particular acknowledgement is given to:
 
 Version History
 
-See ""CHANGELOG.md"" (CHANGELOG.md) for detailed development history and changes between versions.
+See "CHANGELOG.md" (CHANGELOG.md) for detailed development history and changes between versions.
 
 Current version: 2.0.0
 Release: August 2026
